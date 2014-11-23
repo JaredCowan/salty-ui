@@ -1,4 +1,4 @@
-# Salty-UI
+<h1> <a href="http://jaredlucascowan.com/salty-ui"> Salty-UI </a> </h1>
 
 Work in progress.
 
