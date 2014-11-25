@@ -4234,18 +4234,18 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
     var defaults = {
       classParent  : 'dcjq-parent',
       classActive  : 'active',
-      classArrow   : 'dcjq-icon',
-      classCount   : 'dcjq-count',
+      classArrow   : 'sidebar-icon',
+      classCount   : 'sidebar-count',
       classExpand  : 'dcjq-current-parent',
-      eventType  : 'click',
-      hoverDelay   : 300,
-      menuClose     : true,
+      eventType    : 'click',
+      hoverDelay   : 200,
+      menuClose    : true,
       autoClose    : true,
       autoExpand   : false,
       speed        : 'slow',
-      saveState  : true,
+      saveState    : true,
       disableLink  : true,
-      showCount : false,
+      showCount    : false,
 //      cookie  : 'dcjq-accordion'
     };
 
@@ -4489,7 +4489,7 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
       }
     );
 
-    $("#sidebar").niceScroll(
+    $("#sidebar, .code-window > pre").niceScroll(
       {
         styler:"fb",
         cursorcolor: colors.teal,
@@ -4500,7 +4500,7 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
         cursorborder: '',
         zindex: '1000'
       }
-    ); 
+    );
 
     // SIDEBAR DROPDOWN MENU AUTO SCROLLING
     // ====================================
@@ -4556,10 +4556,10 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
   
       // SIDEBAR TOGGLE
       // ==============
-      el_toggle_nav.click(function () {
+      el_toggle_nav.click(function($) {
         if (el_sb_ul.is(":visible") === true) {
           el_main_cont.css({
-              'margin-left': '0px'
+              'margin-left': '-1px'
           });
           el_sb.css({
               'margin-left': '-210px'
@@ -4572,7 +4572,7 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
           });
           el_sb_ul.show();
           el_sb.css({
-              'margin-left': '0'
+              'margin-left': '-1px'
           });
           el_cont.removeClass("sidebar-closed");
         }
@@ -4583,7 +4583,7 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
   });  // DOCUMENT READY FUNCTION
 }(jQuery);
 
-$(function() {
+$(function($) {
     $('#nav-accordion').dcAccordion({
         eventType: 'click',
         autoClose: true,
@@ -4592,7 +4592,52 @@ $(function() {
         speed: 'slow',
         showCount: false,
         autoExpand: true,
-//        cookie: 'dcjq-accordion-1',
         classExpand: 'dcjq-current-parent'
     });
 });
+
++(function($) {
+  'use strict'
+  var client    = new ZeroClipboard( $("#copy-button") )
+    , aftr_copy = $(".after-copy")
+    , _button   = $(".btn-copy")
+    , _btnClass;
+
+    // find all elements and loop through
+    _button.mouseenter(function(){
+      _button.each(function(){
+        _btnClass = _button.hasClass('popovers');
+      });
+    });
+
+    // add popovers class to button if not present 
+    switch ( _btnClass == true ) {
+      case true:
+        break;
+      case false:
+        _button.addClass('popovers');
+        break;
+      default:
+        throw new Error('_btnClass has encountered an error adding class - popovers -');
+    };
+
+    // Dynamically add popover data attributes to each button
+    _button.attr({
+      "data-original-title":  "Click To Copy",
+      "data-placement":       "bottom",
+      "data-content":         "Copy the code to your clipboard to easily paste in your own project.",
+      "data-trigger":         "hover"
+    });
+
+  client.on( "ready", function( readyEvent ) {
+    client.on( "aftercopy", function( event ) {
+      aftr_copy.text('Code Was Copied!');
+      aftr_copy.delay(3000).fadeOut(500);
+    });
+  });
+
+  _button.on('click', function() {
+    aftr_copy.fadeIn(500);
+  });
+
+}( jQuery ));
