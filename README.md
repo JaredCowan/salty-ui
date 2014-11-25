@@ -2,7 +2,7 @@
 
 Salty-UI is a flat and clean design front-end framework that offers templates and widgets with easy customization in mind. Built with the powerful front-end framework everyone knows and loves, <a href="https://github.com/twbs/bootstrap">Bootstrap 3.3.1</a>. 
 
-View Salty-UI [here](http://salty-ui.com)
+View Salty-UI http://salty-ui.com
 
 ----------
 ## Where To Start
