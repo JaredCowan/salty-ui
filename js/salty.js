@@ -4640,4 +4640,27 @@ $(function($) {
     aftr_copy.fadeIn(500);
   });
 
+
+  // scroll to page section on click
+  // corrects the height with the fixed slider-menu
+  $( '.navbar-slider header a' ).on('click', function() {
+      var el      = $( this ).attr( 'href' )
+        , el_pos  = $( el ).offset().top
+        , win_pos = $( window ).scrollTop()
+        , o       = $( el ).offset().top - win_pos - $( ".thriii__landing--nav" ).innerHeight()
+        , current = window.location.hash
+        , el_scroll_to;
+
+      if ( el === "#sales-orders" ) {
+          el_scroll_to = el_pos;
+      } else {
+          el_scroll_to = el_pos - 100;
+      }
+
+      $( 'html, body' ).animate({
+          scrollTop: el_scroll_to
+        }, 800
+      )
+  }) //  END scroll to section on click
+
 }( jQuery ));
