@@ -1,5 +1,5 @@
 /*!
-  * Salty-UI v0.0.0 | Creative Commons Attribution 4.0 International License | https://github.com/JaredCowan/salty-ui | http://salty-ui.com
+  * Salty-UI v0.0.0 | MIT License | https://github.com/JaredCowan/salty-ui | http://salty-ui.com
   * Bootstrap v3.3.1 Copyright 2011-2014 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   * Normalize.css v3.0.2 | MIT License | git.io/normalize
   *
@@ -2645,6 +2645,7 @@ html {
 }
 body {
   background-color: #E7E7E7;
+  background-color: #2b3e50;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   font-size: 14px;
@@ -12947,7 +12948,15 @@ tr.odd.gradeX td.sorting_1, tr.even.gradeX td.sorting_1, table.display tr.even.g
 .site-footer {
   background: #5b6e84;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
+  word-spacing: 3px;
+}
+.site-footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+.site-footer a:hover {
+  text-shadow: 0 1px 1px #000;
 }
 
 .go-top {
@@ -13922,6 +13931,7 @@ a.guest-on i {
   position: relative;
   background: lightgrey;
   padding: 5px;
+  cursor: text;
 }
 .code-window > pre {
   position: relative;
@@ -13978,6 +13988,7 @@ a.guest-on i {
   position: absolute;
   top: 1px;
   left: 10px;
+  cursor: default;
 }
 .iterm--window-icons .yellow,
 .iterm--window-icons .green,
@@ -14052,6 +14063,7 @@ a.guest-on i {
   background: -ms-linear-gradient(-45deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* IE10+ */
   background: linear-gradient(135deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08bddd', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  background: #4e5d6c;
   margin: -20px auto 50px;
   padding: 20px;
   height: 400px;
@@ -14072,7 +14084,7 @@ a.guest-on i {
 .landing-page > span > h1 {
   text-align: center;
   font: 900 114px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #1abc9c;
+  color: #df691a;
   text-shadow:
     3px 3px 0 #000,
     -1px -1px 0 #000,  
@@ -14080,6 +14092,7 @@ a.guest-on i {
     -1px 1px 0 #000,
     1px 1px 0 #000;
   letter-spacing: 2.4444px;
+  cursor: default;
 }
 .navbar-slider > header .btn-dark {
   font-size: 16px;
@@ -14087,8 +14100,34 @@ a.guest-on i {
   margin: 11px;
   outline: none!important;
 }
+.getting-started, .getting-started > h1 {
+  background: #4e5d6c;
+  color: #fff;
+  font-weight: 100;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.getting-started > h1 {
+  position: relative;
+  max-width: 460px;
+  cursor: default;
+}
+.getting-started > h1:after {
+  content: '';
+  width: 90%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
 
-
+.go-top i {
+  padding-left: 5.5px;
+}
+.go-top i:before {
+  color: #000;
+}
 
 
 

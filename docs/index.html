@@ -19,7 +19,7 @@
   <body>
     <section id="container" class="sidebar-closed">
 
-      <nav class="navbar navbar-slider" role="navigation" no-select>
+      <nav id="top" class="navbar navbar-slider" role="navigation" no-select>
         <header> <!--header start-->
           <div class="sidebar-toggle-box">
             <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
@@ -145,65 +145,77 @@
           </div> <!-- sidebar end-->
         </aside> 
       </nav> <!-- navbar-slider end-->
-
-      <div class="jumbotron landing-page">
+      <div class="jumbotron landing-page" no-select>
         <span>
           <h1>Salty-UI</h1>
         </span>
       </div>
-
-      <div class="iterm" id="download">
-        <div class="iterm--header">
-          <span class="iterm--window-icons">
-            <span class="red"></span>
-            <span class="yellow"></span>
-            <span class="green"></span>
-          </span>
-        </div>
-        <div class="iterm--shell">
-          <p>
-            <span>git@github.com:JaredCowan/salty-ui.git</span>
-          </p>
+      
+      <div class="container">
+        <div class="jumbotron getting-started" no-select>
+          <h1>Getting-Started</h1>
         </div>
       </div>
-
-
-
-
-      
-      <div class="code">
-        <div class="code-window">
-          <pre>
-            <xmp id="test">
-              <li class="sub-menu">
-                <a href="javascript:;">
-                  <i class="fa fa-laptop"></i>
-                  <span>Templates</span>
-                </a>
-                <ul class="sub">
-                  <li>
-                    <a href="#">Holder</a>
-                  </li>
-                  <li>
-                    <a href="#">Holder</a></li>
-                  <li>
-                    <a href="#">Holder</a>
-                  </li>
-                  <li>
-                    <a href="#">Holder</a>
-                  </li>
-                </ul>
-              </li>
-            </xmp>
-          </pre>
-          <button id="copy-button" data-clipboard-target="test" class="btn-copy popovers" no-select>Copy</button>
-          <span class="after-copy"></span>
+      <div class="container">
+        <div class="iterm" id="download">
+          <div class="iterm--header" no-select>
+            <span class="iterm--window-icons" >
+              <span class="red"></span>
+              <span class="yellow"></span>
+              <span class="green"></span>
+            </span>
+          </div>
+          <div class="iterm--shell">
+            <p>
+              <span>git@github.com:JaredCowan/salty-ui.git</span>
+            </p>
+          </div>
         </div>
+
+
+        <div class="code">
+          <div class="code-window">
+            <pre>
+              <xmp id="test">
+                <li class="sub-menu">
+                  <a href="javascript:;">
+                    <i class="fa fa-laptop"></i>
+                    <span>Templates</span>
+                  </a>
+                  <ul class="sub">
+                    <li>
+                      <a href="#">Holder</a>
+                    </li>
+                    <li>
+                      <a href="#">Holder</a></li>
+                    <li>
+                      <a href="#">Holder</a>
+                    </li>
+                    <li>
+                      <a href="#">Holder</a>
+                    </li>
+                  </ul>
+                </li>
+              </xmp>
+            </pre>
+            <button id="copy-button" data-clipboard-target="test" class="btn-copy popovers" no-select>Copy</button>
+            <span class="after-copy"></span>
+          </div>
+        </div>
+
       </div>
 
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
       </section> <!-- page end -->
+
+      <footer class="site-footer" no-select>
+        2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+        <span>Code released under <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+        <a href="#top" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+      </footer>
 
      <!-- Javascript -->
      <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

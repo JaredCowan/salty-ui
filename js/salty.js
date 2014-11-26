@@ -1,5 +1,5 @@
 /*!
-  * Salty-UI v0.0.0 | Creative Commons Attribution 4.0 International License | https://github.com/JaredCowan/salty-ui | http://salty-ui.com
+  * Salty-UI v0.0.0 | MIT License | https://github.com/JaredCowan/salty-ui | http://salty-ui.com
   * Bootstrap v3.3.1 (http://getbootstrap.com) Copyright 2011-2014 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   * jquery.nicescroll 3.5.0 InuYaksa*2013 MIT http://areaaperta.com/nicescroll
 */
@@ -4459,7 +4459,7 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
 // =========================================================
 
 
-+function($) {
++function() {
 
   // DOCUMENT READY FUNCTIONS
   // ========================
@@ -4556,8 +4556,9 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
   
       // SIDEBAR TOGGLE
       // ==============
-      el_toggle_nav.click(function($) {
-        if (el_sb_ul.is(":visible") === true) {
+      function sidebarToggle() {
+        
+      if (el_sb_ul.is(":visible") === true) {
           el_main_cont.css({
               'margin-left': '-1px'
           });
@@ -4576,14 +4577,13 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
           });
           el_cont.removeClass("sidebar-closed");
         }
-      });
+      };
+      el_toggle_nav.on('click', sidebarToggle);
     });
+
     $('.tooltips').tooltip();
     $('.popovers').popover();
-  });  // DOCUMENT READY FUNCTION
-}(jQuery);
 
-$(function($) {
     $('#nav-accordion').dcAccordion({
         eventType: 'click',
         autoClose: true,
@@ -4594,10 +4594,16 @@ $(function($) {
         autoExpand: true,
         classExpand: 'dcjq-current-parent'
     });
-});
 
-+(function($) {
+  });  // DOCUMENT READY FUNCTION
+}(jQuery);
+
+
+
++(function() {
   'use strict'
+
+  // Init clipboard and variables
   var client    = new ZeroClipboard( $("#copy-button") )
     , aftr_copy = $(".after-copy")
     , _button   = $(".btn-copy")
@@ -4629,6 +4635,7 @@ $(function($) {
       "data-trigger":         "hover"
     });
 
+  // Show/hide confirmation text on copy success
   client.on( "ready", function( readyEvent ) {
     client.on( "aftercopy", function( event ) {
       aftr_copy.text('Code Was Copied!');
@@ -4636,6 +4643,8 @@ $(function($) {
     });
   });
 
+  // FadeIn confirmation text if copy funct. 
+  // is clicked multiple times
   _button.on('click', function() {
     aftr_copy.fadeIn(500);
   });
@@ -4643,20 +4652,21 @@ $(function($) {
 
   // scroll to page section on click
   // corrects the height with the fixed slider-menu
-  $( '.navbar-slider header a' ).on('click', function() {
-      var el      = $( this ).attr( 'href' )
-        , el_pos  = $( el ).offset().top
-        , win_pos = $( window ).scrollTop()
-        , o       = $( el ).offset().top - win_pos - $( ".thriii__landing--nav" ).innerHeight()
-        , current = window.location.hash
-        , el_scroll_to;
+  $( '.navbar-slider header a:last, .go-top' ).on('click', function( event ) {
+    // Prevent button clicks from causing screen to flicker
+    event.preventDefault();
+    var el      = $( this ).attr( 'href' )
+      , el_pos  = $( el ).offset().top
+      , win_pos = $( window ).scrollTop()
+      , o       = $( el ).offset().top - win_pos - $( ".thriii__landing--nav" ).innerHeight()
+      , current = window.location.hash
+      , el_scroll_to;
 
-      if ( el === "#sales-orders" ) {
-          el_scroll_to = el_pos;
-      } else {
-          el_scroll_to = el_pos - 100;
-      }
+      // Fix the scroll height to accommodate
+      // for the height of the navbars
+      el_scroll_to = el_pos - 100;
 
+      // Scroll smoothly to the correct element
       $( 'html, body' ).animate({
           scrollTop: el_scroll_to
         }, 800
