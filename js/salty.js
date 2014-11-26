@@ -4606,34 +4606,34 @@ e.nicescroll || (e.nicescroll = new D, e.nicescroll.options = I)
   // Init clipboard and variables
   var client    = new ZeroClipboard( $("#copy-button") )
     , aftr_copy = $(".after-copy")
-    , _button   = $(".btn-copy")
+    , _button   = $(".copy")
     , _btnClass;
 
-    // find all elements and loop through
-    _button.mouseenter(function(){
-      _button.each(function(){
-        _btnClass = _button.hasClass('popovers');
-      });
+  // find all elements and loop through
+  _button.mouseenter(function(){
+    _button.each(function(){
+      _btnClass = _button.hasClass('popovers');
     });
+  });
 
-    // add popovers class to button if not present 
-    switch ( _btnClass == true ) {
-      case true:
-        break;
-      case false:
-        _button.addClass('popovers');
-        break;
-      default:
-        throw new Error('_btnClass has encountered an error adding class - popovers -');
-    };
+  // add popovers class to button if not present 
+  switch ( _btnClass == true ) {
+    case true:
+      break;
+    case false:
+      _button.addClass('popovers');
+      break;
+    default:
+      throw new Error('_btnClass has encountered an error adding class - popovers -');
+  };
 
-    // Dynamically add popover data attributes to each button
-    _button.attr({
-      "data-original-title":  "Click To Copy",
-      "data-placement":       "bottom",
-      "data-content":         "Copy the code to your clipboard to easily paste in your own project.",
-      "data-trigger":         "hover"
-    });
+  // Dynamically add popover data attributes to each button
+  _button.attr({
+    "data-original-title":  "Click To Copy",
+    "data-placement":       "bottom",
+    "data-content":         "Copy the code to your clipboard to easily paste in your own project.",
+    "data-trigger":         "hover"
+  });
 
   // Show/hide confirmation text on copy success
   client.on( "ready", function( readyEvent ) {
