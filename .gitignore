@@ -1,0 +1,13 @@
+# Ignore files and folders
+
+# Wildcard File Types
+*.zip
+*.orig
+*.diff
+
+# Misc Folders
+.DS_Store
+
+# Folders
+node_modules
+bower_components

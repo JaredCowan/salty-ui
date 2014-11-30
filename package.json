@@ -1,0 +1,63 @@
+{
+  "name": "salty-ui",
+  "title": "Salty-UI",
+  "version": "0.1.0",
+  "description": "Salty-UI is a flat and clean design front-end framework that offers templates and widgets with easy customization in mind.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "doc": "docs",
+    "dist": "dist"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JaredCowan/salty-ui"
+  },
+  "keywords": [
+    "css",
+    "mobile-first",
+    "js",
+    "front-end",
+    "framework",
+    "design",
+    "salty-ui"
+  ],
+  "author": "Jared L Cowan",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/JaredCowan/salty-ui/blob/master/License"
+  },
+  "bugs": {
+    "url": "https://github.com/JaredCowan/salty-ui/issues"
+  },
+  "homepage": "http://salty-ui.com",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0"
+  },
+  "config": {
+    "autoprefixerBrowsers": [
+      "Android 2.3",
+      "Android >= 4",
+      "Chrome >= 20",
+      "Firefox >= 24",
+      "Explorer >= 8",
+      "iOS >= 6",
+      "Opera >= 12",
+      "Safari >= 6"
+    ]
+  },
+  "bs": {
+    "banner": "Bootstrap v3.3.1 (http://getbootstrap.com) Copyright 2011-2014 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)"
+  },
+  "norm": {
+    "banner": "Normalize.css v3.0.2 | MIT License | git.io/normalize"
+  }
+}
