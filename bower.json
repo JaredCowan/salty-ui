@@ -1,0 +1,44 @@
+{
+  "name": "salty-ui",
+  "description": "Salty-UI is a flat and clean design front-end framework that offers templates and widgets with easy customization in mind.",
+  "version": "0.1.0",
+  "homepage": "http://salty-ui.com",
+  "authors": [
+    "JaredCowan <https://github.com/JaredCowan>"
+  ],
+  "main": [
+    "dist/css/salty-ui.css",
+    "dist/js/salty-ui.js",
+    "dist/fonts/glyphicons-halflings-regular.eot",
+    "dist/fonts/glyphicons-halflings-regular.svg",
+    "dist/fonts/glyphicons-halflings-regular.ttf",
+    "dist/fonts/glyphicons-halflings-regular.woff",
+    "dist/fonts/fontawesome-webfont.eot",
+    "dist/fonts/fontawesome-webfont.svg",
+    "dist/fonts/fontawesome-webfont.ttf",
+    "dist/fonts/FontAwesome.otf",
+    "dist/fonts/fontawesome-webfont.woff"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "mobile-first",
+    "js",
+    "front-end",
+    "framework",
+    "design",
+    "salty-ui"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "CNAME",
+    "docs"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}

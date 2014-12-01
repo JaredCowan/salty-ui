@@ -160,16 +160,40 @@ module.exports = function (grunt) {
         src: 'fonts/*',
         dest: 'docs/'
       }
+    },
+
+    pagespeed: {
+      options: {
+        nokey: true,
+        url: "http://salty-ui.com"
+      },
+      prod: {
+        options: {
+          url: "http://salty-ui.com",
+          locale: "en_US",
+          strategy: "desktop",
+          threshold: 80
+        }
+      },
+      paths: {
+        options: {
+          paths: ["/"],
+          locale: "<%= pagespeed.prod.options.locale %>",
+          strategy: "mobile",
+          threshold: 80
+        }
+      }
     }
   });
 
   // Load plugins
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-autoprefixer');
+  require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+  // grunt.loadNpmTasks('grunt-contrib-uglify');
+  // grunt.loadNpmTasks('grunt-contrib-concat');
+  // grunt.loadNpmTasks('grunt-contrib-cssmin');
+  // grunt.loadNpmTasks('grunt-contrib-clean');
+  // grunt.loadNpmTasks('grunt-contrib-copy');
+  // grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Dist JS
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);
@@ -177,9 +201,13 @@ module.exports = function (grunt) {
   // Dist CSS
   grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
 
-  // Default task.
+  // Test Page Speed
+  grunt.registerTask('speed', ['pagespeed']);
+
+  // Default Task.
   grunt.registerTask('default', ['uglify', 'copy:fonts']);
 
-  // Full distribution task.
+  // Full Distribution Task.
   grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
+
 };
