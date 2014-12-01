@@ -6,7 +6,7 @@
   "authors": [
     "JaredCowan <https://github.com/JaredCowan>"
   ],
-  "main": "dist",
+  "main": "dist/**",
   "license": "MIT",
   "keywords": [
     "css",
@@ -19,19 +19,14 @@
   ],
   "ignore": [
     "**/.*",
-    "/.*",
     "node_modules",
     "bower_components",
     "CNAME",
-    "docs",
-    "docs/*",
-    "fonts",
-    "fonts/*",
+    "docs/**",
+    "fonts/**",
     "*.md",
-    "js",
-    "js/*",
-    "css/*",
-    "css",
+    "js/**",
+    "css/**",
     "Gruntfile.js",
     "package.json"
   ],
