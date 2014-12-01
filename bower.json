@@ -1,7 +1,7 @@
 {
   "name": "salty-ui",
   "description": "Salty-UI is a flat and clean design front-end framework that offers templates and widgets with easy customization in mind.",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "homepage": "http://salty-ui.com",
   "authors": [
     "JaredCowan <https://github.com/JaredCowan>"
