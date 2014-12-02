@@ -139,7 +139,7 @@
   });  // DOCUMENT READY FUNCTION
 
   // Init clipboard and variables
-  var client    = new ZeroClipboard( $("#copy-button") )
+  var client    = new ZeroClipboard( $(".copy-button") )
     , aftr_copy = $(".after-copy")
     , _button   = $(".copy")
     , _btnClass;

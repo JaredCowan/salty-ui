@@ -1,8 +1,8 @@
 module.exports = function (grunt) {
   'use strict';
 
-  grunt.util.linefeed = '\n';
   grunt.file.defaultEncoding = 'utf8';
+  grunt.util.linefeed = '\n';
 
   // Project configuration.
   grunt.initConfig({
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
           url: "http://salty-ui.com",
           locale: "en_US",
           strategy: "desktop",
-          threshold: 80
+          threshold: 85
         }
       },
       paths: {
@@ -180,7 +180,7 @@ module.exports = function (grunt) {
           paths: ["/"],
           locale: "<%= pagespeed.prod.options.locale %>",
           strategy: "mobile",
-          threshold: 80
+          threshold: 85
         }
       }
     }
@@ -188,12 +188,6 @@ module.exports = function (grunt) {
 
   // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-  // grunt.loadNpmTasks('grunt-contrib-uglify');
-  // grunt.loadNpmTasks('grunt-contrib-concat');
-  // grunt.loadNpmTasks('grunt-contrib-cssmin');
-  // grunt.loadNpmTasks('grunt-contrib-clean');
-  // grunt.loadNpmTasks('grunt-contrib-copy');
-  // grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Dist JS
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);

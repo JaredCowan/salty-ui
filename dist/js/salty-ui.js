@@ -3,7 +3,7 @@
  * License: MIT https://github.com/JaredCowan/salty-ui/blob/master/License 
  * Web: http://salty-ui.com 
  * repository: https://github.com/JaredCowan/salty-ui 
- * Changed: 2014-11-30 
+ * Changed: 2014-12-01 
 */ 
  if (typeof jQuery === 'undefined') {
   throw new Error('Salty-ui\'s JavaScript requires jQuery')
