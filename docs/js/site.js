@@ -137,9 +137,16 @@
     });
 
   });  // DOCUMENT READY FUNCTION
+  
+  // Insert copy to clipboard button before .highlight
+    $('.highlight').each(function () {
+      var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      $(this).before(btnHtml)
+    })
 
   // Init clipboard and variables
   var client    = new ZeroClipboard( $(".copy-button") )
+    , htmlBridge = $('#global-zeroclipboard-html-bridge')
     , aftr_copy = $(".after-copy")
     , _button   = $(".copy")
     , _btnClass;
@@ -199,7 +206,7 @@
 
       // Fix the scroll height to accommodate
       // for the height of the navbars
-      el_scroll_to = el_pos - 100;
+      el_scroll_to = el_pos - 70;
 
       // Scroll smoothly to the correct element
       $( 'html, body' ).animate({

@@ -19,7 +19,6 @@
 </head>
   <body>
     <section id="container" class="sidebar-closed">
-
       <nav id="top" class="navbar navbar-slider" role="navigation" no-select>
         <header> <!--header start-->
           <div class="sidebar-toggle-box">
@@ -159,37 +158,96 @@
         </span>
       </div>
       
-        <div class="jumbotron getting-started" no-select>
-          <h1>Getting-Started</h1>
-          <p>
-            Let's bring your vision to life.
-          </p>
-        </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="well well--download" id="download">
-              <h2>Download the files from Github</h2>
-            </div>
-            <div class="iterm" >
-              <div class="iterm--header" no-select>
-                <span class="iterm--window-icons" >
-                  <span class="red"></span>
-                  <span class="yellow"></span>
-                  <span class="green"></span>
-                </span>
+      <div class="jumbotron getting-started" no-select>
+        <h1>Getting Started</h1>
+        <p>
+          Downloading
+        </p>
+      </div>
+
+    <!--   <div class="well well--download" id="download">
+        <h2>Options for Downloading</h2>
+        <hr>
+      </div> -->
+
+      <div class="download-container">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 download-container--section">
+              <h2>Git Clone:</h2>
+              <div class="iterm">
+                <div class="iterm--header" no-select>
+                  <span class="iterm--window-icons" >
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                  </span>
+                </div>
+                <div class="iterm--shell">
+                  <p>
+                    <span id="github-download">git@github.com:JaredCowan/salty-ui.git</span>
+                  </p>
+                  <button data-clipboard-target="github-download" class="btn-gh-download copy-button copy popovers" no-select>Copy</button>
+                </div>
               </div>
-              <div class="iterm--shell">
-                <p>
-                  <span id="github-download">git@github.com:JaredCowan/salty-ui.git</span>
-                </p>
-                <button data-clipboard-target="github-download" class="btn-gh-download copy-button copy popovers" no-select>Copy</button>
+            </div>
+
+            <div class="col-lg-12 download-container--section">
+              <h2>Install With Bower:</h2>
+              <div class="iterm">
+                <div class="iterm--header" no-select>
+                  <span class="iterm--window-icons" >
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                  </span>
+                </div>
+                <div class="iterm--shell">
+                  <p>
+                    <span id="github-download">bower install salty-ui</span>
+                  </p>
+                  <button data-clipboard-target="github-download" class="btn-gh-download copy-button copy popovers" no-select>Copy</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="code">
+      <!-- <div class="jumbotron section-break"></div> -->
+
+      <div class="jumbotron basic-template" no-select>
+        <h1>Basic Template</h1>
+        <p>
+          See more templates <a href="javascript:;">here</a>.
+        </p>
+      </div>
+      <!-- <div class="jumbotron section-break"></div> -->
+
+      <div class="template-container">
+        <div class="container">
+          <div class="highlight">
+            <pre>
+              <code>
+                Template content here.
+              </code>
+            </pre>
+          </div>
+
+          <div class="highlight">
+            <pre>
+              <code>
+                Template content here 2.
+              </code>
+            </pre>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="code" hidden>
           <div class="code-window">
             <pre>
               <xmp id="test">
@@ -217,27 +275,22 @@
             <button data-clipboard-target="test" class="btn-copy copy-button copy popovers" no-select>Copy</button>
             <span class="after-copy"></span>
           </div>
-        </div>
-
       </div>
+    </section> <!-- page end -->
 
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer class="site-footer" no-select>
+      2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+      <span>Code released under <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+      <a href="#top" class="go-top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+    </footer>
 
-      </section> <!-- page end -->
-
-      <footer class="site-footer" no-select>
-        2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
-        <span>Code released under <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
-        <a href="#top" class="go-top">
-          <i class="fa fa-angle-up"></i>
-        </a>
-      </footer>
-
-     <!-- Javascript -->
-     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-     <script src="js/ZeroClipboard.js"></script>
-     <script src="js/salty-ui.min.js"></script>
-     <script src="js/site.js"></script>
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/ZeroClipboard.js"></script>
+    <script src="js/salty-ui.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>

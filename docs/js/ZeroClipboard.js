@@ -359,7 +359,7 @@
     containerClass: "global-zeroclipboard-container",
     swfObjectId: "global-zeroclipboard-flash-bridge",
     hoverClass: "btn-copy-hover",
-    activeClass: "zeroclipboard-is-active",
+    activeClass: "btn-copy-active",
     forceHandCursor: false,
     title: null,
     zIndex: 999999999
