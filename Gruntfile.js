@@ -131,6 +131,12 @@ module.exports = function (grunt) {
           map: false
         },
         src: 'dist/css/<%= pkg.name %>.css'
+      },
+      site: {
+        options: {
+          map: false
+        },
+        src: 'docs/css/site.css'
       }
     },
 

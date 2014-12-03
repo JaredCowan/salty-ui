@@ -163,11 +163,11 @@
     });
 
     // Dynamically add unique ids to button and target
-    // of element to copy.
-    $btn_clip.on('mouseenter', function( el ) {
+    // of element to copy. Run only once.
+    $btn_clip.one('mouseenter', function( el ) {
       var $highlight = $(this).parent().nextAll('.highlight').first()
         , $btn = $( this )
-        , randId = Math.ceil(Math.random() * 200);
+        , randId = Math.ceil(Math.random() * 2000);
       $btn.attr("data-clipboard-target", randId )
       $highlight.attr({ id: randId })
     })

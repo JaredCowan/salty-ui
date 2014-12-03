@@ -23,7 +23,8 @@ pre, code {
 }
 .landing-page > span {
   background: #242424 url("../img/all-comp.png") center center no-repeat;
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
   display: block;
   height: 100%;
   margin: 30px auto;
@@ -93,7 +94,8 @@ pre, code {
   width: 600px;
   background-image: url("../img/imac.png"); 
   background-repeat: no-repeat;
-  background-size: contain;
+  -webkit-background-size: contain;
+          background-size: contain;
   margin: 0 auto;
   padding: 24px 24px 173px;
   border-radius: 11px;
@@ -162,34 +164,34 @@ pre, code {
           box-shadow: 0 0 2px #000;
 }
 .iterm--window-icons .red {
-  background: #ea2803; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ea2803 27%, #ea2803 43%, #ea2803 43%, #e86c57 66%, #e86c57 66%, #e86c57 87%, #f3c5bd 95%, #ff6600 96%, #ff6600 96%, #f3c5bd 96%, #c72200 100%); /* FF3.6+ */
+  background: #ea2803; /* Old browsers */ /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(27%,#ea2803), color-stop(43%,#ea2803), color-stop(43%,#ea2803), color-stop(66%,#e86c57), color-stop(66%,#e86c57), color-stop(87%,#e86c57), color-stop(95%,#f3c5bd), color-stop(96%,#ff6600), color-stop(96%,#ff6600), color-stop(96%,#f3c5bd), color-stop(100%,#c72200)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#ff6600 96%,#ff6600 96%,#f3c5bd 96%,#c72200 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#ff6600 96%,#ff6600 96%,#f3c5bd 96%,#c72200 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#ff6600 96%,#ff6600 96%,#f3c5bd 96%,#c72200 100%); /* IE10+ */
+  background: -o-radial-gradient(center, ellipse cover, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#ff6600 96%,#ff6600 96%,#f3c5bd 96%,#c72200 100%); /* Opera 12+ */ /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #ea2803 27%, #ea2803 43%, #ea2803 43%, #e86c57 66%, #e86c57 66%, #e86c57 87%, #f3c5bd 95%, #ff6600 96%, #ff6600 96%, #f3c5bd 96%, #c72200 100%);
+  background: -o-radial-gradient(center, ellipse, #ea2803 27%, #ea2803 43%, #ea2803 43%, #e86c57 66%, #e86c57 66%, #e86c57 87%, #f3c5bd 95%, #ff6600 96%, #ff6600 96%, #f3c5bd 96%, #c72200 100%);
   background: radial-gradient(ellipse at center, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#ff6600 96%,#ff6600 96%,#f3c5bd 96%,#c72200 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2803', endColorstr='#c72200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2803', endColorstr='#c72200',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--window-icons .yellow {
-  background: #ffd65e; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #ffd65e 25%, #febf04 100%); /* FF3.6+ */
+  background: #ffd65e; /* Old browsers */ /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(25%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover, #ffd65e 25%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #ffd65e 25%,#febf04 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #ffd65e 25%,#febf04 100%); /* IE10+ */
+  background: -o-radial-gradient(center, ellipse cover, #ffd65e 25%,#febf04 100%); /* Opera 12+ */ /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #ffd65e 25%, #febf04 100%);
+  background: -o-radial-gradient(center, ellipse, #ffd65e 25%, #febf04 100%);
   background: radial-gradient(ellipse at center, #ffd65e 25%,#febf04 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--window-icons .green {
-  background: #b4e391; /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse cover, #b4e391 0%, #61c419 91%, #b4e391 100%); /* FF3.6+ */
+  background: #b4e391; /* Old browsers */ /* FF3.6+ */
   background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b4e391), color-stop(91%,#61c419), color-stop(100%,#b4e391)); /* Chrome,Safari4+ */
   background: -webkit-radial-gradient(center, ellipse cover, #b4e391 0%,#61c419 91%,#b4e391 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover, #b4e391 0%,#61c419 91%,#b4e391 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover, #b4e391 0%,#61c419 91%,#b4e391 100%); /* IE10+ */
+  background: -o-radial-gradient(center, ellipse cover, #b4e391 0%,#61c419 91%,#b4e391 100%); /* Opera 12+ */ /* IE10+ */
+  background: -webkit-radial-gradient(center, ellipse, #b4e391 0%, #61c419 91%, #b4e391 100%);
+  background: -o-radial-gradient(center, ellipse, #b4e391 0%, #61c419 91%, #b4e391 100%);
   background: radial-gradient(ellipse at center, #b4e391 0%,#61c419 91%,#b4e391 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--shell {
   font-family:  Consolas, "Liberation Mono", Courier, monospace;
@@ -254,7 +256,7 @@ pre, code {
 }
 .template-container,
 .download-container {
-  background: #fafafa;
+  background: #fafafa
   /*padding: 40px 0;*/
 }
 .download-container--section {
@@ -298,11 +300,13 @@ pre, code {
   background-color: #4F5F71;
   border: 1px solid #e1e1e8;
   border-radius: 0 4px 0 4px;
-  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+       -o-transition: all .4s ease;
+          transition: all .4s ease;
 }
 .tool-tip, .tooltip-inner {
   white-space: nowrap;
-  z-index: 999999999;
+  z-index: 100;
 }
 
 .btn-copy-hover {
@@ -343,12 +347,11 @@ pre, code {
 }
 .prettyprint.linenums {
   -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-     -moz-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
           box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
 }
 /* Specify class=linenums on a pre to get line numbering */
 ol.linenums {
-  margin: 0 0 0 0; /* IE indents via margin-left */
+  margin: 0 0 0 0 /* IE indents via margin-left */
 }
 ol.linenums li {
   padding-left: 12px;
