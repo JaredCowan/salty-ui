@@ -1,3 +1,86 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+body {
+  background: #242424;
+  font-family: "Lato", arial, helvetica, sans-serif;
+  font-size: 1em;
+}
+.navbar-slider > header .btn-dark {
+  font-size: 16px;
+  float: right;
+  margin: 11px;
+  outline: none!important;
+}
+.landing-page {
+  background: #242424;
+  margin: -20px auto 0;
+  padding: 20px;
+  height: 400px;
+  max-width: 800px;
+  display: block;
+}
+.landing-page > span {
+  background: #242424 url("../img/all-comp.png") center center no-repeat;
+  background-size: contain;
+  display: block;
+  height: 100%;
+  margin: 30px auto;
+  max-width: 1000px;
+}
+.landing-page > span > h1 {
+  text-align: center;
+  font-family: "Lato", arial, helvetica, sans-serif;
+  font-size: 25px;
+  font-size: 20vmin;
+  color: #fafafa;
+  text-shadow:
+    3px 3px 0 #000,
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  letter-spacing: 2.4444px;
+  cursor: default;
+}
+.getting-started {
+  background: #fafafa;
+  color: #6b6b6b;
+  padding: 85px 0;
+  margin-bottom: 50px;
+  border-radius: 0;
+  font-size: 26px;
+  text-align: center;
+}
+.getting-started > h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  position: relative;
+  cursor: default;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: .5px;
+}
+.getting-started > h1:after {
+  content: '';
+  width: 60%;
+  max-width: 400px;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  margin: -5px auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .getting-started > h1 {
+    font-size: 30px;
+    font-size: 8vw;
+  }
+  .getting-started p {
+    font-size: 20px;
+    font-size: 5vw;
+  }
+}
 .code {
   height: 500px;
   width: 600px;
@@ -138,74 +221,9 @@
   padding-right: 10px;
 }
 
-.landing-page {
-  background: rgb(8,189,221); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(8,189,221,1) 0%, rgba(31,143,224,1) 45%, rgba(125,185,232,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(8,189,221,1)), color-stop(45%,rgba(31,143,224,1)), color-stop(100%,rgba(125,185,232,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* IE10+ */
-  background: linear-gradient(135deg,  rgba(8,189,221,1) 0%,rgba(31,143,224,1) 45%,rgba(125,185,232,1) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#08bddd', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-  background: #4e5d6c;
-  margin: -20px auto 50px;
-  padding: 20px;
-  height: 400px;
-  width: 100%;
-  display: inline-block;
-}
-.landing-page > span {
-  display: block;
-  height: 110%;
-  margin: 30px auto;
-  background-image: url("../img/mobile.png"), url("../img/tab.png"), url("../img/imac.png"), url("../img/laptop.png");
-  background-size: 75px, 150px, 300px, 360px;
-  background-repeat: no-repeat;
-  background-position: 29% 90%, 44% 92%, 17% 77%, 75% 92%;
-  max-width: 1000px;
-  min-width: 725px;
-}
-.landing-page > span > h1 {
-  text-align: center;
-  font: 900 114px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #df691a;
-  text-shadow:
-    3px 3px 0 #000,
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  letter-spacing: 2.4444px;
-  cursor: default;
-}
-.navbar-slider > header .btn-dark {
-  font-size: 16px;
-  float: right;
-  margin: 11px;
-  outline: none!important;
-}
-.getting-started, .getting-started > h1 {
-  background: #4e5d6c;
-  color: #fff;
-  font-weight: 100;
-  padding: 20px;
-  margin-bottom: 50px;
-  border-radius: 0;
-}
-.getting-started > h1 {
-  position: relative;
-  max-width: 460px;
-  cursor: default;
-}
-.getting-started > h1:after {
-  content: '';
-  width: 90%;
-  height: 1px;
-  background: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-}
+
+
+
 
 .go-top i {
   padding-left: 5.5px;
@@ -235,3 +253,4 @@
   transform: scale(0.5);
   box-sizing: border-box;
 }
+

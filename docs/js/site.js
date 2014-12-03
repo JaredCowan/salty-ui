@@ -187,7 +187,7 @@
 
   // scroll to page section on click
   // corrects the height with the fixed slider-menu
-  $( '.navbar-slider header a:last, .go-top' ).on('click', function( event ) {
+  $( '.navbar-slider header a, .go-top' ).not('.outlink').on('click', function( event ) {
     // Prevent button clicks from causing screen to flicker
     event.preventDefault();
     var el      = $( this ).attr( 'href' )
@@ -207,5 +207,22 @@
         }, 800
       )
   }) //  END scroll to section on click
+
+  // $(function() {
+  //   var BV = new $.BigVideo({container: $('.landing-page')});
+  //   var defaults = {
+  //           // If you want to use a single mp4 source, set as true
+  //           useFlashForFirefox:true,
+  //           // If you are doing a playlist, the video won't play the first time
+  //           // on a touchscreen unless the play event is attached to a user click
+  //           forceAutoplay:false,
+  //           controls:false,
+  //           doLoop:false,
+  //           container:$('.landing-page'), //Container
+  //           shrinkable:false
+  //       };
+  //   BV.init();
+  //   BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
+  // });
 
 }( jQuery );
