@@ -145,52 +145,33 @@
     })
 
   // Init clipboard and variables
-  var client    = new ZeroClipboard( $(".copy-button") )
-    , htmlBridge = $('#global-zeroclipboard-html-bridge')
-    , aftr_copy = $(".after-copy")
-    , _button   = $(".copy")
-    , _btnClass;
-
-  // find all elements and loop through
-  _button.mouseenter(function(){
-    _button.each(function(){
-      _btnClass = _button.hasClass('popovers');
-    });
-  });
-
-  // add popovers class to button if not present 
-  switch ( _btnClass == true ) {
-    case true:
-      break;
-    case false:
-      _button.addClass('popovers');
-      break;
-    default:
-      throw new Error('_btnClass has encountered an error adding class - popovers -');
-  };
+  var zeroClipboard = new ZeroClipboard( $(".copy-button") )
+    , $btn_clip     = $('.btn-clipboard')
+    , $copy_button  = $(".copy-button"); 
 
   // Dynamically add popover data attributes to each button
-  _button.attr({
-    "data-original-title":  "Click To Copy",
-    "data-placement":       "bottom",
-    "data-content":         "Copy the code to your clipboard to easily paste in your own project.",
-    "data-trigger":         "hover"
+  $copy_button.attr({
+    "data-toggle":          "tooltip",
+    "title":                "Click To Copy",
+    "data-placement":       "top"
   });
 
   // Show/hide confirmation text on copy success
-  client.on( "ready", function( readyEvent ) {
-    client.on( "aftercopy", function( event ) {
-      aftr_copy.text('Code Was Copied!');
-      aftr_copy.delay(3000).fadeOut(500);
+  zeroClipboard.on( "ready", function( readyEvent ) {
+    $copy_button.on( "click", function() {
+      $('.tooltip-inner').text('Copied!')
     });
-  });
 
-  // FadeIn confirmation text if copy funct. 
-  // is clicked multiple times
-  _button.on('click', function() {
-    aftr_copy.fadeIn(500);
+    // Dynamically add unique ids to button and target
+    // of element to copy.
+    $btn_clip.on('mouseenter', function( el ) {
+      var $highlight = $(this).parent().nextAll('.highlight').first()
+        , $btn = $( this )
+        , randId = Math.ceil(Math.random() * 200);
+      $btn.attr("data-clipboard-target", randId )
+      $highlight.attr({ id: randId })
+    })
   });
-
 
   // scroll to page section on click
   // corrects the height with the fixed slider-menu
@@ -215,21 +196,15 @@
       )
   }) //  END scroll to section on click
 
-  // $(function() {
-  //   var BV = new $.BigVideo({container: $('.landing-page')});
-  //   var defaults = {
-  //           // If you want to use a single mp4 source, set as true
-  //           useFlashForFirefox:true,
-  //           // If you are doing a playlist, the video won't play the first time
-  //           // on a touchscreen unless the play event is attached to a user click
-  //           forceAutoplay:false,
-  //           controls:false,
-  //           doLoop:false,
-  //           container:$('.landing-page'), //Container
-  //           shrinkable:false
-  //       };
-  //   BV.init();
-  //   BV.show('http://vjs.zencdn.net/v/oceans.mp4',{ambient:true});
-  // });
+  $('[data-toggle="tooltip"]').tooltip({
+    container: 'body'
+  })
+
+  !function ($) {
+    $(function(){
+      window.prettyPrint && prettyPrint()   
+    })
+  }(window.jQuery)
+
 
 }( jQuery );
