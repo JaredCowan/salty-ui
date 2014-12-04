@@ -10,6 +10,10 @@ View Salty-UI http://salty-ui.com
 
 - [Getting Started](#getting-started)
 - [File Structure](#file-structure)
+- [Browser Compatibility](#browser-compatibility)
+- [Versioning](#versioning)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started
@@ -53,6 +57,28 @@ We also include [FontAwesome](https://github.com/FortAwesome/Font-Awesome) ![Git
 | OSX        | 27      | 34      | 8                     | :red_circle: _none  | 8.1                |
 | Linux      | 35      | 34      | :red_circle: _none    | :red_circle: _none  | :red_circle: _none |
 | Windows    | 35      | 33      | :red_circle: _none    | 8-11                | :red_circle: _none |
+
+## Versioning
+
+Salty-ui will be maintained under the Semantic Versioning guidelines as much as possible. Releases will be numbered
+with the following format:
+
+`<major>.<minor>.<patch>`
+
+And constructed with the following guidelines:
+
+* Breaking backward compatibility bumps the major (and resets the minor and patch)
+* New additions, including new icons, without breaking backward compatibility bumps the minor (and resets the patch)
+* Bug fixes and misc changes bumps the patch
+
+For more information on SemVer, please visit http://semver.org.
+
+## Changelog
+ - Pending. Still in development
+
+## Contributing
+
+Please check back soon.
 
 ## License
 
