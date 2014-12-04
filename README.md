@@ -10,7 +10,6 @@ View Salty-UI http://salty-ui.com
 
 - [Getting Started](#getting-started)
 - [File Structure](#file-structure)
-- [Browser Compatibility](#browser-compatibility)
 - [License](#license)
 
 ## Getting Started
@@ -49,11 +48,11 @@ We also include [FontAwesome](https://github.com/FortAwesome/Font-Awesome) ![Git
 
 ## Browser Compatibility
 
-| ------- | Chrome  | Firefox | Safari                | IE            | iPhone       |
-| :-----: | :-----: | :-----: | :-------------------: | :-----------: | :----------: |
-| OSX     | 27      | 34      | 8                     | :red_circle:  | 8.1          |
-| Linux   | 35      | 34      | :red_circle:_         | :red_circle:_ | :red_circle: |
-| Windows | 35      | 33      | :red_circle:_         | 8-11          | :red_circle: |
+| :computer: | Chrome  | Firefox | Safari                | IE                  | iPhone             |
+| :--------: | :-----: | :-----: | :-------------------: | :-----------------: | :----------------: |
+| OSX        | 27      | 34      | 8                     | :red_circle: none_  | 8.1                |
+| Linux      | 35      | 34      | :red_circle: none_    | :red_circle:_       | :red_circle: none_ |
+| Windows    | 35      | 33      | :red_circle: none_    | 8-11                | :red_circle: none_ |
 
 ## License
 
