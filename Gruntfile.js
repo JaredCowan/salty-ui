@@ -197,13 +197,14 @@ module.exports = function (grunt) {
           username: '<%= secret.username %>',
           password: '<%= secret.password %>',
           showProgress: true,
+          "<%= secret.option %>"
       },
       distindex: {
         files: {
           "./": "docs/index.html"
         },
         options: {
-          path: 'public_html/salty-ui.com/',
+          path: '<%= secret.path %>/',
           srcBasePath: "docs/"
         },
       },
@@ -212,8 +213,35 @@ module.exports = function (grunt) {
           "./": "docs/js/**"
         },
         options: {
-          path: 'public_html/salty-ui.com/js/',
+          path: '<%= secret.path %>/js/',
           srcBasePath: "docs/js/"
+        },
+      },
+      distcss: {
+        files: {
+          "./": "docs/css/**"
+        },
+        options: {
+          path: '<%= secret.path %>/cs/',
+          srcBasePath: "docs/css/"
+        },
+      },
+      distfonts: {
+        files: {
+          "./": "docs/fonts/**"
+        },
+        options: {
+          path: '<%= secret.path %>/fonts/',
+          srcBasePath: "docs/fonts/"
+        },
+      },
+      distimg: {
+        files: {
+          "./": "docs/img/**"
+        },
+        options: {
+          path: '<%= secret.path %>/img/',
+          srcBasePath: "docs/img/"
         },
       }
     }
