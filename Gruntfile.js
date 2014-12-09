@@ -191,13 +191,14 @@ module.exports = function (grunt) {
         }
       }
     },
+    
     sftp: {
       options: {
           host: '<%= secret.host %>',
           username: '<%= secret.username %>',
           password: '<%= secret.password %>',
           showProgress: true,
-          "<%= secret.option %>"
+          "<%= secret.option %>": '<%= secret.optionans %>'
       },
       distindex: {
         files: {
@@ -222,7 +223,7 @@ module.exports = function (grunt) {
           "./": "docs/css/**"
         },
         options: {
-          path: '<%= secret.path %>/cs/',
+          path: '<%= secret.path %>/css/',
           srcBasePath: "docs/css/"
         },
       },
@@ -243,6 +244,15 @@ module.exports = function (grunt) {
           path: '<%= secret.path %>/img/',
           srcBasePath: "docs/img/"
         },
+      },
+      distpages: {
+        files: {
+          "./": "docs/pages/**"
+        },
+        options: {
+          path: '<%= secret.path %>/pages/',
+          srcBasePath: "docs/pages/"
+        }
       }
     }
   });
@@ -256,8 +266,11 @@ module.exports = function (grunt) {
   // Dist CSS
   grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
 
-  // SFTP Dist Files
-  grunt.registerTask('ftp', ['sftp']);
+  // SFTP Common Files
+  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distjs', 'sftp:distcss']);
+
+  // SFTP Common Files
+  grunt.registerTask('ftpall', ['sftp']);
 
   // Test Page Speed
   grunt.registerTask('speed', ['pagespeed']);
@@ -266,6 +279,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['uglify', 'copy:fonts']);
 
   // Full Distribution Task.
-  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js', 'ftpall']);
 
 };
