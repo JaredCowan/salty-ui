@@ -1,4 +1,5 @@
 # Ignore files and folders
+.secret.json
 
 # Wildcard File Types
 *.zip

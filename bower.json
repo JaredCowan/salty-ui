@@ -28,7 +28,8 @@
     "js/**",
     "css/**",
     "Gruntfile.js",
-    "package.json"
+    "package.json",
+    ".secret.json"
   ],
   "dependencies": {
     "jquery": "~2.1.1"

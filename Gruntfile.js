@@ -7,6 +7,7 @@ module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    secret: grunt.file.readJSON('.secret.json'),
     banner: '/*! \n' +
             ' * <%= pkg.title %>  v<%= pkg.version %> \n' +
             ' * License: <%= pkg.license.type %> <%= pkg.license.url %> \n' +
@@ -189,6 +190,32 @@ module.exports = function (grunt) {
           threshold: 85
         }
       }
+    },
+    sftp: {
+      options: {
+          host: '<%= secret.host %>',
+          username: '<%= secret.username %>',
+          password: '<%= secret.password %>',
+          showProgress: true,
+      },
+      distindex: {
+        files: {
+          "./": "docs/index.html"
+        },
+        options: {
+          path: 'public_html/salty-ui.com/',
+          srcBasePath: "docs/"
+        },
+      },
+      distjs: {
+        files: {
+          "./": "docs/js/**"
+        },
+        options: {
+          path: 'public_html/salty-ui.com/js/',
+          srcBasePath: "docs/js/"
+        },
+      }
     }
   });
 
@@ -200,6 +227,9 @@ module.exports = function (grunt) {
 
   // Dist CSS
   grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
+
+  // SFTP Dist Files
+  grunt.registerTask('ftp', ['sftp']);
 
   // Test Page Speed
   grunt.registerTask('speed', ['pagespeed']);
