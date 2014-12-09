@@ -50,6 +50,25 @@ We also include [FontAwesome](https://github.com/FortAwesome/Font-Awesome) ![Git
         └── glyphicons-halflings-regular.woff
 ```
 
+## Source Code File Structure
+
+```
+    salty-ui/
+      ├── css/
+      ├── js/
+      ├── fonts/
+      ├── dist/
+      │   ├── css/
+      │   ├── js/
+      │   └── fonts/
+      └── docs/
+          ├── css/
+          ├── js/
+          ├── fonts/
+          ├── img/
+          └── pages/
+```
+
 ## Browser Compatibility
 
 | :computer: | Chrome  | Firefox | Safari                | IE                  | iPhone             |
