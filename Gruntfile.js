@@ -276,7 +276,7 @@ module.exports = function (grunt) {
   grunt.registerTask('speed', ['pagespeed']);
 
   // Default Task.
-  grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']););
+  grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
 
   // Full Distribution Task.
   grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js', 'ftpall']);
