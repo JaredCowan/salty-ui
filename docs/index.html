@@ -217,7 +217,88 @@
         </div>
       </div>
 
-      <!-- <div class="jumbotron section-break"></div> -->
+     <div class="jumbotron getting-started" no-select>
+        <h1>What's included</h1>
+        <div class="container">
+          <p>
+            Salty-UI is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.
+          </p>          
+        </div> <!-- CLOSING container -->
+      </div> <!-- END whats-included -->
+      <div class="template-container">
+        <div class="container">
+          <h2>Precompiled Salty-UI</h2>
+          <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Salty-UI. You'll see something like this:</p>
+<div class="highlight"><pre><code>   salty-ui/
+    ├── css/
+    │   ├── salty-ui.css
+    │   ├── salty-ui.min.css
+    ├── js/
+    │   ├── salty-ui.js
+    │   └── salty-ui.min.js
+    └── fonts/
+        ├── FontAwesome.otf
+        ├── fontawesome-webfont.eot
+        ├── fontawesome-webfont.svg
+        ├── fontawesome-webfont.eot
+        ├── fontawesome-webfont.woff
+        ├── glyphicons-halflings-regular.eot
+        ├── glyphicons-halflings-regular.svg
+        ├── glyphicons-halflings-regular.ttf
+        └── glyphicons-halflings-regular.woff</code></pre>
+</div>
+          <p>This is the most basic form of Salty-UI: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>salty-ui.*</code>), as well as compiled and minified CSS and JS (<code>salty-ui.min.*</code>). Fonts from Glyphicons and FontAwesome v4.2.x are included.</p>
+
+          <h2>Salty-UI Source Code</h2>
+          <p>The Salty-UI source code download includes the precompiled CSS, JavaScript, font assets along with source CSS, JavaScript, and documentation. More specifically, it includes the following and more:</p>
+<div class="highlight"><pre><code>
+salty-ui/
+  ├── css/
+  ├── js/
+  ├── fonts/
+  ├── dist/
+  │   ├── css/
+  │   ├── js/
+  │   └── fonts/
+  └── docs/
+      ├── css/
+      ├── js/
+      ├── fonts/
+      ├── img/
+      └── pages/
+</code></pre>
+</div>
+        <p>The <code>css/</code>, <code>js/</code>, and <code>fonts/</code> are the source code for our CSS, JS, and icon fonts (respectively). The <code>dist/</code> folder includes everything listed in the precompiled download section above. The <code>docs/</code> folder includes the source code for our documentation. Beyond that, any other included file provides support for packages, license information, and development.</p>
+
+        <div class="jumbotron getting-started" no-select>
+        <h1>Compiling CSS and JavaScript</h1>
+        <div class="container">
+          <p>Salty-UI uses <a href="http://gruntjs.com">Grunt</a> for its build system, with convenient methods for working with the framework. It's how we concatenate our code, run tests, and more.</p>          
+        </div> <!-- CLOSING container -->
+      </div> <!-- END whats-included -->
+      <div class="template-container">
+        <div class="container">
+          <h2>Installing Grunt</h2>
+          <p>To install Grunt, you must <strong>first <a href="http://nodejs.org/download/">download and install node.js</a></strong> (which includes npm). npm stands for <a href="http://npmjs.org/">node packaged modules</a> and is a way to manage development dependencies through node.js.</p>
+          Then from the command line:
+          <ol>
+            <li>Install <code>grunt-cli</code> globally with <code>npm install -g grunt-cli</code>.</li>
+            <li>Navigate to the root <code>/salty-ui/</code> directory, then run <code>npm install</code>. npm will look at the <a href="https://github.com/SWDG/salty-ui/blob/master/package.json"><code>package.json</code></a> file and automatically install the necessary local dependencies listed there.</li>
+          </ol>
+          <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
+          
+          <h2>Available Grunt commands</h2>
+
+
+
+<div class="highlight"><pre class="prettyprint"><code>&lt;div class="container-fluid"&gt;
+  &lt;div class="row"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+        </div>
+      </div>
 
       <div class="jumbotron basic-template" no-select>
         <h1>Basic Template</h1>

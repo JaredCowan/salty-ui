@@ -191,7 +191,7 @@ module.exports = function (grunt) {
         }
       }
     },
-    
+
     sftp: {
       options: {
           host: '<%= secret.host %>',
@@ -276,7 +276,7 @@ module.exports = function (grunt) {
   grunt.registerTask('speed', ['pagespeed']);
 
   // Default Task.
-  grunt.registerTask('default', ['uglify', 'copy:fonts']);
+  grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']););
 
   // Full Distribution Task.
   grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js', 'ftpall']);
