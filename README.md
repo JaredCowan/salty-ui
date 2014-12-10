@@ -1,7 +1,7 @@
 ![Bower version](https://badge.fury.io/bo/salty-ui.svg)![GitHub version](https://badge.fury.io/gh/jaredcowan%2Fsalty-ui.svg)[![license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](License)![Dependency Status](https://david-dm.org/cdnjs/cdnjs.svg?theme=shields.io)
 
 # [Salty-UI](http://salty-ui.com)
-
+:loudspeaker:*Please note that this framework is still in development*:loudspeaker:
 Salty-UI is a flat, responsive and beautiful front-end framework that offers a plethora of templates and widgets with easy customization in mind. Built off the powerful front-end framework everyone knows and loves, [Bootstrap 3.3.1](https://github.com/twbs/bootstrap).
 
 View Salty-UI http://salty-ui.com
@@ -104,4 +104,3 @@ Please check back soon.
 Salty-UI is released under [MIT license](License)
 
 [Back To Top](#table-of-contents)
-
