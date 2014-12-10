@@ -192,6 +192,28 @@ module.exports = function (grunt) {
       }
     },
 
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc',
+        formatters: [
+          {id: 'text', dest: 'report/csslint.txt'}
+        ]
+      },
+      predist: [
+        'css/**.css'
+      ],
+      dist: [
+        'dist/css/salty-ui.css'
+      ],
+      docs: {
+        options: {
+          ids: false,
+          'overqualified-elements': false
+        },
+        src: 'docs/css/site.css'
+      }
+    },
+
     sftp: {
       options: {
           host: '<%= secret.host %>',
@@ -271,6 +293,18 @@ module.exports = function (grunt) {
 
   // SFTP Common Files
   grunt.registerTask('ftpall', ['sftp']);
+
+  // CSS Lint PreDist
+  grunt.registerTask('lintpredist', ['csslint:predist']);
+
+  // CSS Lint Docs
+  grunt.registerTask('lintdocs', ['csslint:docs']);
+
+  // CSS Lint Dist
+  grunt.registerTask('lintdist', ['csslint:dist']);
+
+  // CSS Lint All
+  grunt.registerTask('lint', ['csslint:docs', 'csslint:predist']);
 
   // Test Page Speed
   grunt.registerTask('speed', ['pagespeed']);

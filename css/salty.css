@@ -5681,7 +5681,7 @@ a.guest-on i {
 }
 
 .mega-nav #main-content {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .mega-nav .title {
@@ -5760,7 +5760,6 @@ a.guest-on i {
 
 .p-name a {
   font-size:14px;
-  /*font-weight:bold;*/
 }
 
 .bold {

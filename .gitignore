@@ -8,6 +8,7 @@
 
 # Misc Folders
 .DS_Store
+report/**
 
 # Folders
 node_modules

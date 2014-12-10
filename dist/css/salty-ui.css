@@ -2825,8 +2825,8 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   font-size: 14px;
-  padding: 0px !important;
-  margin: 0px !important;
+  padding: 0 !important;
+  margin: 0 !important;
   color: #000;
 }
 ::-moz-selection {
@@ -3543,7 +3543,7 @@ pre code {
   margin-left: 8.33333333%;
 }
 .col-xs-offset-0 {
-  margin-left: 0%;
+  margin-left: 0;
 }
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
@@ -8554,8 +8554,10 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   color: #666666;
   margin: 0;
   padding: 10px;
-  border-radius: 4px 4px 0px 0px;
-  -webkit-border-radius: 4px 4px 0px 0px;
+  border-radius-top-left: 4px;
+  border-radius-top-right: 4px;
+  -webkit-border-radius-top-left: 4px;
+  -webkit-border-radius-top-right: 4px;
 }
 
 .dropdown-menu.extended li p.green {
@@ -8835,7 +8837,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .sidebar-closed #main-content {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .sidebar-closed #sidebar {
@@ -8872,7 +8874,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .state-overview .symbol {
   width: 40%;
   padding: 25px 15px;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .state-overview .value {
@@ -8922,7 +8924,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   height: 100%;
   position: relative;
   width: 4.3%;
-  margin: 0px 2%;
+  margin: 0 2%;
   float: left;
   text-align: center;
   border-radius: 5px 5px 0 0;
@@ -9008,7 +9010,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   font-weight:normal;
   background: #99c262;
   width: 100%;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 #barchart {
@@ -9057,7 +9059,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   font-weight:normal;
   background: #39b7ac;
   width: 100%;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 
 .inline-block {
@@ -9068,7 +9070,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .panel-body.chart-texture {
   background: url("../img/chart-texture.jpg");
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
 }
 
 
@@ -9187,7 +9189,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .timeline:before {
   background-color: #C7CBD6;
-  bottom: 0px;
+  bottom: 0;
   content: "";
   left: 50%;
   position: absolute;
@@ -9423,7 +9425,7 @@ h3.timeline-title {
 
 .revenue-head {
   background: #ff6c60;
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0 0;
   color: #fff;
   line-height: 50px;
 }
@@ -9431,7 +9433,7 @@ h3.timeline-title {
 .revenue-head span {
   background: #e56155;
   padding: 16px;
-  border-radius: 4px 0px 0px 0px;
+  border-radius: 4px 0 0 0;
 }
 
 .revenue-head span i {
@@ -9449,7 +9451,7 @@ h3.timeline-title {
   background: #e56155;
   padding: 16px;
   line-height: normal;
-  border-radius: 0px 4px 0px 0px;
+  border-radius: 0 4px 0 0;
 }
 
 /*easy pie chart*/
@@ -9490,7 +9492,7 @@ h3.timeline-title {
 
 .panel-footer.revenue-foot {
   background-color: #e6e7ec;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
   border: none;
   padding: 0;
   width: 100%;
@@ -13983,5 +13985,5 @@ a.guest-on i {
 
 .m-thumb img {
   width: 100%;
-  border:1px solid #ddd;
+  border: 1px solid #ddd;
 }
