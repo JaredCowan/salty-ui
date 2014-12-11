@@ -175,7 +175,7 @@
 
   // scroll to page section on click
   // corrects the height with the fixed slider-menu
-  $( '.navbar-slider header a, .go-top' ).not('.outlink').on('click', function( event ) {
+  $( '.navbar-slider header a, .go-top, a[href^="#"]' ).not('.outlink').on('click', function( event ) {
     // Prevent button clicks from causing screen to flicker
     event.preventDefault();
     var el      = $( this ).attr( 'href' )
@@ -206,5 +206,18 @@
     })
   }(window.jQuery)
 
+  $('body').scrollspy({
+        target: '.nav-sidebar',
+        offset: 140
+      });
 
+  $('#sidenav').affix({
+    offset: {
+      top: 460,
+      bottom: function () {
+        return (this.bottom = $('.footer').outerHeight(true))
+      }
+    }
+  });
+  
 }( jQuery );

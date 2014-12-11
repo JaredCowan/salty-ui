@@ -5,6 +5,7 @@
 *.zip
 *.orig
 *.diff
+test.*
 
 # Misc Folders
 .DS_Store
