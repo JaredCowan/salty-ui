@@ -374,6 +374,7 @@ ol.linenums li {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 900;
 }
 .fixed {
   position: fixed;
