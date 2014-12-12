@@ -3,6 +3,7 @@ body {
   background: #fafafa;
   font-family: "Lato", arial, helvetica, sans-serif;
   font-size: 1em;
+  padding-bottom: 70px !important;
 }
 pre, code {
   white-space: pre-line;
@@ -425,3 +426,34 @@ ol.linenums li {
   top: 110px;
 }
 /* End sidenav */
+
+.container-lg-height,
+.container-md-height,
+.container-sm-height
+.container-xs-height {
+  display: table;
+  padding-left: 0;
+  padding-right: 0;
+}
+.row-lg-height
+.row-md-height,
+.row-sm-height,
+.row-xs-height {
+  display: table-row;
+}
+.col-lg-height,
+.col-md-height,
+.col-sm-height,
+.col-xs-height {
+  display: table-cell;
+  float: none;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
+}

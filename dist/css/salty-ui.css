@@ -3,7 +3,7 @@
  * License: MIT https://github.com/SWDG/salty-ui/blob/master/License 
  * Web: http://salty-ui.com 
  * repository: https://github.com/SWDG/salty-ui 
- * Changed: 2014-12-08 
+ * Changed: 2014-12-11 
 */ 
 /*! 
  // 01.) Normalize CSS                  ( Around line 22   ) 
@@ -2825,8 +2825,8 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.42857143;
   font-size: 14px;
-  padding: 0 !important;
-  margin: 0 !important;
+  padding: 0px !important;
+  margin: 0px !important;
   color: #000;
 }
 ::-moz-selection {
@@ -3379,9 +3379,33 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+.container-lg-height, .container-md-height, .container-sm-height .container-xs-height {
+  display: table;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
 .row {
   margin-left: -15px;
   margin-right: -15px;
+}
+.row-lg-height .row-md-height, .row-sm-height, .row-xs-height {
+  display: table-row;
+  min-height: 1px;
+}
+.col-lg-height, .col-md-height, .col-sm-height, .col-xs-height {
+  display: table-cell;
+  min-height: 1px;
+  float: none;
+}
+.col-top {
+  vertical-align: top;
+}
+.col-middle {
+  vertical-align: middle;
+}
+.col-bottom {
+  vertical-align: bottom;
 }
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
@@ -3543,7 +3567,7 @@ pre code {
   margin-left: 8.33333333%;
 }
 .col-xs-offset-0 {
-  margin-left: 0;
+  margin-left: 0%;
 }
 @media (min-width: 768px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
@@ -8554,10 +8578,8 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   color: #666666;
   margin: 0;
   padding: 10px;
-  border-radius-top-left: 4px;
-  border-radius-top-right: 4px;
-  -webkit-border-radius-top-left: 4px;
-  -webkit-border-radius-top-right: 4px;
+  border-radius: 4px 4px 0px 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
 }
 
 .dropdown-menu.extended li p.green {
@@ -8837,7 +8859,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 }
 
 .sidebar-closed #main-content {
-  margin-left: 0;
+  margin-left: 0px;
 }
 
 .sidebar-closed #sidebar {
@@ -8874,7 +8896,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 .state-overview .symbol {
   width: 40%;
   padding: 25px 15px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 4px 0px 0px 4px;
 }
 
 .state-overview .value {
@@ -8924,7 +8946,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   height: 100%;
   position: relative;
   width: 4.3%;
-  margin: 0 2%;
+  margin: 0px 2%;
   float: left;
   text-align: center;
   border-radius: 5px 5px 0 0;
@@ -9010,7 +9032,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   font-weight:normal;
   background: #99c262;
   width: 100%;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 #barchart {
@@ -9059,7 +9081,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
   font-weight:normal;
   background: #39b7ac;
   width: 100%;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .inline-block {
@@ -9070,7 +9092,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .panel-body.chart-texture {
   background: url("../img/chart-texture.jpg");
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0px 0px;
 }
 
 
@@ -9189,7 +9211,7 @@ ul.top-menu > li > a:hover, ul.top-menu > li > a:focus {
 
 .timeline:before {
   background-color: #C7CBD6;
-  bottom: 0;
+  bottom: 0px;
   content: "";
   left: 50%;
   position: absolute;
@@ -9425,7 +9447,7 @@ h3.timeline-title {
 
 .revenue-head {
   background: #ff6c60;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px 4px 0px 0px;
   color: #fff;
   line-height: 50px;
 }
@@ -9433,7 +9455,7 @@ h3.timeline-title {
 .revenue-head span {
   background: #e56155;
   padding: 16px;
-  border-radius: 4px 0 0 0;
+  border-radius: 4px 0px 0px 0px;
 }
 
 .revenue-head span i {
@@ -9451,7 +9473,7 @@ h3.timeline-title {
   background: #e56155;
   padding: 16px;
   line-height: normal;
-  border-radius: 0 4px 0 0;
+  border-radius: 0px 4px 0px 0px;
 }
 
 /*easy pie chart*/
@@ -9492,7 +9514,7 @@ h3.timeline-title {
 
 .panel-footer.revenue-foot {
   background-color: #e6e7ec;
-  border-radius: 0 0 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   border: none;
   padding: 0;
   width: 100%;
@@ -13845,7 +13867,7 @@ a.guest-on i {
 }
 
 .mega-nav #main-content {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .mega-nav .title {
@@ -13924,8 +13946,7 @@ a.guest-on i {
 }
 
 .p-name a {
-  font-size:14px
-  /*font-weight:bold;*/
+  font-size:14px;
 }
 
 .bold {
@@ -13985,5 +14006,5 @@ a.guest-on i {
 
 .m-thumb img {
   width: 100%;
-  border: 1px solid #ddd;
+  border:1px solid #ddd;
 }
