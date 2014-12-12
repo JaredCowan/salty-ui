@@ -8,6 +8,9 @@ body {
 pre, code {
   white-space: pre-line;
 }
+.salty-docs-feature {
+  text-align: center;
+}
 .navbar-slider > header .btn-dark {
   font-size: 16px;
   float: right;
@@ -23,7 +26,7 @@ pre, code {
   display: block;
 }
 .landing-page > span {
-  background: #242424 url("../img/all-comp.png") center center no-repeat;
+  background: #242424 url("../img/salty-ui-logo.png") center center no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
   display: block;
@@ -46,6 +49,9 @@ pre, code {
   letter-spacing: 2.4444px;
   cursor: default;
 }
+.highlight {
+  cursor: text;
+}
 .basic-template,
 .getting-started {
   background: #fafafa;
@@ -54,6 +60,7 @@ pre, code {
   border-radius: 0;
   font-size: 26px;
   text-align: center;
+  cursor: default;
 }
 .basic-template > h1,
 .getting-started > h1 {
@@ -89,6 +96,16 @@ pre, code {
     font-size: 20px;
     font-size: 5vw;
   }
+}
+.btn-salty {
+  color: #16a085;
+  background-color: transparent;
+  border-color: #16a085;
+}
+.btn-salty:hover,
+.btn-salty:focus {
+  color: #fff;
+  background-color: #16a085;
 }
 .code {
   height: 500px;
@@ -325,6 +342,10 @@ pre, code {
   bottom: -61px;
   right: 100px;
   color: #1abc9c
+}
+.half-rule {
+  width: 100px;
+  margin: 40px auto;
 }
 
 

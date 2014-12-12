@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Salty-UI | Jared Cowan</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="salty-ui - css, html, js framework for fast web design"/>
+  <meta name="keywords" content="salty-ui, css, html, js, framework, web design, jared cowan, front-end"/>
+  <meta name="author" content="Jared Cowan"/>
+  <meta property="og:site_name" content="Salty-UI" />
+  <meta property="og:title" content="salty-ui front-end framework" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/SWDG/salty-ui" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="icon" href="img/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="https://github.com/SWDG/salty-ui" />
+  <link rel="shortlink" href="https://github.com/SWDG/salty-ui" />
+  <link rel="stylesheet" href="css/salty-ui.min.css">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/pretty.js"></script>
+</head>
+  <body id="top">
+    <section id="container" class="sidebar-closed salty-page-header">
+      <nav id="top" class="navbar navbar-slider" role="navigation" no-select>
+        <header> <!--header start-->
+          <div class="sidebar-toggle-box">
+            <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
+          </div>
+          <a href="#top" class="logo" >Salty<span>-ui</span></a>
+          <a href="#download">
+            <button type="button" class="btn btn-dark" href="#download">
+              <i class="fa fa-download"></i> 
+              <span class="hidden-xs"> Download </span>
+            </button>
+          </a>
+          <a class="outlink" target="_blank" href="https://github.com/JaredCowan/salty-ui">
+            <button type="button" class="btn btn-dark" href="https://github.com/SWDG/salty-ui">
+              <i class="fa fa-github-alt"></i> 
+              <span class="hidden-xs"> Github </span>
+            </button>
+          </a>
+        </header> <!--header end-->
+        <aside> 
+          <!--sidebar start-->
+          <div id="sidebar"  class="nav-collapse">
+            <!-- sidebar menu start-->
+            <ul class="sidebar-menu" id="nav-accordion">
+              <li>
+                <a href="getting-started.html" class="active">
+                  <i class="fa fa-desktop"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li class="sub-menu">
+                <a href="javascript:;">
+                  <i class="fa fa-laptop"></i>
+                  <span>Templates</span>
+                </a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a></li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="sub-menu">
+                <a href="javascript:;">
+                  <i class="fa fa-book"></i>
+                  <span>UI Elements</span>
+                </a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="sub-menu">
+                <a href="javascript:;" >
+                  <i class="fa fa-tasks"></i>
+                  <span>Forms</span>
+                </a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                </ul>
+               </li>
+              <li class="sub-menu">
+                <a href="javascript:;" >
+                  <i class=" fa fa-bar-chart-o"></i>
+                  <span>Charts</span>
+                </a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                    <li>
+                    <a href="#">Holder</a>
+                  </li>
+                    <li>
+                    <a href="#">Holder</a>
+                  </li>
+                    <li>
+                    <a href="#">Holder</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" >
+                  <i class="fa fa-map-marker"></i>
+                  <span>Google Maps </span>
+                </a>
+              </li>
+              <li class="sub-menu">
+                <a href="javascript:;" >
+                  <i class="fa fa-glass"></i>
+                  <span>Extra</span>
+                </a>
+                <ul class="sub">
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                  <li>
+                    <a href="#">Holder</a>
+                  </li>
+                </ul>
+              </li> -->
+            </ul> <!-- sidebar menu end-->
+          </div> <!-- sidebar end-->
+        </aside> 
+      </nav> <!-- navbar-slider end-->
+      <div class="jumbotron landing-page" no-select>
+        <span>
+          <!-- <h1>Salty-UI</h1> -->
+        </span>
+      </div>
+    </section> <!-- section end -->
+    
+    <div class="container"> <!-- Body container -->
+
+      <div class="row main-container">
+       
+        <!--Nav Bar -->
+        <nav data-spy="Myaffix" data-offset-top="60" class="col-md-3 nav-sidebar col-md-push-9 hidden-sm hidden-xs">
+          <ul id="sidenav" class="nav nav-stacked">
+            <li>
+              <a href="#gettingstarted">Getting Started</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#gitclone">Git Clone</a></li>
+                <li><a href="#bower">Bower Install</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#whatsincluded">What's Included</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#precompiled">Precompiled</a></li>
+                <li><a href="#sourcecode">Source Code</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#grunt">Compiling with Grunt</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#installinggrunt">Installing Grunt</a></li>
+                <li><a href="#gruntcommands">Grunt Commands</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#basictemplates">Basic Templates</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#html5template">Installing Grunt</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#license">MIT License</a>
+            </li>
+          </ul>
+        </nav> <!-- CLOSING col-xs-9 -->
+
+         <div class="col-md-9 col-md-pull-3 col-sm-12">
+        
+
+
+
+          <div id="gettingstarted" class="jumbotron getting-started" no-select>
+          <h1>Getting Started</h1>
+          <p>
+            Downloading
+          </p>
+        </div>
+
+        <div class="download-container" id="download">
+            <div class="row">
+              <div id="gitclone" class="col-lg-12 download-container--section">
+                <h2>Git Clone:</h2>
+                <div class="iterm">
+                  <div class="iterm--header" no-select>
+                    <!-- osx style icons added via JS in site js -->
+                  </div>
+                  <div id="github-download" class="iterm--shell">
+                    <p>
+                      <span>git@github.com:JaredCowan/salty-ui.git</span>
+                    </p>
+                    <button data-clipboard-target="github-download" class="btn-gh-download copy-button copy" no-select><i class="fa fa-copy"></i> Copy</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 download-container--section">
+                <h2 id="bower">Install With Bower:</h2>
+                <div class="iterm">
+                  <div class="iterm--header" no-select>
+                    <!-- osx style icons added via JS in site js -->
+                  </div>
+                  <div class="iterm--shell">
+                    <p>
+                      <span id="bower-download">bower install salty-ui</span>
+                    </p>
+                    <button data-clipboard-target="bower-download" class="btn-gh-download copy-button copy" no-select><i class="fa fa-copy"></i>Copy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+       <div id="whatsincluded" class="jumbotron getting-started" no-select>
+          <h1>What's included</h1>
+            <p>
+              Salty-UI is downloadable in two forms, within which you'll find the following directories and files, logically grouping common resources and providing both compiled and minified variations.
+            </p>          
+        </div> <!-- END whats-included -->
+        <div id="precompiled" class="template-container">
+          <!-- <div class="container"> -->
+            <h2>Precompiled Salty-UI</h2>
+            <p>Once downloaded, unzip the compressed folder to see the structure of (the compiled) Salty-UI. You'll see something like this:</p>
+  <div class="highlight"><pre><code>salty-ui/
+      ├── css/
+      │   ├── salty-ui.css
+      │   ├── salty-ui.min.css
+      ├── js/
+      │   ├── salty-ui.js
+      │   └── salty-ui.min.js
+      └── fonts/
+          ├── FontAwesome.otf
+          ├── fontawesome-webfont.eot
+          ├── fontawesome-webfont.svg
+          ├── fontawesome-webfont.eot
+          ├── fontawesome-webfont.woff
+          ├── glyphicons-halflings-regular.eot
+          ├── glyphicons-halflings-regular.svg
+          ├── glyphicons-halflings-regular.ttf
+          └── glyphicons-halflings-regular.woff</code></pre>
+  </div>
+            <p>This is the most basic form of Salty-UI: precompiled files for quick drop-in usage in nearly any web project. We provide compiled CSS and JS (<code>salty-ui.*</code>), as well as compiled and minified CSS and JS (<code>salty-ui.min.*</code>). Fonts from Glyphicons and FontAwesome v4.2.x are included.</p>
+
+            <h2 id="sourcecode">Salty-UI Source Code</h2>
+            <p>The Salty-UI source code download includes the precompiled CSS, JavaScript, font assets along with source CSS, JavaScript, and documentation. More specifically, it includes the following and more:</p>
+  <div class="highlight"><pre><code>
+  salty-ui/
+    ├── css/
+    ├── js/
+    ├── fonts/
+    ├── dist/
+    │   ├── css/
+    │   ├── js/
+    │   └── fonts/
+    └── docs/
+        ├── css/
+        ├── js/
+        ├── fonts/
+        ├── img/
+        └── pages/
+  </code></pre>
+  </div>
+          <p>The <code>css/</code>, <code>js/</code>, and <code>fonts/</code> are the source code for our CSS, JS, and icon fonts (respectively). The <code>dist/</code> folder includes everything listed in the precompiled download section above. The <code>docs/</code> folder includes the source code for our documentation. Beyond that, any other included file provides support for packages, license information, and development.</p>
+
+          <div id="grunt" class="jumbotron getting-started" no-select>
+          <h1>Compiling CSS and JavaScript</h1>
+          <!-- <div class="container"> -->
+            <p>Salty-UI uses <a href="http://gruntjs.com">Grunt</a> for its build system, with convenient methods for working with the framework. It's how we concatenate our code, run tests, and more.</p>          
+          </div> <!-- CLOSING container -->
+        </div> <!-- END whats-included -->
+        <div id="installinggrunt" class="template-container">
+            <h2>Installing Grunt</h2>
+            <p>To install Grunt, you must <strong>first <a href="http://nodejs.org/download/">download and install node.js</a></strong> (which includes npm). npm stands for <a href="http://npmjs.org/">node packaged modules</a> and is a way to manage development dependencies through node.js.</p>
+            Then from the command line:
+            <ol>
+              <li>Install <code>grunt-cli</code> globally with <code>npm install -g grunt-cli</code>.</li>
+              <li>Navigate to the root <code>/salty-ui/</code> directory, then run <code>npm install</code>. npm will look at the <a href="https://github.com/SWDG/salty-ui/blob/master/package.json"><code>package.json</code></a> file and automatically install the necessary local dependencies listed there.</li>
+            </ol>
+            <p>When completed, you'll be able to run the various Grunt commands provided from the command line.</p>
+
+            <h2 id="gruntcommands">Available Grunt commands</h2>
+            <h3><code>grunt dist</code> (All task and SFTP upload to your site)</h3>
+            <p>Regenerates the <code>/dist/</code> directory with compiled and minified CSS and JavaScript files. Also AutoPrefixes CSS. As a Salty-UI user, this is normally the command you want.</p>
+
+            <h3><code>grunt speed</code> (Run speed tests)</h3>
+            <p>Runs <a href="https://developers.google.com/speed/docs/insights/about">Google PageSpeed</a> tests from command line and shows results.</a>.</p>
+
+            <h3><code>grunt</code> (Build absolutely everything)</h3>
+            <p>Compiles and minifies CSS and JavaScript, builds the documentation website, and more.</p>
+
+            <h2 id="grunt-troubleshooting">Troubleshooting</h2>
+            <p>Should you encounter problems with installing dependencies or running Grunt commands, first delete the <code>/node_modules/</code> directory generated by npm. Then, rerun <code>npm install</code>.</p>
+        </div>
+
+        <div id="basictemplates" class="jumbotron basic-template" no-select>
+          <h1 >Basic Template</h1>
+          <p>Start with this basic HTML template, or modify <a href="javascript:;">these examples</a>. We hope you'll customize our templates and examples, adapting them to suit your needs.</p>
+        </div>
+        <p>Copy the HTML below to begin working with a minimal Bootstrap document.</p>
+        <div  class="template-container">
+  <div id="html5template" class="highlight"><pre class="prettyprint"><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+      &lt;meta charset=&quot;utf-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+      &lt;title&gt;Salty-UI 101 Template&lt;/title&gt;
+      &lt;!-- Salty-UI --&gt;
+      &lt;link href=&quot;css/salty-ui.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+      &lt;!-- jQuery (necessary for Salty-UI's JavaScript plugins) --&gt;
+      &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+      &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+      &lt;script src=&quot;js/salty-ui.min.js&quot;&gt;&lt;/script&gt;
+    &lt;/body&gt;
+  &lt;/html&gt;</code></pre>
+  </div>
+        </div>
+        <div id="license" class="jumbotron basic-template" no-select>
+          <h1>License FAQs</h1>
+          <p>Salty-UI is released under the MIT license. Boiled down to smaller chunks, it can be described with the following conditions.</p>
+        </div>
+        <div class="template-container">
+            <h4>It requires you to:</h4>
+              <ul>
+                <li>Include the license and copyright notice in your works</li>
+              </ul>
+
+              <h4>It permits you to:</h4>
+              <ul>
+                <li>Freely download and use Salty-UI, in whole or in part, for personal, private, company internal, or commercial purposes</li>
+                <li>Use Salty-UI in packages or distributions that you create</li>
+                <li>Modify the source code</li>
+                <li>Grant a sublicense to modify and distribute Salty-UI to third parties not included in the license</li>
+              </ul>
+
+              <h4>It forbids you to:</h4>
+              <ul>
+                <li>Hold the authors and license owners liable for damages as Salty-UI is provided without warranty</li>
+                <li>Hold the creators or copyright holders of Salty-UI liable</li>
+                <li>Redistribute any piece of Salty-UI without proper attribution</li>
+                <li>Use any marks owned by Twitter in any way that might state or imply that Twitter endorses your distribution</li>
+                <li>Use any marks owned by Twitter in any way that might state or imply that you created the Twitter software in question</li>
+              </ul>
+              <h4>It does not require you to:</h4>
+              <ul>
+                <li>Include the source of Salty-UI itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it</li>
+                <li>Submit changes that you make to Salty-UI back to the Salty-UI project (though such feedback is encouraged)</li>
+              </ul>
+              <p>The full Salty-UI license is located <a href="https://github.com/SWDG/salty-ui/blob/master/License">in the project repository</a> for more information.</p>
+              <p>The full Bootstrap license is located <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">in the project repository</a> for more information.</p>
+          </div>
+        </div>
+
+        <div class="code" hidden>
+            <div class="code-window">
+              <pre>
+                <xmp id="test">
+                  <li class="sub-menu">
+                    <a href="javascript:;">
+                      <i class="fa fa-laptop"></i>
+                      <span>Templates</span>
+                    </a>
+                    <ul class="sub">
+                      <li>
+                        <a href="#">Holder</a>
+                      </li>
+                      <li>
+                        <a href="#">Holder</a></li>
+                      <li>
+                        <a href="#">Holder</a>
+                      </li>
+                      <li>
+                        <a href="#">Holder</a>
+                      </li>
+                    </ul>
+                  </li>
+                </xmp>
+              </pre>
+              <button data-clipboard-target="test" class="btn-copy copy-button copy popovers" no-select>Copy</button>
+              <span class="after-copy"></span>
+            </div>
+        </div> 
+
+
+
+
+
+
+        </div> <!-- CLOSING col-xs-3 -->
+      </div> <!-- CLOSING row main-container -->
+    </div> <!-- CLOSING Body container -->
+
+    <footer class="site-footer" no-select>
+      2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+      <span><span class="hidden-xs"> Code released under </span> <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+      <a href="#top" class="go-top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/ZeroClipboard.js"></script>
+    <script src="js/salty-ui.min.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>
