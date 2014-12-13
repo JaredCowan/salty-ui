@@ -151,11 +151,17 @@
       $(this).before(iconCopyHtml)
     })
 
+    $('.fa-icon-copy').each(function () {
+      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn fa-icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      $(this).before(iconCopyHtml)
+    })
+
   // Init clipboard and variables
   var zeroClipboard = new ZeroClipboard( $(".copy-button") )
     , $btn_clip     = $('.btn-clipboard')
     , $copy_button  = $(".copy-button")
-    , $icon_copy    = $(".icon-clipboard"); 
+    , $icon_copy    = $(".icon-clipboard")
+    , $fa_icon_copy = $(".fa-icon-clipboard"); 
 
   // Dynamically add popover data attributes to each button
   $copy_button.attr({
@@ -196,6 +202,17 @@
         , randId = Math.ceil(Math.random() * 2000);
       $btn.attr("data-clipboard-target", randId )
       $icon_copy_elm.attr({ id: randId })
+    })
+
+    $fa_icon_copy.on('mouseover', function( el ) {
+      if ( $(".tooltip").length >= 2 ) {
+        $(".tooltip").first().tooltip('hide')
+      }
+      var $fa_icon_copy_elm = $(this).parent().nextAll('.fa-icon-copy').first()
+        , $btn = $( this )
+        , randId = Math.ceil(Math.random() * 2000);
+      $btn.attr("data-clipboard-target", randId )
+      $fa_icon_copy_elm.attr({ id: randId })
     })
     // =======================================
     // =======================================

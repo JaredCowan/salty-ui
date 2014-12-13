@@ -362,6 +362,24 @@ pre, code {
        -o-transition: all .4s ease;
           transition: all .4s ease;
 }
+.fa-icon-clipboard {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 15px;
+  z-index: 10;
+  display: block;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: #fafafa;
+  cursor: pointer;
+  background-color: #1abc9c;
+  border-top: none;
+  border-radius: 0;
+  -webkit-transition: all .4s ease;
+       -o-transition: all .4s ease;
+          transition: all .4s ease;
+}
 .tool-tip, .tooltip-inner {
   white-space: nowrap;
   z-index: 100;
@@ -375,6 +393,13 @@ pre, code {
   background-color: #08BDDD;
   border-top: 1px solid #000;
   margin-top: -4px;
+  color: #fff;
+  cursor: pointer;
+}
+.fontawesome-icon-list .btn-copy-hover {
+  background-color: #08BDDD;
+  border-top: none;
+  margin-top: 1px;
   color: #fff;
   cursor: pointer;
 }
@@ -598,6 +623,35 @@ li.L9 { background: #eee }
 .glyphicons li:hover {
   color: #fff;
   background-color: #1abc9c;
+}
+.fontawesome-icon-list {
+  margin-top: 22px;
+}
+.fa-hover {
+  height: 60px;
+  position: relative;
+}
+.fontawesome-icon-list .prettyprint {
+  display: none;
+}
+.fontawesome-icon-list .fa-hover .icon-name {
+  display: block;
+  position: relative;
+  color: #222222;
+  line-height: 32px;
+  height: 32px;
+  padding-left: 10px;
+  border-radius: 4px;
+}
+.fontawesome-icon-list .zero-clipboard {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fontawesome-icon-list .fa-hover .icon-name {
+  background-color: #1d9d74;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
