@@ -103,11 +103,11 @@ pre, code {
 .page-banner p {
   color: #747474;
 }
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   .page-banner {
     text-align: left;
   }
-}
+}*/
 .section-lead {
   color: #6b6b6b;
 }
@@ -674,4 +674,15 @@ li.L9 { background: #eee }
     width: 12.5%;
     font-size: 12px;
   }
+}
+
+.tab-pane .search,
+.tab-pane .search:focus {
+  border-color: #1d9d74;
+  color: #000;
+  background: url(../img/search-icon.jpg) no-repeat 10px 15px;
+  width: 100%;
+}
+.tab-pane .btn {
+  margin-bottom: 20px;
 }
