@@ -135,7 +135,6 @@
         autoExpand: true,
         classExpand: 'dcjq-current-parent'
     });
-
   });  // DOCUMENT READY FUNCTION
   
   // Insert copy to clipboard button before .highlight
@@ -143,11 +142,20 @@
       var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
       $(this).before(btnHtml)
     })
+     // =======================================
+  // =======================================
+  // Refactor 
+
+    $('.icon-copy').each(function () {
+      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      $(this).before(iconCopyHtml)
+    })
 
   // Init clipboard and variables
   var zeroClipboard = new ZeroClipboard( $(".copy-button") )
     , $btn_clip     = $('.btn-clipboard')
-    , $copy_button  = $(".copy-button"); 
+    , $copy_button  = $(".copy-button")
+    , $icon_copy    = $(".icon-clipboard"); 
 
   // Dynamically add popover data attributes to each button
   $copy_button.attr({
@@ -171,7 +179,30 @@
       $btn.attr("data-clipboard-target", randId )
       $highlight.attr({ id: randId })
     })
+
+    // =======================================
+  // =======================================
+  // Refactor 
+
+    $('.icon-copy').each(function () {
+      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      $(this).before(iconCopyHtml)
+    })
+
+    // Dynamically add unique ids to button and target
+    // of element to copy. Run only once.
+    $icon_copy.one('mouseenter', function( el ) {
+      var $icon_copy_elm = $(this).parent().nextAll('.icon-copy').first()
+        , $btn = $( this )
+        , randId = Math.ceil(Math.random() * 2000);
+      $btn.attr("data-clipboard-target", randId )
+      $icon_copy_elm.attr({ id: randId })
+    })
+    // =======================================
+    // =======================================
   });
+
+  
 
   // scroll to page section on click
   // corrects the height with the fixed slider-menu

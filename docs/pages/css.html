@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Salty-UI | Jared Cowan</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="salty-ui - css, html, js framework for fast web design"/>
+  <meta name="keywords" content="salty-ui, css, html, js, framework, web design, jared cowan, front-end"/>
+  <meta name="author" content="Jared Cowan"/>
+  <meta property="og:site_name" content="Salty-UI" />
+  <meta property="og:title" content="salty-ui front-end framework" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/SWDG/salty-ui" />
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="icon" href="../img/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="https://github.com/SWDG/salty-ui" />
+  <link rel="shortlink" href="https://github.com/SWDG/salty-ui" />
+  <link rel="stylesheet" href="../css/salty-ui.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+  <script src="../js/pretty.js"></script>
+</head>
+<body id="top">
+  <section id="container" class="sidebar-closed salty-page-header">
+    <nav class="navbar navbar-slider" role="navigation" no-select>
+      <header> <!--header start-->
+        <div class="sidebar-toggle-box">
+          <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
+        </div>
+        <a href="#top" class="logo" >Salty<span>-ui</span></a>
+        <a href="#download">
+          <button type="button" class="btn btn-dark" href="#download">
+            <i class="fa fa-download"></i> 
+            <span class="hidden-xs"> Download </span>
+          </button>
+        </a>
+        <a class="outlink" target="_blank" href="https://github.com/JaredCowan/salty-ui">
+          <button type="button" class="btn btn-dark" href="https://github.com/SWDG/salty-ui">
+            <i class="fa fa-github-alt"></i> 
+            <span class="hidden-xs"> Github </span>
+          </button>
+        </a>
+      </header> <!--header end-->
+      <aside> 
+        <!--sidebar start-->
+        <div id="sidebar"  class="nav-collapse">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu" id="nav-accordion">
+            <li>
+              <a href="getting-started.html">
+                <i class="fa fa-desktop"></i>
+                <span>Getting Started</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="css.html" class="active">
+                <i class="fa fa-laptop"></i>
+                <span>CSS</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="icons.html">
+                <i class="fa fa-laptop"></i>
+                <span>Icons</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>JavaScript</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Layouts</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Starter Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Dynamic Grid</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">404 Error Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">500 Error Page</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Social Templates</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Login Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Bio Profile Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Social Profile Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Social Profile Page</a>
+               </li>
+               <li>
+                  <a  href="javascript:;">Private Messaging</a>
+               </li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Business Templates</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Contact Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Pricing Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">About Page</a>
+                </li>
+              </ul>
+            </li>
+          </ul> <!-- sidebar menu end-->
+        </div> <!-- sidebar end-->
+      </aside> 
+    </nav> <!-- navbar-slider end-->
+    <div id="gettingstarted" class="jumbotron section-hero page-banner" no-select>
+      <h1>Getting Started</h1>
+      <p>
+        An overview of Salty-UI, how to download and use, basic templates and examples, and more.
+      </p>
+    </div>
+  </section> <!-- section end -->
+    
+  <div class="container"> <!-- Body container -->
+
+    <div class="row main-container">
+
+      <!--Nav Bar -->
+      <nav data-spy="Myaffix" data-offset-top="60" class="col-md-3 nav-sidebar col-md-push-9 hidden-sm hidden-xs">
+        <ul id="sidenav" class="nav nav-stacked">
+          <li>
+            <a href="#gettingstarted">Getting Started</a>
+            <ul class="nav nav-stacked">
+              <li><a href="#gitclone">Git Clone</a></li>
+              <li><a href="#bower">Bower Install</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#whatsincluded">What's Included</a>
+            <ul class="nav nav-stacked">
+              <li><a href="#precompiled">Precompiled</a></li>
+              <li><a href="#sourcecode">Source Code</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#grunt">Compiling with Grunt</a>
+            <ul class="nav nav-stacked">
+              <li><a href="#installinggrunt">Installing Grunt</a></li>
+              <li><a href="#gruntcommands">Grunt Commands</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#basictemplates">Basic Templates</a>
+            <ul class="nav nav-stacked">
+              <li><a href="#html5template">Installing Grunt</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#license">MIT License</a>
+          </li>
+        </ul>
+      </nav> <!-- CLOSING col-xs-9 -->
+
+
+      
+      <div class="col-md-9 col-md-pull-3 col-sm-12">
+
+      </div> <!-- END col-md-9 -->
+
+
+    </div> <!-- CLOSING row main-container -->
+  </div> <!-- CLOSING Body container -->
+
+    <footer class="site-footer" no-select>
+      2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+      <span><span class="hidden-xs"> Code released under </span> <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+      <a href="#top" class="go-top">
+        <i class="fa fa-angle-up"></i>
+      </a>
+    </footer>
+
+    <!-- Javascript -->
+    <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="../js/ZeroClipboard.js"></script>
+    <script src="../js/salty-ui.min.js"></script>
+    <script src="../js/site.js"></script>
+</body>
+</html>

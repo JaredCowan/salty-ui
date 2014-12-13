@@ -137,6 +137,7 @@
 
 #sidebar .sub-menu > .sub li  {
   padding: 1px 10px;
+  list-style-type: none;
 }
 
 #sidebar .sub-menu > .sub li:last-child {
@@ -154,7 +155,7 @@
   -webkit-border-radius:3px;
   position:absolute;
   right:10px;
-  top:15px;
+  /*top:15px;*/
 }
 .sidebar-icon:before {
   content: '\f067';
