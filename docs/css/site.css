@@ -52,8 +52,7 @@ pre, code {
 .highlight {
   cursor: text;
 }
-.basic-template,
-.getting-started {
+.section-hero {
   background: #fafafa;
   color: #6b6b6b;
   padding: 85px 0;
@@ -62,8 +61,7 @@ pre, code {
   text-align: center;
   cursor: default;
 }
-.basic-template > h1,
-.getting-started > h1 {
+.section-hero > h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   position: relative;
@@ -72,8 +70,7 @@ pre, code {
   font-size: 1.8em;
   letter-spacing: .5px;
 }
-.basic-template > h1:after,
-.getting-started > h1:after {
+.section-hero > h1:after {
   content: '';
   width: 60%;
   max-width: 400px;
@@ -86,13 +83,11 @@ pre, code {
   right: 0;
 }
 @media (max-width: 500px) {
-  .basic-template,
-  .getting-started > h1 {
+  .section-hero > h1 {
     font-size: 30px;
     font-size: 8vw;
   }
-  .basic-template,
-  .getting-started p {
+  .section-hero p {
     font-size: 20px;
     font-size: 5vw;
   }
@@ -274,7 +269,7 @@ pre, code {
 }
 .template-container,
 .download-container {
-  background: #fafafa
+  background-color: #fafafa
   /*padding: 40px 0;*/
 }
 .download-container--section {
@@ -347,40 +342,72 @@ pre, code {
   width: 100px;
   margin: 40px auto;
 }
-
-
-
-
-
-
-
-.com { color: #93a1a1; }
-.lit { color: #195f91; }
-.pun, .opn, .clo { color: #93a1a1; }
-.fun { color: #dc322f; }
-.str, .atv { color: #D14; }
-.kwd, .prettyprint .tag { color: #1e347b; }
-.typ, .atn, .dec, .var { color: teal; }
-.pln { color: #48484c; }
-.prettyprint {
-  padding: 8px;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
 }
-.prettyprint.linenums {
-  -webkit-box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
-          box-shadow: inset 40px 0 0 #fbfbfc, inset 41px 0 0 #ececf0;
+.callout-info {
+  border-left-color: #5bc0de;
 }
+.callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+
+.pln { color: #000 }  /* plain text */
+
+@media screen {
+  .str { color: #080 }  /* string content */
+  .kwd { color: #008 }  /* a keyword */
+  .com { color: #323232 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: #f00 }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint { padding: 2px; border: 1px solid #888 }
+
 /* Specify class=linenums on a pre to get line numbering */
-ol.linenums {
-  margin: 0 0 0 0 /* IE indents via margin-left */
-}
-ol.linenums li {
-  padding-left: 12px;
-  color: #bebec5;
-  line-height: 20px;
-  text-shadow: 0 1px 0 #fff;
-}
+ol.linenums { margin-top: 0; margin-bottom: 0 } /* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { list-style-type: none }
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { background: #eee }
+
+
 
 
 /* Testing the new sidenav */

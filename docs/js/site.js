@@ -140,7 +140,7 @@
   
   // Insert copy to clipboard button before .highlight
     $('.highlight').each(function () {
-      var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button"><i class="fa fa-copy"></i>Copy</span></div>'
+      var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
       $(this).before(btnHtml)
     })
 
