@@ -92,6 +92,22 @@ pre, code {
     font-size: 5vw;
   }
 }
+.page-banner {
+  margin-bottom: 40px;
+  background-color: #1abc9c;
+  color: #fff;
+}
+.page-banner > h1 {
+  color: #fff;
+}
+.page-banner p {
+  color: #747474;
+}
+@media (min-width: 992px) {
+  .page-banner {
+    text-align: left;
+  }
+}
 .btn-salty {
   color: #16a085;
   background-color: transparent;

@@ -20,11 +20,10 @@
   <link rel="stylesheet" href="css/salty-ui.min.css">
   <link rel="stylesheet" href="css/site.css">
   <!-- // <script src="js/pretty.js"></script> -->
-  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
 </head>
   <body id="top">
     <section id="container" class="sidebar-closed salty-page-header">
-      <nav id="top" class="navbar navbar-slider" role="navigation" no-select>
+      <nav class="navbar navbar-slider" role="navigation" no-select>
         <header> <!--header start-->
           <div class="sidebar-toggle-box">
             <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
@@ -157,11 +156,12 @@
           </div> <!-- sidebar end-->
         </aside> 
       </nav> <!-- navbar-slider end-->
-      <div class="jumbotron landing-page" no-select>
-        <span>
-          <!-- <h1>Salty-UI</h1> -->
-        </span>
-      </div>
+      <div id="gettingstarted" class="jumbotron section-hero page-banner" no-select>
+          <h1>Getting Started</h1>
+          <p>
+            An overview of Salty-UI, how to download and use, basic templates and examples, and more.
+          </p>
+        </div>
     </section> <!-- section end -->
     
     <div class="container"> <!-- Body container -->
@@ -204,20 +204,13 @@
           </ul>
         </nav> <!-- CLOSING col-xs-9 -->
 
-         <div class="col-md-9 col-md-pull-3 col-sm-12">
+
         
-
-
-
-        <div id="gettingstarted" class="jumbotron section-hero" no-select>
-          <h1>Getting Started</h1>
-          <p>
-            Downloading
-          </p>
-        </div>
+        <div class="col-md-9 col-md-pull-3 col-sm-12">  
 
         <div class="download-container" id="download">
             <div class="row">
+            <h1 id="download" class="page-header">Download</h1>
               <div id="gitclone" class="col-lg-12 download-container--section">
                 <h2>Git Clone:</h2>
                 <div class="iterm">
@@ -683,27 +676,27 @@ $(function () {
         <div class="template-container">
           <h3>Skip navigation</h3>
           <p>If your navigation contains many links and comes before the main content in the DOM, add a <code>Skip to main content</code> link immediately after your opening <code>&lt;body&gt;</code> tag. <a target="_blank" href="http://a11yproject.com/posts/skip-nav-links/">(read why)</a></p>
-        <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;body&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#content"</span> <span class="na">class=</span><span class="s">"sr-only sr-only-focusable"</span><span class="nt">&gt;</span>Skip to main content<span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span> <span class="na">id=</span><span class="s">"content"</span><span class="nt">&gt;</span>
-            The main page content.
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/body&gt;</span></code></pre></div>
-
+          <div class="highlight"><pre class="prettyprint lang-html"><code>&lt;body&gt;
+  &lt;a href="#content" class="sr-only sr-only-focusable"&gt;Skip to main content&lt;/a&gt;
+  &lt;div class="container" id="content"&gt;
+    The main page content.
+  &lt;/div&gt;
+&lt;/body&gt;</code></pre>
+          </div>
           <h3>Nested headings</h3>
           <p>When nesting headings (<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>), your primary document header should be an <code>&lt;h1&gt;</code>. Subsequent headings should make logical use of <code>&lt;h2&gt;</code> - <code>&lt;h6&gt;</code> such that screen readers can construct a table of contents for your pages.</p>
-          <p>Learn more at <a href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/">HTML CodeSniffer</a> and <a href="http://accessibility.psu.edu/headings">Penn State's AccessAbility</a>.</p>
+          <p>Learn more at <a target="_blank" href="http://squizlabs.github.io/HTML_CodeSniffer/Standards/Section508/">HTML CodeSniffer</a> and <a target="_blank" href="http://accessibility.psu.edu/headings">Penn State's AccessAbility</a>.</p>
 
           <h3>Color contrast</h3>
-          <p>Currently, some of the default color combinations available in Bootstrap (such as the various <a href="../css/#buttons">styled button</a> classes, some of the code highlighting colors used for <a href="../css/#code-block">basic code blocks</a>, the <code>.bg-primary</code> <a href="..css/#helper-classes-backgrounds">contextual background</a> helper class, and the default link color when used on a white background) have a low contrast ratio (below the <a href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">recommended ratio of 4.5:1</a>). This can cause problems to users with low vision or who are color blind. These default colors may need to be modified to increase their contrast and legibility.</p>
+          <p>Currently, some of the default color combinations available in Bootstrap (such as the various <a href="javascript:;">styled button</a> classes, some of the code highlighting colors used for <a href="javascript:;">basic code blocks</a>, the <code>.bg-primary</code> <a href="javascript:;">contextual background</a> helper class, and the default link color when used on a white background) have a low contrast ratio (below the <a target="_blank" href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast">recommended ratio of 4.5:1</a>). This can cause problems to users with low vision or who are color blind. These default colors may need to be modified to increase their contrast and legibility.</p>
 
           <h3>Additional resources</h3>
           <ul>
-            <li><a href="https://github.com/squizlabs/HTML_CodeSniffer">"HTML Codesniffer" bookmarklet for identifying accessibility issues</a></li>
-            <li><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Chrome's Accessibility Developer Tools extension</a></li>
-            <li><a href="http://www.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser</a>
-            </li><li><a href="http://a11yproject.com/">The A11Y Project</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Accessibility">MDN accessibility documentation</a></li>
+            <li><a target="_blank" href="https://github.com/squizlabs/HTML_CodeSniffer">"HTML Codesniffer" bookmarklet for identifying accessibility issues</a></li>
+            <li><a target="_blank" href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Chrome's Accessibility Developer Tools extension</a></li>
+            <li><a target="_blank" href="http://www.paciellogroup.com/resources/contrastanalyser/">Colour Contrast Analyser</a>
+            </li><li><a target="_blank" href="http://a11yproject.com/">The A11Y Project</a></li>
+            <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Accessibility">MDN accessibility documentation</a></li>
           </ul>
         </div> <!-- END template container -->
 
@@ -762,6 +755,7 @@ $(function () {
     </footer>
 
     <!-- Javascript -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     <script src="js/ZeroClipboard.js"></script>
