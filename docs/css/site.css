@@ -653,6 +653,17 @@ li.L9 { background: #eee }
   color: #ffffff;
   text-decoration: none;
 }
+.icon-name > .fa {
+  color: #000;
+}
+.icon-name:hover  >.fa {
+  font-size: 53px;
+  background-color: #1d9d74;
+  width: 77px;
+  text-align: center;
+  padding: 7px;
+  margin-left: -10px;
+}
 
 @media (min-width: 768px) {
   .glyphicons {

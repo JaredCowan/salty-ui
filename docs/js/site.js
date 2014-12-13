@@ -181,7 +181,7 @@
     $btn_clip.one('mouseenter', function( el ) {
       var $highlight = $(this).parent().nextAll('.highlight').first()
         , $btn = $( this )
-        , randId = Math.ceil(Math.random() * 2000);
+        , randId = Math.ceil(Math.random() * 20000);
       $btn.attr("data-clipboard-target", randId )
       $highlight.attr({ id: randId })
     })
@@ -199,7 +199,7 @@
       }
       var $icon_copy_elm = $(this).parent().nextAll('.icon-copy').first()
         , $btn = $( this )
-        , randId = Math.ceil(Math.random() * 2000);
+        , randId = Math.ceil(Math.random() * 20000);
       $btn.attr("data-clipboard-target", randId )
       $icon_copy_elm.attr({ id: randId })
     })
@@ -210,7 +210,7 @@
       }
       var $fa_icon_copy_elm = $(this).parent().nextAll('.fa-icon-copy').first()
         , $btn = $( this )
-        , randId = Math.ceil(Math.random() * 2000);
+        , randId = Math.ceil(Math.random() * 20000);
       $btn.attr("data-clipboard-target", randId )
       $fa_icon_copy_elm.attr({ id: randId })
     })
