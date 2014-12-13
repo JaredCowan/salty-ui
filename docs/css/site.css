@@ -343,7 +343,8 @@ pre, code {
 }
 .icon-clipboard {
   position: absolute;
-  top: 34px;
+  box-sizing: border-box;
+  top: 4px;
   right: 0;
   left: 0;
   margin-left: -10px;
@@ -355,7 +356,7 @@ pre, code {
   color: #fafafa;
   cursor: pointer;
   background-color: #1abc9c;
-  border: none;
+  border-top: none;
   border-radius: 0;
   -webkit-transition: all .4s ease;
        -o-transition: all .4s ease;
@@ -372,6 +373,8 @@ pre, code {
 }
 .glyphicons-list .btn-copy-hover {
   background-color: #08BDDD;
+  border-top: 1px solid #000;
+  margin-top: -4px;
   color: #fff;
   cursor: pointer;
 }
@@ -385,7 +388,10 @@ pre, code {
   position: absolute;
   bottom: -61px;
   right: 100px;
-  color: #1abc9c
+  color: #1abc9c;
+}
+.icon-copy {
+  display: none;
 }
 .half-rule {
   width: 100px;
@@ -556,6 +562,7 @@ li.L9 { background: #eee }
   vertical-align: bottom;
 }
 
+
 .glyphicons {
   margin: 0 -10px 20px;
   overflow: hidden;
@@ -564,15 +571,18 @@ li.L9 { background: #eee }
   padding-left: 0;
   list-style: none;
 }
+.glyphicons-list .glyphicon {
+  color: #fff;
+}
 .glyphicons li {
   float: left;
   width: 25%;
-  height: 115px;
+  height: 85px;
   padding: 10px;
   font-size: 10px;
   line-height: 1.4;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #08BDDD;
   border: 1px solid #fff;
 }
 .glyphicons .glyphicon {
@@ -587,7 +597,7 @@ li.L9 { background: #eee }
 }
 .glyphicons li:hover {
   color: #fff;
-  background-color: #563d7c;
+  background-color: #1abc9c;
 }
 
 @media (min-width: 768px) {

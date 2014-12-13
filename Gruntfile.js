@@ -272,7 +272,7 @@ module.exports = function (grunt) {
           "./": "docs/pages/**"
         },
         options: {
-          path: '<%= secret.path %>/pages/',
+          path: '<%= secret.path %>/pages',
           srcBasePath: "docs/pages/"
         }
       }
@@ -289,7 +289,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
 
   // SFTP Common Files
-  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distjs', 'sftp:distcss']);
+  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'sftp:distcss']);
 
   // SFTP Common Files
   grunt.registerTask('ftpall', ['sftp']);

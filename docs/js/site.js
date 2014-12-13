@@ -184,14 +184,13 @@
   // =======================================
   // Refactor 
 
-    $('.icon-copy').each(function () {
-      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
-      $(this).before(iconCopyHtml)
-    })
 
     // Dynamically add unique ids to button and target
     // of element to copy. Run only once.
-    $icon_copy.one('mouseenter', function( el ) {
+    $icon_copy.on('mouseover', function( el ) {
+      if ( $(".tooltip").length >= 2 ) {
+        $(".tooltip").first().tooltip('hide')
+      }
       var $icon_copy_elm = $(this).parent().nextAll('.icon-copy').first()
         , $btn = $( this )
         , randId = Math.ceil(Math.random() * 2000);
