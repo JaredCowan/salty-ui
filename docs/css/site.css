@@ -469,7 +469,7 @@ pre, code {
 
 /* Put a border around prettyprinted code snippets. */
 pre.prettyprint { 
-  padding: 15px; 
+  padding: 15px 70px 15px 15px; 
   border: 1px solid #888;
   min-height: 40px;
 }
@@ -689,4 +689,16 @@ li.L9 { background: #eee }
 }
 .tab-pane .btn {
   margin-bottom: 20px;
+}
+
+
+.show-grid {
+  margin-bottom: 15px;
+}
+.show-grid [class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #1d9d74;
+  border: 1px solid #08BDDD;
+  border-radius: 4px;
 }
