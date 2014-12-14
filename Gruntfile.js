@@ -214,6 +214,25 @@ module.exports = function (grunt) {
       }
     },
 
+    csscomb: {
+      options: {
+        config: 'config/.csscomb.json'
+      },
+      dist: {
+        expand: true,
+        cwd: 'docs/css/',
+        src: ['site.css'],
+        dest: 'docs/css/'
+      }
+    },
+
+    watch: {
+      test: {
+        files: 'docs/**',
+        tasks: ['ftp']
+      }
+    },
+
     sftp: {
       options: {
           host: '<%= secret.host %>',
@@ -305,6 +324,9 @@ module.exports = function (grunt) {
 
   // CSS Lint All
   grunt.registerTask('lint', ['csslint:docs', 'csslint:predist']);
+
+  // CSS Comb
+  grunt.registerTask('test', ['csscomb']);
 
   // Test Page Speed
   grunt.registerTask('speed', ['pagespeed']);

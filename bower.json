@@ -29,7 +29,7 @@
     "css/**",
     "Gruntfile.js",
     "package.json",
-    ".secret.json",
+    "config/.secret.json",
     "report/**",
     "test.*"
   ],

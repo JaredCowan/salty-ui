@@ -1,5 +1,4 @@
 # Ignore files and folders
-.secret.json
 
 # Wildcard File Types
 *.zip
@@ -10,6 +9,7 @@ test.*
 # Misc Folders
 .DS_Store
 report/**
+config/.secret.json
 
 # Folders
 node_modules
