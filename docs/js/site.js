@@ -295,5 +295,5 @@ var options = {
 };
 
 var userList = new List('icons', options);
-  
+
 }( jQuery );
