@@ -213,7 +213,7 @@
 
   <div class="callout callout-info">
     <h4>Separate Files</h4>
-    <p>Please note that not styles are included in the <code>.css / .css.min</code> and <code>.js / .js.min</code> files respectively. Some widgets, layouts and other styles will be places in folders with their respective name. We do this to reduce code that may not be used and to avoid conflict with <a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx" target="_blank"> IE 6-9 stylesheet rules</a>.
+    <p>Please note that not all styles are included in the <code>.css / .css.min</code> and <code>.js / .js.min</code> files respectively. Some widgets, layouts and other styles will be places in folders with their respective name. We do this to reduce code that may not be used and to avoid conflict with <a href="http://blogs.msdn.com/b/ieinternals/archive/2011/05/14/10164546.aspx" target="_blank"> IE 6-9 stylesheet rules</a>.
     </p>
   </div>
   <p>To ensure proper rendering and touch zooming, <strong>add the viewport meta tag</strong> to your <code>&lt;head&gt;</code>.</p>
@@ -650,27 +650,215 @@
   &lt;div class=&quot;col-md-3 col-md-pull-9&quot;&gt;.col-md-3 .col-md-pull-9&lt;/div&gt;
 &lt;/div&gt;</code></pre></div><!-- END 'highlight' div -->
 <!-- END Code Window -->
+  <div id="type" class="jumbotron section-hero" no-select>
+    <h1>Typography</h1>
+    <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available. <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.</p>
+  </div> <!-- END type -->
 
+  <!-- Headings -->
+  <h2 id="type-headings">Headings</h2>
+  
+  <div class="example-code">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Salty-UI heading</h1></td>
+          <td class="type-info">Semibold 36px</td>
+        </tr>
+        <tr>
+          <td><h2>h2. Salty-UI heading</h2></td>
+          <td class="type-info">Semibold 30px</td>
+        </tr>
+        <tr>
+          <td><h3>h3. Salty-UI heading</h3></td>
+          <td class="type-info">Semibold 24px</td>
+        </tr>
+        <tr>
+          <td><h4>h4. Salty-UI heading</h4></td>
+          <td class="type-info">Semibold 18px</td>
+        </tr>
+        <tr>
+          <td><h5>h5. Salty-UI heading</h5></td>
+          <td class="type-info">Semibold 14px</td>
+        </tr>
+        <tr>
+          <td><h6>h6. Salty-UI heading</h6></td>
+          <td class="type-info">Semibold 12px</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint"><code>&lt;h1&gt;h1. Semibold 36px&lt;/h1&gt;
+&lt;h2&gt;h2. Semibold 30px&lt;/h2&gt;
+&lt;h3&gt;h3. Semibold 24px&lt;/h3&gt;
+&lt;h4&gt;h4. Semibold 18px&lt;/h4&gt;
+&lt;h5&gt;h5. Semibold 14px&lt;/h5&gt;
+&lt;h6&gt;h6. Semibold 12px&lt;/h6&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <p>Create lighter, secondary text in any heading with a generic <code>&lt;small&gt;</code> tag or the <code>.small</code> class.</p>
+  <div class="example-code">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td><h1>h1. Salty-UI heading <small>Secondary text</small></h1></td>
+        </tr>
+        <tr>
+          <td><h2>h2. Salty-UI heading <small>Secondary text</small></h2></td>
+        </tr>
+        <tr>
+          <td><h3>h3. Salty-UI heading <small>Secondary text</small></h3></td>
+        </tr>
+        <tr>
+          <td><h4>h4. Salty-UI heading <small>Secondary text</small></h4></td>
+        </tr>
+        <tr>
+          <td><h5>h5. Salty-UI heading <small>Secondary text</small></h5></td>
+        </tr>
+        <tr>
+          <td><h6>h6. Salty-UI heading <small>Secondary text</small></h6></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint"><code>&lt;h1&gt;h1. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h1&gt;
+&lt;h2&gt;h2. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h2&gt;
+&lt;h3&gt;h3. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h3&gt;
+&lt;h4&gt;h4. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h4&gt;
+&lt;h5&gt;h5. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h5&gt;
+&lt;h6&gt;h6. Bootstrap heading &lt;small&gt;Secondary text&lt;/small&gt;&lt;/h6&gt;</small></code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+
+  <!-- Body copy -->
+  <h2 id="type-body-copy">Body copy</h2>
+  <p>Salty-UI's global default <code>font-size</code> is <strong>14px</strong>, with a <code>line-height</code> of <strong>1.428</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (10px by default).</p>
+
+  <div class="example-code">
+    <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+    <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;p&gt;...&lt;/p&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <!-- Body copy .lead -->
+  <h3>Lead body copy</h3>
+  <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+  <div class="example-code">
+    <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+  </div>
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;p class="lead"&gt;...&lt;/p&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <!-- Inline text elements -->
+  <h2 id="type-inline-text">Inline text elements</h2>
+  <h3>Marked text</h3>
+  <p>For highlighting a run of text due to its relevance in another context, use the <code>&lt;mark&gt;</code> tag.</p>
+  <div class="example-code">
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>You can use the mark tag to &lt;mark&gt;highlight&lt;/mark&gt; text.</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+
+  <h3>Deleted text</h3>
+  <p>For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code> tag.</p>
+  <div class="example-code">
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint"><code>&lt;del&gt;This line of text is meant to be treated as deleted text.&lt;/del&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <h3>Strikethrough text</h3>
+  <p>For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code> tag.</p>
+  <div class="example-code">
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;s&gt;This line of text is meant to be treated as no longer accurate.&lt;/s&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <h3>Inserted text</h3>
+  <p>For indicating additions to the document use the <code>&lt;ins&gt;</code> tag.</p>
+  <div class="example-code">
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;ins&gt;This line of text is meant to be treated as no longer accurate.&lt;/ins&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <h3>Underlined text</h3>
+  <p>To underline text use the <code>&lt;u&gt;</code> tag.</p>
+  <div class="example-code">
+    <p><u>This line of text will render as underlined</u></p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;u&gt;This line of text will render as underlined.&lt;/u&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+
+  <h3>Small text</h3>
+  <p>For de-emphasizing inline or blocks of text, use the <code>&lt;small&gt;</code> tag to set text at 85% the size of the parent. Heading elements receive their own <code>font-size</code> for nested <code>&lt;small&gt;</code> elements.</p>
+  <p>You may alternatively use an inline element with <code>.small</code> in place of any <code>&lt;small&gt;</code>.</p>
+  <div class="example-code">
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+  </div>
+
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <h3>Bold</h3>
+  <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+  <div class="example-code">
+    <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+  </div>
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;strong&gt;rendered as bold text&lt;/strong&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
+
+  <h3>Italics</h3>
+  <p>For emphasizing a snippet of text with italics.</p>
+  <div class="example-code">
+    <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+  </div>
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;em&gt;rendered as italicized text&lt;/em&gt;</code></pre></div><!-- END 'highlight' div -->
+<!-- END Code Window -->
 
 
       </div> <!-- END col-md-9 -->
     </div> <!-- CLOSING row main-container -->
   </div> <!-- CLOSING Body container -->
 
-    <footer class="site-footer" no-select>
-      2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
-      <span><span class="hidden-xs"> Code released under </span> <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
-      <a href="#top" class="go-top">
-        <i class="fa fa-angle-up"></i>
-      </a>
-    </footer>
+  <footer class="site-footer" no-select>
+    2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+    <span><span class="hidden-xs"> Code released under </span> <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+    <a href="#top" class="go-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </footer>
 
-    <!-- Javascript -->
-    <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script> -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
-    <script src="../js/ZeroClipboard.js"></script>
-    <script src="../js/salty-ui.min.js"></script>
-    <script src="../js/site.js"></script>
+  <!-- Javascript -->
+  <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="../js/ZeroClipboard.js"></script>
+  <script src="../js/salty-ui.min.js"></script>
+  <script src="../js/site.js"></script>
 </body>
 </html>

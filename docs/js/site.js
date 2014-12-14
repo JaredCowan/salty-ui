@@ -139,7 +139,7 @@
   
   // Insert copy to clipboard button before .highlight
     $('.highlight').each(function () {
-      var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      var btnHtml = '<div class="zero-clipboard"><span class="btn btn-clipboard copy-button hidden-xs"><i class="fa fa-copy"></i> Copy</span></div>'
       $(this).before(btnHtml)
     })
      // =======================================
@@ -147,12 +147,12 @@
   // Refactor 
 
     $('.icon-copy').each(function () {
-      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn icon-clipboard copy-button hidden-xs"><i class="fa fa-copy"></i> Copy</span></div>'
       $(this).before(iconCopyHtml)
     })
 
     $('.fa-icon-copy').each(function () {
-      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn fa-icon-clipboard copy-button"><i class="fa fa-copy"></i> Copy</span></div>'
+      var iconCopyHtml = '<div class="zero-clipboard"><span class="btn fa-icon-clipboard copy-button hidden-xs"><i class="fa fa-copy"></i> Copy</span></div>'
       $(this).before(iconCopyHtml)
     })
 

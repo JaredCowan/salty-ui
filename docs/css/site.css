@@ -692,8 +692,73 @@ li.L9 { background: #eee }
 .tab-pane .btn {
   margin-bottom: 20px;
 }
-
-
+.example-code {
+  position: relative;
+  padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  background-color: #fff;
+  border-color: #e5e5e5 #eee #eee;
+  border-style: solid;
+  border-width: 1px 0;
+  -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+  box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
+}
+.example-code:after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Example";
+}
+.example-code + .highlight, .example-code + .zero-clipboard + .highlight > .prettyprint {
+  margin: -15px -15px 15px;
+  /*border-width: 0 0 1px;*/
+  border-radius: 0;
+  margin-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .example-code {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 1px;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .example-code + .zero-clipboard .btn-clipboard {
+    top: -16px;
+  }
+  .example-code + .highlight,
+  .example-code + .zero-clipboard + .highlight > .prettyprint {
+    margin-top: -16px;
+    margin-right: 0;
+    margin-left: 0;
+    border-color: #ccc;
+    border-radius: 0 0 4px 4px;
+  }
+}
+@media (max-width: 768px) {
+  .example-code + .zero-clipboard + .highlight {
+    position: relative;
+  }
+  .example-code + .zero-clipboard + .highlight:before {
+    content: "Code";
+    position: absolute;
+    top: -9px;
+    left: 0;
+    background: #ccc;
+    padding: 1px 23px;
+  }
+  .example-code + .zero-clipboard + .highlight > .prettyprint {
+    padding-right: 15px;
+  }
+}
 .show-grid {
   margin-bottom: 15px;
 }
