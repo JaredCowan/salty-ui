@@ -1,6 +1,8 @@
-# Ignore files and folders
+# files
+config/.secret.json
+.sass-cache
 
-# Wildcard File Types
+# Wildcard Files
 *.zip
 *.orig
 *.diff
@@ -8,9 +10,9 @@ test.*
 
 # Misc Folders
 .DS_Store
-report/**
-config/.secret.json
+report
 
 # Folders
 node_modules
 bower_components
+sass

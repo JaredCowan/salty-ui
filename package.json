@@ -37,10 +37,12 @@
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-compass": "^1.0.1",
     "grunt-contrib-concat": "^0.5.0",
     "grunt-contrib-copy": "^0.7.0",
     "grunt-contrib-csslint": "^0.3.1",
     "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-csscomb": "^3.0.0",
@@ -59,11 +61,5 @@
       "Opera >= 12",
       "Safari >= 6"
     ]
-  },
-  "bs": {
-    "banner": "Bootstrap v3.3.1 (http://getbootstrap.com) Copyright 2011-2014 Twitter, Inc. Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)"
-  },
-  "norm": {
-    "banner": "Normalize.css v3.0.2 | MIT License | git.io/normalize"
   }
 }

@@ -3,11 +3,17 @@ module.exports = function (grunt) {
 
   grunt.file.defaultEncoding = 'utf8';
   grunt.util.linefeed = '\n';
+  var distJsPath = "dist/js/<%= pkg.name %>.js";
+  var distMinJsPath = "dist/js/<%= pkg.name %>.min.js";
+  var distCssPath = "dist/css/<%= pkg.name %>.min.css";
+  var distMinCssPath = "dist/css/<%= pkg.name %>.min.css";
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    secret: grunt.file.readJSON('.secret.json'),
+    files: grunt.file.readJSON('config/files.json'),
+    secret: grunt.file.readJSON('config/.secret.json'),
+
     banner: '/*! \n' +
             ' * <%= pkg.title %>  v<%= pkg.version %> \n' +
             ' * License: <%= pkg.license.type %> <%= pkg.license.url %> \n' +
@@ -53,60 +59,37 @@ module.exports = function (grunt) {
         options: {
           banner: '<%= banner %> '
         },
-        src: [
-          'js/req-jquery.js',
-          'js/transition.js',
-          'js/alert.js',
-          'js/button.js',
-          'js/carousel.js',
-          'js/collapse.js',
-          'js/dropdown.js',
-          'js/modal.js',
-          'js/tooltip.js',
-          'js/popover.js',
-          'js/scrollspy.js',
-          'js/tab.js',
-          'js/affix.js',
-          'js/nicescroll.js',
-          'js/scrollto.js',
-          'js/boxslider.js',
-          'js/accordion.js'
-        ],
+        src: [ "<%= files.jsfiles %>" ],
         dest: 'dist/js/<%= pkg.name %>.js'
       },
       saltyCSS: {
         options: {
-          banner: '<%= cssBanner %>'
+          banner: '<%= files.cssfiles %>'
         },
-        src: [
-          'css/normalize.css',
-          'css/print.css',
-          'css/icons.css',
-          'css/basic.css',
-          'css/thumbnails.css',
-          'css/code.css',
-          'css/columns.css',
-          'css/tables.css',
-          'css/forms.css',
-          'css/buttons.css',
-          'css/navbars.css',
-          'css/breadcrumbs.css',
-          'css/badges.css',
-          'css/jumbtrons.css',
-          'css/alerts.css',
-          'css/progresbars.css',
-          'css/media-listgroups.css',
-          'css/panels.css',
-          'css/wells.css',
-          'css/modals.css',
-          'css/tooltip-popovers.css',
-          'css/carousels.css',
-          'css/misc-elements.css',
-          'css/salty.css'
-        ],
+        src: [ "<%= cssFilePaths %>" ],
         dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
+
+    compass: {
+      app: {
+        options: {
+          noLineComments: true,
+          sourcemap: true,
+          specify: ['sass/salty-ui.scss'],
+          sassDir: 'sass',
+          cssDir: 'sass',
+          imagesDir: 'docs/img',
+          fontsDir: 'fonts',
+          relativeAssets: true,
+          boring: true,
+          debugInfo: false,
+          outputStyle: 'expanded',
+          raw: 'preferred_syntax = :sass\nSass::Script::Number.precision = 8\n'
+        }
+      }
+    },
+
 
     uglify: {
       options: {
@@ -115,11 +98,11 @@ module.exports = function (grunt) {
       },
       core: {
         src: '<%= concat.saltyJS.dest %>',
-        dest: 'dist/js/<%= pkg.name %>.min.js'
+        dest: '<%= distJsMinPath %>'
       },
       site: {
         src: '<%= concat.saltyJS.dest %>',
-        dest: 'docs/js/<%= pkg.name %>.min.js'
+        dest: '<%= distJsMinPath %>'
       }
     },
 
@@ -194,9 +177,11 @@ module.exports = function (grunt) {
 
     csslint: {
       options: {
-        csslintrc: '.csslintrc',
+        csslintrc: 'config/.csslintrc',
         formatters: [
-          {id: 'text', dest: 'report/csslint.txt'}
+          {
+            id: 'text', dest: 'report/csslint.txt'
+          }
         ]
       },
       predist: [
@@ -218,18 +203,30 @@ module.exports = function (grunt) {
       options: {
         config: 'config/.csscomb.json'
       },
-      dist: {
+      docs: {
         expand: true,
         cwd: 'docs/css/',
-        src: ['site.css'],
+        src: ['*.css', '!*.min.css'],
         dest: 'docs/css/'
+      },
+      predist: {
+        expand: true,
+        cwd: 'css/',
+        src: ['*.css'],
+        dest: 'css/'
+      },
+      dist: {
+        expand: true,
+        cwd: 'dist/css/',
+        src: ['*.css', '!*.min.css'],
+        dest: 'dist/css/'
       }
     },
 
     watch: {
       test: {
-        files: 'docs/**',
-        tasks: ['ftp']
+        files: 'sass/<%= pkg.name %>.scss',
+        tasks: ['compass']
       }
     },
 
@@ -300,33 +297,33 @@ module.exports = function (grunt) {
 
   // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-
+  
   // Dist JS
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);
 
   // Dist CSS
-  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
+  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site', 'csscomb']);
 
   // SFTP Common Files
-  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'sftp:distcss']);
+  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'csscomb', 'sftp:distcss']);
 
   // SFTP Common Files
-  grunt.registerTask('ftpall', ['sftp']);
+  grunt.registerTask('ftpall', ['csscomb','sftp']);
 
   // CSS Lint PreDist
-  grunt.registerTask('lintpredist', ['csslint:predist']);
+  grunt.registerTask('lintpredist', ['csscomb', 'csslint:predist']);
 
   // CSS Lint Docs
-  grunt.registerTask('lintdocs', ['csslint:docs']);
+  grunt.registerTask('lintdocs', ['csscomb', 'csslint:docs']);
 
   // CSS Lint Dist
-  grunt.registerTask('lintdist', ['csslint:dist']);
+  grunt.registerTask('lintdist', ['csscomb', 'csslint:dist']);
 
   // CSS Lint All
-  grunt.registerTask('lint', ['csslint:docs', 'csslint:predist']);
+  grunt.registerTask('lint', ['csscomb', 'csslint:docs', 'csslint:predist']);
 
   // CSS Comb
-  grunt.registerTask('test', ['csscomb']);
+  grunt.registerTask('comb', ['csscomb']);
 
   // Test Page Speed
   grunt.registerTask('speed', ['pagespeed']);
@@ -335,6 +332,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
 
   // Full Distribution Task.
-  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js', 'ftpall']);
+  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'csscomb', 'dist-js', 'ftpall']);
 
 };

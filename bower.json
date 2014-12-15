@@ -31,7 +31,9 @@
     "package.json",
     "config/.secret.json",
     "report/**",
-    "test.*"
+    "test.*",
+    ".sass-cache",
+    "sass"
   ],
   "dependencies": {
     "jquery": "~2.1.1"
