@@ -387,17 +387,16 @@ code {
   white-space: nowrap;
 }
 .btn-copy-hover {
-  /*border-bottom-left-radius: 4px;*/
   color: #fff;
   cursor: pointer;
   background-color: #08bddd;
 }
 .glyphicons-list .btn-copy-hover {
-  margin-top: -4px;
+  margin-top: 1px;
   color: #fff;
   cursor: pointer;
   background-color: #08bddd;
-  border-top: 1px solid #000;
+  border: none;
 }
 .fontawesome-icon-list .btn-copy-hover {
   color: #fff;
