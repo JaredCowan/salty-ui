@@ -938,15 +938,15 @@ li.L9 {
   padding: 20px 30px;
 }
 .yamm .dropdown.yamm-fw .dropdown-menu {
-  left: 0;
   right: 0;
+  left: 0;
 }
-.super-test {
-  /*background-color: red;*/
+
+.glyphicon-popover {
   max-width: 450px;
   white-space: nowrap;
 }
-.super-test .icon {
-  color: #08bddd;
+.glyphicon-popover .icon {
   font-size: 21px;
+  color: #08bddd;
 }

@@ -306,7 +306,7 @@
       "data-placement":       "top",
       "data-container":        "body",
       "data-content":         "<span class=\"icon " + child + "\"></span> &lt;span class=\"" + child + "\"&gt;&lt;/span&gt;",
-      "data-template":        '<div class="super-test popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+      "data-template":        '<div class="glyphicon-popover popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
     })
 
     $('.icon-popover').popover()
