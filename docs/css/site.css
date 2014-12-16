@@ -370,13 +370,13 @@ code {
   z-index: 10;
   display: block;
   box-sizing: border-box;
-  padding: 5px 8px;
+  padding: 5.333333px 8px;
   font-size: 12px;
   color: #fafafa;
   cursor: pointer;
   background-color: #1abc9c;
   border-top: none;
-  border-radius: 0;
+  border-radius: 0 4px 4px 0;
   -webkit-transition: all .4s ease;
        -o-transition: all .4s ease;
           transition: all .4s ease;
@@ -400,7 +400,6 @@ code {
   border-top: 1px solid #000;
 }
 .fontawesome-icon-list .btn-copy-hover {
-  margin-top: 1px;
   color: #fff;
   cursor: pointer;
   background-color: #08bddd;
@@ -851,4 +850,103 @@ li.L9 {
   background-color: #1d9d74;
   border: 1px solid #08bddd;
   border-radius: 4px;
+}
+
+#gritter-notice-wrapper {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 301px;
+}
+.gritter-item-wrapper {
+  position: relative;
+  margin: 0 0 10px 0;
+  background-color: rgba(0, 0, 0, .8);
+}
+.gritter-top {
+  height: 10px;
+  background-color: rgba(0, 0, 0, .7);
+}
+.gritter-item {
+  display: block;
+  padding: 2px 11px 8px 11px;
+  font-family: verdana;
+  font-size: 11px;
+  color: #eee;
+  background-color: rgba(0, 0, 0, .7);
+}
+.hover .gritter-item {
+  background-position: right -40px;
+}
+.gritter-item p {
+  padding: 0;
+  margin: 0;
+  word-wrap: break-word;
+}
+.gritter-close {
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .7);
+}
+.gritter-close::before {
+  position: absolute;
+  top: -5px;
+  right: -3px;
+  padding: 7px;
+  content: "X";
+  background-color: #f00;
+}
+.gritter-title {
+  display: block;
+  padding: 0 0 7px 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #000;
+}
+.gritter-image {
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+.gritter-with-image,
+.gritter-without-image {
+  padding: 0;
+}
+.gritter-with-image {
+  float: right;
+  width: 220px;
+}
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+.yamm .container {
+  position: relative;
+}
+.yamm .dropdown-menu {
+  left: auto;
+}
+.yamm .yamm-content {
+  padding: 20px 30px;
+}
+.yamm .dropdown.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}
+.super-test {
+  /*background-color: red;*/
+  max-width: 450px;
+  white-space: nowrap;
+}
+.super-test .icon {
+  color: #08bddd;
+  font-size: 21px;
 }

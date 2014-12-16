@@ -29,7 +29,7 @@
             <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
           </div>
           <a href="index.html" class="outlink logo" >Salty<span>-ui</span></a>
-          <a class="outlink" href="pages/getting-started.html#gettingstarted">
+          <a class="outlink" href="pages/getting-started.html#download">
             <button type="button" class="btn btn-dark" href="#download">
               <i class="fa fa-download"></i> 
               <span class="hidden-xs"> Download </span>
@@ -203,5 +203,17 @@
     <script src="js/ZeroClipboard.js"></script>
     <script src="js/salty-ui.min.js"></script>
     <script src="js/site.js"></script>
+    <script>
+      $(window).load(function(){
+        var unique_id = $.gritter.add({
+          title: 'Hey all! Quick Note.',
+          text: 'Salty-UI is still in the early stages of development. While it does work, the documentation is not yet complete and the code is being cleaned-up and changed daily. Use with care.',
+          image: 'img/salty-ui-2.png',
+          sticky: true,
+          time: '',
+          class_name: 'my-sticky-class'
+        });
+      });
+    </script>
   </body>
 </html>
