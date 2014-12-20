@@ -949,3 +949,56 @@ li.L9 {
   font-size: 21px;
   color: #08bddd;
 }
+
+
+/* Dropdowns */
+.example-code > .dropdown > .dropdown-toggle {
+  float: left;
+}
+.example-code > .dropdown > .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 5px;
+  clear: left;
+}
+.example-code > .style-row {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.example-code > .style-row > .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 6px;
+}
+.example-code > .style-row > .btn-group > .btn:last-child:not(:first-child) {
+  border-bottom-right-radius: 0;
+}
+.example-code > .style-row .btn-salty.active {
+ background-color: #1FD5B1;
+ color: #fff;
+}
+.example-code > .style-row::after {
+  position: absolute;
+  top: 8px;
+  left: -120px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: 'Choose Style';
+}
+
+.dropdown-toggle + .dark,
+.dark {
+  background-color: rgba(0, 0, 0, .8);
+}
+.dropdown-toggle + .dark > li > a,
+.dropdown-toggle + .dark > li > a:hover,
+.dropdown-toggle + .dark > li > a:focus {
+  color: #fff;
+}
+.dropdown-toggle + .dark > li > a:hover,
+.dropdown-toggle + .dark > li > a:focus {
+  background-color: #337ab7;
+}

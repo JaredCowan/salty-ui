@@ -217,7 +217,6 @@
   });
 
   
-
   // scroll to page section on click
   // corrects the height with the fixed slider-menu
   $( '.navbar-slider header a, .go-top, a[href^="#"]' ).not('.outlink').on('click', function( event ) {
@@ -318,5 +317,29 @@
       })
     }
   }) // End popovers
+
+
+  function setStyle(data) {
+    var selectedEffect
+      , $dropdown = $( ".dropdown-menu" )
+      , $js_code  = $( ".js-dropdown-code span" );
+   
+    // Set default
+    if ( data == "default" ) {
+      selectedEffect = "dropdown-menu"
+    } else {
+      selectedEffect = "dropdown-menu " + data
+    }
+
+    // run the effect
+    $dropdown.removeClass().addClass( selectedEffect );
+    $js_code.text( selectedEffect );
+  };
+
+  // set style
+  $( ".style-row .btn" ).click(function() {
+    var data = $.trim(this.childNodes[2].data.toLowerCase());
+    setStyle(data);
+  });
 
 }( jQuery );

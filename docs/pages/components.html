@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Salty-UI | Jared Cowan</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="salty-ui - css, html, js framework for fast web design"/>
+  <meta name="keywords" content="salty-ui, css, html, js, framework, web design, jared cowan, front-end"/>
+  <meta name="author" content="Jared Cowan"/>
+  <meta property="og:site_name" content="Salty-UI" />
+  <meta property="og:title" content="salty-ui front-end framework" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/SWDG/salty-ui" />
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+  <link rel="icon" href="../img/favicon.ico">
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="canonical" href="https://github.com/SWDG/salty-ui" />
+  <link rel="shortlink" href="https://github.com/SWDG/salty-ui" />
+  <link rel="stylesheet" href="../css/salty-ui.min.css">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body id="top">
+  <section id="container" class="sidebar-closed salty-page-header">
+    <nav class="navbar navbar-slider" role="navigation" no-select>
+      <header> <!--header start-->
+        <div class="sidebar-toggle-box">
+          <div data-original-title="Open Menu" data-placement="right" class="fa i-white fa-bars tooltips"></div>
+        </div>
+        <a href="#top" class="logo" >Salty<span>-ui</span></a>
+        <a class="outlink" href="getting-started.html#download">
+          <button type="button" class="outlink btn btn-dark" href="getting-started.html#download">
+            <i class="fa fa-download"></i> 
+            <span class="hidden-xs"> Download </span>
+          </button>
+        </a>
+        <a class="outlink" target="_blank" href="https://github.com/JaredCowan/salty-ui">
+          <button type="button" class="btn btn-dark" href="https://github.com/SWDG/salty-ui">
+            <i class="fa fa-github-alt"></i> 
+            <span class="hidden-xs"> Github </span>
+          </button>
+        </a>
+      </header> <!--header end-->
+      <aside> 
+        <!--sidebar start-->
+        <div id="sidebar"  class="nav-collapse">
+          <!-- sidebar menu start-->
+          <ul class="sidebar-menu" id="nav-accordion">
+            <li>
+              <a href="getting-started.html">
+                <i class="fa fa-desktop"></i>
+                <span>Getting Started</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="css.html">
+                <i class="fa fa-laptop"></i>
+                <span>CSS</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="icons.html">
+                <i class="fa fa-laptop"></i>
+                <span>Icons</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;" class="active">
+                <i class="fa fa-laptop"></i>
+                <span>Components</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>JavaScript</span>
+              </a>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Layouts</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Starter Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Dynamic Grid</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">404 Error Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">500 Error Page</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Social Templates</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Login Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Bio Profile Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Social Profile Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Social Profile Page</a>
+               </li>
+               <li>
+                  <a  href="javascript:;">Private Messaging</a>
+               </li>
+              </ul>
+            </li>
+            <li class="sub-menu">
+              <a href="javascript:;">
+                <i class="fa fa-laptop"></i>
+                <span>Business Templates</span>
+              </a>
+              <ul class="sub">
+                <li>
+                  <a  href="javascript:;">Contact Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">Pricing Page</a>
+                </li>
+                <li>
+                  <a  href="javascript:;">About Page</a>
+                </li>
+              </ul>
+            </li>
+          </ul> <!-- sidebar menu end-->
+        </div> <!-- sidebar end-->
+      </aside> 
+    </nav> <!-- navbar-slider end-->
+    <div id="gettingstarted" class="jumbotron section-hero page-banner" no-select>
+      <h1>Components</h1>
+      <p>
+        Over a dozen reusable components built to provide dropdowns, input groups, navigation, alerts, and much more.
+      </p>
+    </div>
+  </section> <!-- section end -->
+
+  <div class="container"> <!-- Body container -->
+    <div class="row main-container"> <!-- row main-container -->
+
+      <!--Nav Bar -->
+      <nav data-spy="Myaffix" data-offset-top="60" class="col-md-3 nav-sidebar col-md-push-9 hidden-sm hidden-xs">
+        <ul id="sidenav" class="nav nav-stacked">
+          <li class="">
+            <a href="#overview">Dropdowns</a>
+            <ul class="nav">
+              <li><a href="#dropdowns-example">Example</a></li>
+              </ul>
+          </li>
+          <li>
+            <a href="#grid">Grid system</a>
+            <ul class="nav">
+              <li><a href="#grid-intro">Introduction</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav> <!-- CLOSING col-xs-9 -->
+ 
+      <div class="col-md-9 col-md-pull-3 col-sm-12">
+        <div id="dropdowns" class="jumbotron section-hero" no-select>
+          <h1>Dropdowns</h1>
+            <p class="lead">Toggleable, contextual menu for displaying lists of links. Made interactive with the <a href="javascript:;">dropdown JavaScript plugin</a>.</p>
+        </div> <!-- END overview -->
+
+        <h3 id="dropdowns-example">Example</h3>
+        <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
+
+        <div class="example-code">
+        <div class="btn-row style-row">
+          <div class="btn-group" data-toggle="buttons" data-type="dropdown">
+            <label class="btn btn-salty active">
+              <input type="radio" name="options" value="default"> Default
+            </label>
+            <label class="btn btn-salty">
+              <input type="radio" name="options" value="dark"> Dark
+            </label>
+            <label class="btn btn-salty">
+              <input type="radio" name="options" value="light"> Light
+            </label>
+          </div>
+        </div>
+        <div class="dropdown clearfix">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-dark" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Something else here</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Separated link</a></li>
+          </ul>
+        </div> <!-- END dropdown -->
+      </div> <!-- END example-code -->
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;<span class="js-dropdown-code">dropdown-menu</span>&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div> <!-- END 'highlight' div -->
+<!-- End Code Window -->
+
+
+
+
+
+
+      </div> <!-- END col-md-9 -->
+    </div> <!-- CLOSING row main-container -->
+  </div> <!-- CLOSING Body container -->
+
+  <footer class="site-footer" no-select>
+    2014 &copy; Salty-UI by <i class="fa fa-github"></i> <a href="https://github.com/JaredCowan/salty-ui" target="_blank"> Jared Cowan</a>.
+    <span><span class="hidden-xs"> Code released under </span> <a href="https://github.com/JaredCowan/salty-ui/blob/master/License" target="_blank">MIT License</a></span>
+    <a href="#top" class="go-top">
+      <i class="fa fa-angle-up"></i>
+    </a>
+  </footer>
+
+  <!-- Javascript -->
+  <!-- // <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="../js/salty-ui.min.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>
