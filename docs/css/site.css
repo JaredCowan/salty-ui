@@ -974,8 +974,8 @@ li.L9 {
   border-bottom-right-radius: 0;
 }
 .example-code > .style-row .btn-salty.active {
- background-color: #1FD5B1;
- color: #fff;
+  color: #fff;
+  background-color: #1fd5b1;
 }
 .example-code > .style-row::after {
   position: absolute;
