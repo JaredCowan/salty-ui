@@ -12,6 +12,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     files: grunt.file.readJSON('config/files.json'),
+    config: grunt.file.readJSON('config/.csscomb.json'),
     secret: grunt.file.readJSON('config/.secret.json'),
 
     banner: '/*! \n' +

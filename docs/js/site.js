@@ -321,7 +321,7 @@
 
   function setStyle(data) {
     var selectedEffect
-      , $dropdown = $( ".dropdown-menu" )
+      , $dropdown = $( ".dropdown-menu" ).first()
       , $js_code  = $( ".js-dropdown-code span" );
    
     // Set default

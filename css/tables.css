@@ -10,8 +10,8 @@ table {
 caption {
   padding-top: 8px;
   padding-bottom: 8px;
-  color: #777777;
   text-align: left;
+  color: #777;
 }
 th {
   text-align: left;
@@ -19,7 +19,7 @@ th {
 .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -27,14 +27,14 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
   line-height: 1.42857143;
+  padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #ddd;
 }
 .table > thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solid #ddd;
 }
 .table > caption + thead > tr:first-child > th,
 .table > colgroup + thead > tr:first-child > th,
@@ -45,10 +45,10 @@ th {
   border-top: 0;
 }
 .table > tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #ddd;
 }
 .table .table {
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -59,7 +59,7 @@ th {
   padding: 5px;
 }
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -67,7 +67,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -81,14 +81,14 @@ th {
 }
 table col[class*="col-"] {
   position: static;
-  float: none;
   display: table-column;
+  float: none;
 }
 table td[class*="col-"],
 table th[class*="col-"] {
   position: static;
-  float: none;
   display: table-cell;
+  float: none;
 }
 .table > thead > tr > td.active,
 .table > tbody > tr > td.active,
@@ -197,15 +197,16 @@ table th[class*="col-"] {
 }
 .table-responsive {
   overflow-x: auto;
-  min-height: 0.01%;
+  min-height: .01%;
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
+    overflow-y: hidden;
     width: 100%;
     margin-bottom: 15px;
-    overflow-y: hidden;
+    border: 1px solid #ddd;
+
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
   }
   .table-responsive > .table {
     margin-bottom: 0;

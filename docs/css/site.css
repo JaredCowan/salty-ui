@@ -989,16 +989,45 @@ li.L9 {
   content: 'Choose Style';
 }
 
-.dropdown-toggle + .dark,
-.dark {
+.dropdown-toggle + .square {
+  border-radius: 0;
+}
+.dropdown-toggle + .dark {
+  background-color: #000;
   background-color: rgba(0, 0, 0, .8);
+}
+.dropdown-toggle + .light {
+  background-color: #e7e7e7;
 }
 .dropdown-toggle + .dark > li > a,
 .dropdown-toggle + .dark > li > a:hover,
-.dropdown-toggle + .dark > li > a:focus {
+.dropdown-toggle + .dark > li > a:focus,
+.dropdown-toggle + .light > li > a:hover,
+.dropdown-toggle + .light > li > a:focus  {
   color: #fff;
 }
 .dropdown-toggle + .dark > li > a:hover,
 .dropdown-toggle + .dark > li > a:focus {
   background-color: #337ab7;
+}
+.dropdown-toggle + .light > li > a:hover,
+.dropdown-toggle + .light > li > a:focus {
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .8);
+}
+.dropdown-toggle + .dark > .disabled > a,
+.dropdown-toggle + .dark > .disabled > a:hover,
+.dropdown-toggle + .dark > .disabled > a:focus,
+.dropdown-toggle + .light > .disabled > a,
+.dropdown-toggle + .light > .disabled > a:hover,
+.dropdown-toggle + .light > .disabled > a:focus {
+  background-color: transparent;
+}
+.dropdown-toggle + .dark > .disabled > a,
+.dropdown-toggle + .dark > .disabled > a:hover,
+.dropdown-toggle + .dark > .disabled > a:focus,
+.dropdown-toggle + .light > .disabled > a:hover,
+.dropdown-toggle + .light > .disabled > a:focus {
+  color: #949494;
+  background-color: transparent;
 }

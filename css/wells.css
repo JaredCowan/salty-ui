@@ -6,9 +6,9 @@
 .embed-responsive {
   position: relative;
   display: block;
+  overflow: hidden;
   height: 0;
   padding: 0;
-  overflow: hidden;
 }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
@@ -17,10 +17,10 @@
 .embed-responsive video {
   position: absolute;
   top: 0;
-  left: 0;
   bottom: 0;
-  height: 100%;
+  left: 0;
   width: 100%;
+  height: 100%;
   border: 0;
 }
 .embed-responsive.embed-responsive-16by9 {
@@ -31,17 +31,17 @@
 }
 .well {
   min-height: 20px;
-  padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
+  padding: 19px;
   border: 1px solid #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 .well blockquote {
   border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
+  border-color: rgba(0, 0, 0, .15);
 }
 .well-lg {
   padding: 24px;

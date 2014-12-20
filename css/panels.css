@@ -5,9 +5,9 @@
 */
 .panel {
   margin-bottom: 20px;
-  background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
+  background-color: #fff;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -24,9 +24,9 @@
   color: inherit;
 }
 .panel-title {
+  font-size: 16px;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
   color: inherit;
 }
 .panel-title > a {
@@ -34,10 +34,10 @@
 }
 .panel-footer {
   padding: 10px 15px;
-  background-color: #f5f5f5;
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  background-color: #f5f5f5;
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
@@ -235,8 +235,8 @@
 }
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
   border-color: #ddd;
+  background-color: #f5f5f5;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ddd;
@@ -253,8 +253,8 @@
 }
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
   border-color: #337ab7;
+  background-color: #337ab7;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #337ab7;
@@ -271,8 +271,8 @@
 }
 .panel-success > .panel-heading {
   color: #3c763d;
-  background-color: #dff0d8;
   border-color: #d6e9c6;
+  background-color: #dff0d8;
 }
 .panel-success > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #d6e9c6;
@@ -289,8 +289,8 @@
 }
 .panel-info > .panel-heading {
   color: #31708f;
-  background-color: #d9edf7;
   border-color: #bce8f1;
+  background-color: #d9edf7;
 }
 .panel-info > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #bce8f1;
@@ -307,8 +307,8 @@
 }
 .panel-warning > .panel-heading {
   color: #8a6d3b;
-  background-color: #fcf8e3;
   border-color: #faebcc;
+  background-color: #fcf8e3;
 }
 .panel-warning > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #faebcc;
@@ -325,8 +325,8 @@
 }
 .panel-danger > .panel-heading {
   color: #a94442;
-  background-color: #f2dede;
   border-color: #ebccd1;
+  background-color: #f2dede;
 }
 .panel-danger > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #ebccd1;

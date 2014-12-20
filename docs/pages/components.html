@@ -179,32 +179,40 @@
         <p>Wrap the dropdown's trigger and the dropdown menu within <code>.dropdown</code>, or another element that declares <code>position: relative;</code>. Then add the menu's HTML.</p>
 
         <div class="example-code">
-        <div class="btn-row style-row">
-          <div class="btn-group" data-toggle="buttons" data-type="dropdown">
-            <label class="btn btn-salty active">
-              <input type="radio" name="options" value="default"> Default
-            </label>
-            <label class="btn btn-salty">
-              <input type="radio" name="options" value="dark"> Dark
-            </label>
-            <label class="btn btn-salty">
-              <input type="radio" name="options" value="light"> Light
-            </label>
+          <div class="btn-row style-row">
+            <div class="btn-group" data-toggle="buttons" data-type="dropdown">
+              <label class="btn btn-salty active">
+                <input type="radio" name="options" value="default"> Default
+              </label>
+              <label class="btn btn-salty">
+                <input type="radio" name="options" value="dark"> Dark
+              </label>
+              <label class="btn btn-salty">
+                <input type="radio" name="options" value="light"> Light
+              </label>
+            </div>
           </div>
-        </div>
-        <div class="dropdown clearfix">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
-            Dropdown
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu dropdown-dark" role="menu" aria-labelledby="dropdownMenu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Another action</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Something else here</a></li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;">Separated link</a></li>
-          </ul>
-        </div> <!-- END dropdown -->
-      </div> <!-- END example-code -->
+          <div class="dropdown clearfix">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Action</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Another action</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Something else here</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Separated link</a>
+              </li>
+            </ul>
+          </div> <!-- END dropdown -->
+        </div> <!-- END example-code -->
 <!-- Code Window -->
 <div class="highlight"><pre class="prettyprint lang-html"><code>&lt;div class=&quot;dropdown&quot;&gt;
   &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
@@ -212,6 +220,87 @@
     &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
   &lt;/button&gt;
   &lt;ul class=&quot;<span class="js-dropdown-code">dropdown-menu</span>&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div> <!-- END 'highlight' div -->
+<!-- End Code Window -->
+
+        <h3 id="dropdowns-example">Square Edges</h3>
+        <p>Add <code>.square</code> to <code>ul</code> for square edges.</p>
+
+        <div class="example-code">
+          <div class="dropdown clearfix">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dark square" role="menu" aria-labelledby="dropdownMenu2">
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Action</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Another action</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Something else here</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Separated link</a>
+              </li>
+            </ul>
+          </div> <!-- END dropdown -->
+        </div> <!-- END example-code -->
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dark square&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+    &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre></div> <!-- END 'highlight' div -->
+<!-- End Code Window -->
+
+
+        <h3 id="dropdowns-example">Disabled Items</h3>
+        <p>We provide a few helper classes for <code>.dropdown</code>'s. Add <code>.disabled</code> to <code>li</code> tags to disable links.</p>
+
+        <div class="example-code">
+          <div class="dropdown clearfix">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+              Dropdown
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dark square" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Action</a>
+              </li>
+              <li role="presentation" class="disabled">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Disabled</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Something else here</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" tabindex="-1" href="javascript:;">Separated link</a>
+              </li>
+            </ul>
+          </div> <!-- END dropdown -->
+        </div> <!-- END example-code -->
+<!-- Code Window -->
+<div class="highlight"><pre class="prettyprint lang-html"><code>&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-expanded=&quot;true&quot;&gt;
+    Dropdown
+    &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dark square&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
     &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
     &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
     &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
