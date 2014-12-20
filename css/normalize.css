@@ -129,7 +129,6 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
-
   -webkit-appearance: button;
 }
 button[disabled],
@@ -194,8 +193,8 @@ th {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-*:before,
-*:after {
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
