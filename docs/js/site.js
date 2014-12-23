@@ -56,12 +56,12 @@
     // LEFT SIDEBAR FUNCTION
     $(function() {
 
-      var wSize              = $(window).width()
-            , el_toggle_nav  = $('.sidebar-toggle-box')
-            , el_cont        = $('#container')
-            , el_main_cont   = $('#main-content')
-            , el_sb          = $('#sidebar')
-            , el_sb_ul       = $('#sidebar > ul');
+      var wSize          = $(window).width()
+        , el_toggle_nav  = $('.sidebar-toggle-box')
+        , el_cont        = $('#container')
+        , el_main_cont   = $('#main-content')
+        , el_sb          = $('#sidebar')
+        , el_sb_ul       = $('#sidebar > ul');
 
       // RESPONSIVE LEFT SIDEBAR
       // =======================    
@@ -188,7 +188,6 @@
   // =======================================
   // Refactor 
 
-
     // Dynamically add unique ids to button and target
     // of element to copy. Run only once.
     $icon_copy.on('mouseover', function( el ) {
@@ -295,15 +294,15 @@
     $target.addClass("icon-popover");
 
     $target.attr({
-      "no-select":            "",
-      "data-toggle":          "popover",
-      "data-html":            "true",
-      "data-trigger":         "click",
-      "title":                "",
-      "data-placement":       "top",
-      "data-container":        "body",
-      "data-content":         "<span class=\"icon " + child + "\"></span> &lt;span class=\"" + child + "\"&gt;&lt;/span&gt;",
-      "data-template":        '<div class="glyphicon-popover popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+      "no-select":      "",
+      "data-toggle":    "popover",
+      "data-html":      "true",
+      "data-trigger":   "click",
+      "title":          "",
+      "data-placement": "top",
+      "data-container": "body",
+      "data-content":   "<span class=\"icon " + child + "\"></span> &lt;span class=\"" + child + "\"&gt;&lt;/span&gt;",
+      "data-template":  '<div class="glyphicon-popover popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
     })
 
     $('.icon-popover').popover()
