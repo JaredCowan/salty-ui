@@ -65,9 +65,9 @@ module.exports = function (grunt) {
       },
       saltyCSS: {
         options: {
-          banner: '<%= files.cssfiles %>'
+          banner: '<%= cssBanner %>'
         },
-        src: [ "<%= cssFilePaths %>" ],
+        src: [ "<%= files.cssfiles %>" ],
         dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
@@ -333,6 +333,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
 
   // Full Distribution Task.
-  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'csscomb', 'dist-js', 'ftpall']);
+  grunt.registerTask('dist', ['clean:dist', 'copy', 'csscomb', 'dist-css', 'dist-js', 'csscomb', 'ftpall']);
 
 };
