@@ -3,15 +3,10 @@ module.exports = function (grunt) {
 
   grunt.file.defaultEncoding = 'utf8';
   grunt.util.linefeed = '\n';
-  var distJsPath = "dist/js/<%= pkg.name %>.js";
-  var distMinJsPath = "dist/js/<%= pkg.name %>.min.js";
-  var distCssPath = "dist/css/<%= pkg.name %>.min.css";
-  var distMinCssPath = "dist/css/<%= pkg.name %>.min.css";
 
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    files: grunt.file.readJSON('config/files.json'),
     config: grunt.file.readJSON('config/.csscomb.json'),
     secret: grunt.file.readJSON('config/.secret.json'),
 
@@ -58,16 +53,59 @@ module.exports = function (grunt) {
       },
       saltyJS: {
         options: {
-          banner: '<%= banner %> '
+          banner: '<%= banner %>'
         },
-        src: [ "<%= files.jsfiles %>" ],
+        src: [
+          "js/req-jquery.js",
+          "js/transition.js",
+          "js/alert.js",
+          "js/button.js",
+          "js/carousel.js",
+          "js/collapse.js",
+          "js/dropdown.js",
+          "js/modal.js",
+          "js/tooltip.js",
+          "js/popover.js",
+          "js/scrollspy.js",
+          "js/tab.js",
+          "js/affix.js",
+          "js/nicescroll.js",
+          "js/scrollto.js",
+          "js/boxslider.js",
+          "js/accordion.js"
+        ],
         dest: 'dist/js/<%= pkg.name %>.js'
       },
       saltyCSS: {
         options: {
           banner: '<%= cssBanner %>'
         },
-        src: [ "<%= files.cssfiles %>" ],
+        src: [
+          "css/normalize.css",
+          "css/print.css",
+          "css/icons.css",
+          "css/basic.css",
+          "css/thumbnails.css",
+          "css/code.css",
+          "css/columns.css",
+          "css/tables.css",
+          "css/forms.css",
+          "css/buttons.css",
+          "css/navbars.css",
+          "css/breadcrumbs.css",
+          "css/badges.css",
+          "css/jumbtrons.css",
+          "css/alerts.css",
+          "css/progresbars.css",
+          "css/media-listgroups.css",
+          "css/panels.css",
+          "css/wells.css",
+          "css/modals.css",
+          "css/tooltip-popovers.css",
+          "css/carousels.css",
+          "css/misc-elements.css",
+          "css/salty.css"
+        ],
         dest: 'dist/css/<%= pkg.name %>.css'
       }
     },
@@ -91,19 +129,18 @@ module.exports = function (grunt) {
       }
     },
 
-
     uglify: {
       options: {
         preserveComments: false,
         banner: '<%= banner %> \n'
       },
       core: {
-        src: '<%= concat.saltyJS.dest %>',
-        dest: '<%= distJsMinPath %>'
+        src: 'dist/js/<%= pkg.name %>.js',
+        dest: 'dist/js/<%= pkg.name %>.min.js'
       },
       site: {
-        src: '<%= concat.saltyJS.dest %>',
-        dest: '<%= distJsMinPath %>'
+        src: 'dist/js/<%= pkg.name %>.js',
+        dest: 'dist/js/<%= pkg.name %>.min.js'
       }
     },
 
@@ -303,7 +340,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);
 
   // Dist CSS
-  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site', 'csscomb']);
+  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
 
   // SFTP Common Files
   grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'csscomb', 'sftp:distcss']);

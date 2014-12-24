@@ -353,7 +353,9 @@ code {
   right: 0;
   left: 0;
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin-right: -10px;
   margin-left: -10px;
   padding: 5px 8px;
@@ -373,7 +375,9 @@ code {
   top: 0;
   right: 15px;
   display: block;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 5.333333px 8px;
   cursor: pointer;
   -webkit-transition: all .4s ease;
