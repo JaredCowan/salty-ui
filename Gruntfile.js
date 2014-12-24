@@ -340,12 +340,12 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);
 
   // Dist CSS
-  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'cssmin:core', 'cssmin:site']);
+  grunt.registerTask('dist-css', ['concat:saltyCSS', 'autoprefixer', 'csscomb', 'cssmin:core', 'cssmin:site']);
 
   // SFTP Common Files
-  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'csscomb', 'sftp:distcss']);
+  grunt.registerTask('ftp', ['sftp:distindex', 'sftp:distpages', 'sftp:distjs', 'sftp:distcss']);
 
-  // SFTP Common Files
+  // SFTP All Files
   grunt.registerTask('ftpall', ['csscomb','sftp']);
 
   // CSS Lint PreDist
@@ -370,6 +370,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', ['clean:dist', 'copy', 'dist-css', 'dist-js']);
 
   // Full Distribution Task.
-  grunt.registerTask('dist', ['clean:dist', 'copy', 'csscomb', 'dist-css', 'dist-js', 'csscomb', 'ftpall']);
+  grunt.registerTask('dist', ['clean:dist', 'copy', 'dist-css', 'dist-js', 'ftpall']);
 
 };
