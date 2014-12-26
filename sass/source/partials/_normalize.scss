@@ -1,14 +1,7 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-
-//
-// 1. Set default font family to sans-serif.
-// 2. Prevent iOS text size adjust after orientation change, without disabling
-//    user zoom.
-//
-
 html {
-  font-family: sans-serif; // 1
-  text-size-adjust: 100%; // 2
+  font-family: sans-serif;
+  text-size-adjust: 100%;
 }
 body {
   margin: 0;
@@ -32,8 +25,8 @@ audio,
 canvas,
 progress,
 video {
-  display: inline-block; // 1
-  vertical-align: baseline; // 2
+  display: inline-block;
+  vertical-align: baseline;
 }
 audio:not([controls]) {
   display: none;
@@ -112,9 +105,9 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; // 1
-  font: inherit; // 2
-  margin: 0; // 3
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
 button {
   overflow: visible;
@@ -124,11 +117,11 @@ select {
   text-transform: none;
 }
 button,
-html input[type="button"], // 1
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  appearance: button; // 2
-  cursor: pointer; // 3
+  appearance: button;
+  cursor: pointer;
 }
 button[disabled],
 html input[disabled] {
