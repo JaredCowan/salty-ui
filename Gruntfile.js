@@ -17,34 +17,12 @@ module.exports = function (grunt) {
             ' * repository: <%= pkg.repository.url %> \n' +
             ' * Changed: <%= grunt.template.today("yyyy-mm-dd") %> \n' +
             '*/ \n',
-    cssBanner: '<%= banner %>' +
-               '/*! \n' +
-               ' // 01.) Normalize CSS                  ( Around line 22   ) \n' +
-               ' // 02.) Fonts CSS                      ( Around line 293  ) \n' +
-               ' // 03.) Basic Element Styles           ( Around line 2246 ) \n' +
-               ' // 04.) Columns and Containers         ( Around line 2743 ) \n' +
-               ' // 05.) Tables CSS                     ( Around line 3420 ) \n' +
-               ' // 06.) Inputs & Form Fields           ( Around line 3667 ) \n' +
-               ' // 07.) Buttons & Button Groups        ( Around line 4128 ) \n' +
-               ' // 08.) Navigation Styles              ( Around line 5024 ) \n' +
-               ' // 09.) Breadcrumb & Pagination Styles ( Around line 5757 ) \n' +
-               ' // 10.) Labels & Badge Styles          ( Around line 5913 ) \n' +
-               ' // 11.) Jumbotron Styles               ( Around line 6031 ) \n' +
-               ' // 12.) Thumbnails Images Styles       ( Around line 6076 ) \n' +
-               ' // 13.) Alerts Styles                  ( Around line 6109 ) \n' +
-               ' // 14.) Progress Bars Styles           ( Around line 6195 ) \n' +
-               ' // 15.) Media and List-Group Items     ( Around line 6296 ) \n' +
-               ' // 16.) Panel Styles                   ( Around line 6507 ) \n' +
-               ' // 17.) Wells Styles                   ( Around line 6852 ) \n' +
-               ' // 18.) Modal Styles                   ( Around line 6907 ) \n' +
-               ' // 19.) Tooltips & Popovers Styles     ( Around line 7061 ) \n' +
-               ' // 20.) Carousel Styles                ( Around line 7297 ) \n' +
-               ' // 21.) Misc Element Styles            ( Around line 7526 ) \n' +
-               '*/ \n',
+    cssBanner: '<%= banner %>',
    
     // Task configuration.
     clean: {
-      dist: 'dist'
+      dist: 'dist',
+      sasssource: ["sass/source/salty-ui.css", "sass/source/salty-ui.css.map"]
     },
 
     concat: {
@@ -111,11 +89,11 @@ module.exports = function (grunt) {
     },
 
     compass: {
-      app: {
+      sasssource: {
         options: {
           noLineComments: true,
           sourcemap: true,
-          specify: ['sass/salty-ui.scss'],
+          specify: ['sass/source/<%= pkg.name %>.scss'],
           sassDir: 'sass',
           cssDir: 'sass',
           imagesDir: 'docs/img',
@@ -124,7 +102,7 @@ module.exports = function (grunt) {
           boring: true,
           debugInfo: false,
           outputStyle: 'expanded',
-          raw: 'preferred_syntax = :sass\nSass::Script::Number.precision = 8\n'
+          raw: "preferred_syntax = :scss\n"
         }
       }
     },
@@ -146,19 +124,17 @@ module.exports = function (grunt) {
 
     autoprefixer: {
       options: {
-        browsers: '<%= pkg.config.autoprefixerBrowsers %>'
+        browsers: '<%= pkg.config.autoprefixerBrowsers %>',
+        map: false
       },
       core: {
-        options: {
-          map: false
-        },
         src: 'dist/css/<%= pkg.name %>.css'
       },
       site: {
-        options: {
-          map: false
-        },
         src: 'docs/css/site.css'
+      },
+      sasssource: {
+        src: 'sass/source/<%= pkg.name %>.css'
       }
     },
 
@@ -187,6 +163,10 @@ module.exports = function (grunt) {
       site: {
         src: 'fonts/*',
         dest: 'docs/'
+      },
+      sasssource: {
+        src: 'sass/source/salty-ui.css.map',
+        dest: 'sass/dist/salty-ui.css.map'
       }
     },
 
@@ -258,13 +238,19 @@ module.exports = function (grunt) {
         cwd: 'dist/css/',
         src: ['*.css', '!*.min.css'],
         dest: 'dist/css/'
+      },
+      sasssource: {
+        expand: true,
+        cwd: 'sass/source',
+        src: ['<%= pkg.name %>.css'],
+        dest: 'sass/dist'
       }
     },
 
     watch: {
       test: {
-        files: 'sass/<%= pkg.name %>.scss',
-        tasks: ['compass']
+        files: ['sass/source/*.scss', 'sass/source/**/*.scss'],
+        tasks: ['compass', 'autoprefixer:sasssource', 'csscomb:sasssource', 'copy:sasssource', 'clean:sasssource']
       }
     },
 

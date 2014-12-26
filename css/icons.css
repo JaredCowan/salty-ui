@@ -8,7 +8,6 @@
 
 @font-face {
   font-family: "Glyphicons Halflings";
-
   src: url("../fonts/glyphicons-halflings-regular.eot");
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
 }
@@ -16,7 +15,6 @@
   font-family: "FontAwesome";
   font-weight: normal;
   font-style: normal;
-
   src: url("../fonts/fontawesome-webfont.eot?v=4.2.0");
   src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
 }
@@ -28,7 +26,6 @@
   position: relative;
   top: 1px;
   display: inline-block;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -973,7 +970,7 @@
   content: "\f000";
 }
 .fa-music:before {
-  content: "\f001";
+  content: "f001";
 }
 .fa-search:before {
   content: "\f002";

@@ -33,7 +33,7 @@
     "report/**",
     "test.*",
     ".sass-cache",
-    "sass"
+    "source/**"
   ],
   "dependencies": {
     "jquery": "~2.1.1"

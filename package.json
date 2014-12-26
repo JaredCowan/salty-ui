@@ -55,8 +55,11 @@
       "Android 2.3",
       "Android >= 4",
       "Chrome >= 20",
+      "ChromeAndroid >= 39",
       "Firefox >= 24",
+      "FirefoxAndroid >= 33",
       "Explorer >= 8",
+      "ExplorerMobile >= 10",
       "iOS >= 6",
       "Opera >= 12",
       "Safari >= 6"
