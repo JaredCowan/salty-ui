@@ -13,6 +13,11 @@ body {
   margin: 0;
 }
 
+@-webkit-keyframes rock-boat {
+  50% {
+    -webkit-transform: rotate(-5deg) translateY(-10px);
+  }
+}
 article,
 aside,
 details,
@@ -9104,9 +9109,9 @@ button.close {
     -webkit-transition: -webkit-transform .6s ease-in-out;
          -o-transition:      -o-transform .6s ease-in-out;
             transition:         transform .6s ease-in-out;
-
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+
     -webkit-perspective: 1000;
             perspective: 1000;
   }
