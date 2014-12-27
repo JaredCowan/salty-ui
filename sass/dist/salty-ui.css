@@ -13,11 +13,6 @@ body {
   margin: 0;
 }
 
-@-webkit-keyframes rock-boat {
-  50% {
-    -webkit-transform: rotate(-5deg) translateY(-10px);
-  }
-}
 article,
 aside,
 details,
@@ -262,9 +257,8 @@ th {
 
   pre,
   blockquote {
-    border: 1px solid #999;
-
     page-break-inside: avoid;
+    border: 1px solid #999;
   }
 
   thead {
@@ -284,6 +278,7 @@ th {
   h2,
   h3 {
     orphans: 3;
+
     widows: 3;
   }
 
@@ -9109,11 +9104,10 @@ button.close {
     -webkit-transition: -webkit-transform .6s ease-in-out;
          -o-transition:      -o-transform .6s ease-in-out;
             transition:         transform .6s ease-in-out;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-
     -webkit-perspective: 1000;
             perspective: 1000;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
   }
   .carousel-inner > .item.next,
   .carousel-inner > .item.active.right {
