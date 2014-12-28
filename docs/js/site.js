@@ -19,7 +19,7 @@
       {
         styler:"fb",
         cursorcolor: colors.teal,
-        cursorwidth: '6',
+        cursorwidth: '8',
         cursorborderradius: '10px',
         background: '#404040',
         spacebarenabled:false,  
