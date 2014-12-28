@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             ' * Changed: <%= grunt.template.today("yyyy-mm-dd") %> \n' +
             '*/ \n',
     cssBanner: '<%= banner %>',
-   
+
     // Task configuration.
     clean: {
       dist: 'dist',
@@ -321,7 +321,7 @@ module.exports = function (grunt) {
 
   // Load plugins
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
-  
+
   // Dist JS
   grunt.registerTask('dist-js', ['concat:saltyJS', 'uglify:core', 'uglify:site']);
 
