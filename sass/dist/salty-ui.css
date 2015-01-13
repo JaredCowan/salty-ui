@@ -3328,6 +3328,41 @@ th {
   content: "\f20c";
 }
 
+.glyphicon[class*="i-white"]:before,
+.fa[class*="i-white"]:before {
+  color: #fff;
+}
+
+.glyphicon[class*="i-red"]:before,
+.fa[class*="i-red"]:before {
+  color: #f00;
+}
+
+.glyphicon[class*="i-light-red"]:before,
+.fa[class*="i-light-red"]:before {
+  color: #ff8080;
+}
+
+.glyphicon[class*="i-green"]:before,
+.fa[class*="i-green"]:before {
+  color: #5cb85c;
+}
+
+.glyphicon[class*="i-light-blue"]:before,
+.fa[class*="i-light-blue"]:before {
+  color: #5bc0de;
+}
+
+.glyphicon[class*="i-blue"]:before,
+.fa[class*="i-blue"]:before {
+  color: #428bca;
+}
+
+.glyphicon[class*="i-orange"]:before,
+.fa[class*="i-orange"]:before {
+  color: #f0ad4e;
+}
+
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;

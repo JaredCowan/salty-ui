@@ -2,7 +2,14 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 
 // Set Global Variables for fonts
-$font-path: "../source/fonts" !default;
+$font-path: "../source/fonts"          !default;
+$white-base:   #fff                    !default;
+$red-base:     #f00                    !default;
+$orange-base:  #f0ad4e                 !default;
+$light-green:  #5cb85c                 !default;
+$light-blue:   #5bc0de                 !default;
+$baby-blue:    #428bca                 !default;
+$light-red:    lighten($red-base, 25%) !default;
 
 // Import Glyphicons
 @import "source/fonts/glyphicons/glyphicons";
@@ -11,17 +18,11 @@ $font-path: "../source/fonts" !default;
 @import "source/fonts/font-awesome/font-awesome";
 
 // Global Font Styles
-// .glyphicon, .fa { &[class*="i-white"]:before      { color: $white-base; }}
-// .glyphicon, .fa { &[class*="i-red"]:before        { color: #f00; }}
-// .glyphicon, .fa { &[class*="i-light-red"]:before  { color:  $light-red; }}
-// .glyphicon, .fa { &[class*="i-green"]:before      { color: #5cb85c; }}
-// .glyphicon, .fa { &[class*="i-light-blue"]:before { color: #5bc0de; }}
-// .glyphicon, .fa { &[class*="i-blue"]:before       { color: #428bca; }}
-// .glyphicon, .fa { &[class*="i-orange"]:before     { color: #f0ad4e; }}
+.glyphicon, .fa { &[class*="i-white"]:before      { color: $white-base;  }}
+.glyphicon, .fa { &[class*="i-red"]:before        { color: $red-base;    }}
+.glyphicon, .fa { &[class*="i-light-red"]:before  { color: $light-red;   }}
+.glyphicon, .fa { &[class*="i-green"]:before      { color: $light-green; }}
+.glyphicon, .fa { &[class*="i-light-blue"]:before { color: $light-blue;  }}
+.glyphicon, .fa { &[class*="i-blue"]:before       { color: $baby-blue;   }}
+.glyphicon, .fa { &[class*="i-orange"]:before     { color: $orange-base; }}
 
-// $white-base:   #fff    !default;
-// $red-base:     #f00    !default;
-// $light-red:    lighten($red-base, 14%) !default;
-// $light-green:  #5cb85c !default;
-// $light-blue:   #428bca !default;
-// $orange-base:  #f0ad4e !default;
