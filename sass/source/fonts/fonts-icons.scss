@@ -2,7 +2,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
 
 // Set Global Variables for fonts
-$font-path: "../fonts" !default;
+$font-path: "../source/fonts" !default;
 
 // Import Glyphicons
 @import "source/fonts/glyphicons/glyphicons";
@@ -11,10 +11,17 @@ $font-path: "../fonts" !default;
 @import "source/fonts/font-awesome/font-awesome";
 
 // Global Font Styles
-.glyphicon, .fa { &[class*="i-white"]:before      { color: #fff;    }}
-.glyphicon, .fa { &[class*="i-red"]:before        { color: #d9534f; }}
-.glyphicon, .fa { &[class*="i-bright-red"]:before { color: #f00;    }}
-.glyphicon, .fa { &[class*="i-green"]:before      { color: #5cb85c; }}
-.glyphicon, .fa { &[class*="i-light-blue"]:before { color: #5bc0de; }}
-.glyphicon, .fa { &[class*="i-blue"]:before       { color: #428bca; }}
-.glyphicon, .fa { &[class*="i-orange"]:before     { color: #f0ad4e; }}
+// .glyphicon, .fa { &[class*="i-white"]:before      { color: $white-base; }}
+// .glyphicon, .fa { &[class*="i-red"]:before        { color: #f00; }}
+// .glyphicon, .fa { &[class*="i-light-red"]:before  { color:  $light-red; }}
+// .glyphicon, .fa { &[class*="i-green"]:before      { color: #5cb85c; }}
+// .glyphicon, .fa { &[class*="i-light-blue"]:before { color: #5bc0de; }}
+// .glyphicon, .fa { &[class*="i-blue"]:before       { color: #428bca; }}
+// .glyphicon, .fa { &[class*="i-orange"]:before     { color: #f0ad4e; }}
+
+// $white-base:   #fff    !default;
+// $red-base:     #f00    !default;
+// $light-red:    lighten($red-base, 14%) !default;
+// $light-green:  #5cb85c !default;
+// $light-blue:   #428bca !default;
+// $orange-base:  #f0ad4e !default;

@@ -318,8 +318,8 @@ th {
   }
 }
 @font-face {
-  src: url("../fonts/glyphicons-halflings-regular.eot");
-  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+  src: url("../source/fonts/glyphicons/glyphicons-halflings-regular.eot");
+  src: url("../source/fonts/glyphicons/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../source/fonts/glyphicons/glyphicons-halflings-regular.woff") format("woff"), url("../source/fonts/glyphicons/glyphicons-halflings-regular.ttf") format("truetype"), url("../source/fonts/glyphicons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
   font-family: "Glyphicons Halflings";
 }
 .glyphicon {
@@ -1136,9 +1136,9 @@ th {
 }
 
 @font-face {
-  src: url("../fonts/fontawesome-webfont.eot");
-  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
-  src: url("../fonts/FontAwesome.otf") format("opentype");
+  src: url("../source/fonts/font-awesome/fontawesome-webfont.eot");
+  src: url("../source/fonts/font-awesome/fontawesome-webfont.eot") format("embedded-opentype"), url("../source/fonts/font-awesome/fontawesome-webfont.woff") format("woff"), url("../source/fonts/font-awesome/fontawesome-webfont.ttf") format("truetype"), url("../source/fonts/font-awesome/fontawesome-webfont.svg") format("svg");
+  src: url("../source/fonts/font-awesome/FontAwesome.otf") format("opentype");
   font-family: "FontAwesome";
   font-weight: normal;
   font-style: normal;
@@ -3326,41 +3326,6 @@ th {
 
 .fa-meanpath:before {
   content: "\f20c";
-}
-
-.glyphicon[class*="i-white"]:before,
-.fa[class*="i-white"]:before {
-  color: #fff;
-}
-
-.glyphicon[class*="i-red"]:before,
-.fa[class*="i-red"]:before {
-  color: #d9534f;
-}
-
-.glyphicon[class*="i-bright-red"]:before,
-.fa[class*="i-bright-red"]:before {
-  color: #f00;
-}
-
-.glyphicon[class*="i-green"]:before,
-.fa[class*="i-green"]:before {
-  color: #5cb85c;
-}
-
-.glyphicon[class*="i-light-blue"]:before,
-.fa[class*="i-light-blue"]:before {
-  color: #5bc0de;
-}
-
-.glyphicon[class*="i-blue"]:before,
-.fa[class*="i-blue"]:before {
-  color: #428bca;
-}
-
-.glyphicon[class*="i-orange"]:before,
-.fa[class*="i-orange"]:before {
-  color: #f0ad4e;
 }
 
 * {
