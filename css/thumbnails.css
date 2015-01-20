@@ -4,16 +4,16 @@
 ====================================================
 */
 .thumbnail {
-  line-height: 1.42857143;
   display: block;
-  margin-bottom: 20px;
   padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
           transition: border .2s ease-in-out;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -42,17 +42,17 @@ a.thumbnail.active {
   border-radius: 6px;
 }
 .img-thumbnail {
-  line-height: 1.42857143;
   display: inline-block;
   max-width: 100%;
   height: auto;
   padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
 }
 .img-circle {
   border-radius: 50%;

@@ -8,9 +8,10 @@
 @import "compass/utilities/tables/alternating-rows-and-columns";
 @import "compass/css3/user-interface";
 
-// Core Dependencies & Mixins
+// Core Dependencies, extends & Mixins
 @import "source/variables";
 @import "source/mixins/mixins";
+@import "source/extend/extend";
 
 // Normalize, Fonts
 @import "source/partials/normalize";
@@ -48,6 +49,7 @@
 @import "source/partials/responsive-embed";
 @import "source/partials/wells";
 @import "source/partials/close";
+@import "source/partials/login-form";
 
 // Components w/ JavaScript
 @import "source/partials/modals";

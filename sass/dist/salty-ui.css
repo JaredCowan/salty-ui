@@ -1,6 +1,13 @@
 @charset "UTF-8";
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+.form-signin {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5391,9 +5398,7 @@ input[type="search"] {
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-top: 4px \9;
-  margin-left: -20px;
+  margin-top: 4px;
 }
 
 .radio + .radio,
@@ -8693,6 +8698,140 @@ button.close {
   cursor: pointer;
   background: transparent;
   border: 0;
+}
+
+.form-signin {
+  display: inline-block;
+  max-width: 340px;
+  margin: 15px;
+  cursor: default;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: #777 2px 2px 10px;
+          box-shadow: #777 2px 2px 10px;
+}
+.form-signin .checkbox {
+  margin-bottom: 14px;
+  font-family: Open Sans, sans-serif;
+  font-weight: normal;
+  font-weight: 300;
+  color: #b6b6b6;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 15px;
+  font-size: 12px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 15px;
+  font-size: 12px;
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.form-signin .btn-login {
+  margin-bottom: 20px;
+  font-family: Open Sans, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  background: #f67a6e;
+  -webkit-box-shadow: 0 4px #e56b60;
+          box-shadow: 0 4px #e56b60;
+}
+.form-signin p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #b6b6b6;
+  text-align: center;
+}
+.form-signin .registration {
+  color: #000;
+}
+.form-signin a {
+  color: #41cac0;
+}
+.form-signin a:hover {
+  color: #b6b6b6;
+}
+.form-signin .header {
+  padding: 20px 15px;
+  margin: 0;
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #41cac0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.login-wrap {
+  padding: 20px;
+}
+
+.login-social-link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.login-social-link a {
+  padding: 15px 28px;
+  color: #fff;
+  border-radius: 4px;
+}
+.login-social-link a:hover {
+  color: #fff;
+}
+.login-social-link a i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+.login-social-link a:first-child {
+  margin-right: 10px;
+}
+.login-social-link a.facebook {
+  float: left;
+  background: #5193ea;
+  -webkit-box-shadow: 0 4px #2775e2;
+          box-shadow: 0 4px #2775e2;
+}
+.login-social-link a.twitter {
+  float: left;
+  background: #44ccfe;
+  -webkit-box-shadow: 0 4px #2bb4e8;
+          box-shadow: 0 4px #2bb4e8;
+}
+
+.label_check {
+  padding-left: 34px;
+  background: url(../img/check-off.png) no-repeat;
+}
+.label_check input {
+  position: absolute;
+  left: -9999px;
+}
+.label_check label.c_on {
+  background: url(../img/check-on.png) no-repeat;
 }
 
 .modal-open {

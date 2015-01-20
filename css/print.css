@@ -8,10 +8,10 @@
   *:before,
   *:after {
     color: #000 !important;
+    text-shadow: none !important;
     background: transparent !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    text-shadow: none !important;
   }
   a,
   a:visited {
@@ -29,9 +29,8 @@
   }
   pre,
   blockquote {
-    border: 1px solid #999;
-
     page-break-inside: avoid;
+    border: 1px solid #999;
   }
   thead {
     display: table-header-group;
@@ -47,6 +46,7 @@
   h2,
   h3 {
     orphans: 3;
+
     widows: 3;
   }
   h2,

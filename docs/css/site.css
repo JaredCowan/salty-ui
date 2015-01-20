@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 body {
+  padding-bottom: 70px !important;
   font-family: "Lato", arial, helvetica, sans-serif;
   font-size: 1em;
-  padding-bottom: 70px !important;
   background: #fafafa;
 }
 pre,
@@ -13,17 +13,17 @@ code {
   text-align: center;
 }
 .navbar-slider > header .btn-dark {
-  font-size: 16px;
   float: right;
   margin: 11px;
+  font-size: 16px;
   outline: none!important;
 }
 .landing-page {
   display: block;
   max-width: 800px;
   height: 400px;
-  margin: -20px auto 0;
   padding: 20px;
+  margin: -20px auto 0;
   background: #242424;
 }
 .landing-page > span {
@@ -39,36 +39,36 @@ code {
   font-family: "Lato", arial, helvetica, sans-serif;
   font-size: 25px;
   font-size: 20vmin;
-  cursor: default;
-  text-align: center;
-  letter-spacing: 2.4444px;
   color: #fafafa;
+  text-align: center;
   text-shadow: 3px 3px 0 #000,
   -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px 1px 0 #000,
   1px 1px 0 #000;
+  letter-spacing: 2.4444px;
+  cursor: default;
 }
 .highlight {
   cursor: text;
 }
 .section-hero {
-  font-size: 26px;
   padding: 85px 0;
-  cursor: default;
-  text-align: center;
+  font-size: 26px;
   color: #6b6b6b;
-  border-radius: 0;
+  text-align: center;
+  cursor: default;
   background: #fafafa;
+  border-radius: 0;
 }
 .section-hero > h1 {
+  position: relative;
   font-family: "Lato", sans-serif;
   font-size: 1.8em;
   font-weight: 700;
-  position: relative;
-  cursor: default;
-  letter-spacing: .5px;
   text-transform: uppercase;
+  letter-spacing: .5px;
+  cursor: default;
 }
 .section-hero > h1:after {
   position: absolute;
@@ -113,8 +113,8 @@ code {
 }
 .btn-salty {
   color: #16a085;
-  border-color: #16a085;
   background-color: transparent;
+  border-color: #16a085;
 }
 .btn-salty:hover,
 .btn-salty:focus {
@@ -124,13 +124,13 @@ code {
 .code {
   width: 600px;
   height: 500px;
-  margin: 0 auto;
   padding: 24px 24px 173px;
-  border-radius: 11px;
+  margin: 0 auto;
   background-image: url("../img/imac.png");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
           background-size: contain;
+  border-radius: 11px;
 }
 .code-window {
   position: relative;
@@ -151,32 +151,32 @@ code {
   margin: -10px -80px;
 }
 .btn-copy {
-  font-weight: 500;
   position: absolute;
   bottom: -76px;
   left: 45%;
   width: 50px;
   height: 50px;
-  text-transform: uppercase;
+  font-weight: 500;
   color: #08bddd;
+  text-transform: uppercase;
+  background: #2a3542;
   border: none;
   border-radius: 50%;
-  background: #2a3542;
 }
 
 .iterm {
-  overflow: hidden;
   max-width: 600px;
   margin: 10px auto;
+  overflow: hidden;
 }
 .iterm--header {
-  line-height: 23px;
   position: relative;
   display: block;
   height: 23px;
+  line-height: 23px;
+  background: -webkit-linear-gradient(top, #f7f7f7 0%,#cfcfcf 5%,#aaa 100%);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  background: -webkit-linear-gradient(top, #f7f7f7 0%,#cfcfcf 5%,#aaa 100%);
 }
 .iterm--window-icons {
   position: absolute;
@@ -203,7 +203,6 @@ code {
   background: -webkit-radial-gradient(center, ellipse, #ea2803 27%, #ea2803 43%, #ea2803 43%, #e86c57 66%, #e86c57 66%, #e86c57 87%, #f3c5bd 95%, #f60 96%, #f60 96%, #f3c5bd 96%, #c72200 100%);
   background:      -o-radial-gradient(center, ellipse, #ea2803 27%, #ea2803 43%, #ea2803 43%, #e86c57 66%, #e86c57 66%, #e86c57 87%, #f3c5bd 95%, #f60 96%, #f60 96%, #f3c5bd 96%, #c72200 100%);
   background:         radial-gradient(ellipse at center, #ea2803 27%,#ea2803 43%,#ea2803 43%,#e86c57 66%,#e86c57 66%,#e86c57 87%,#f3c5bd 95%,#f60 96%,#f60 96%,#f3c5bd 96%,#c72200 100%); /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2803', endColorstr='#c72200',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--window-icons .yellow {
@@ -214,7 +213,6 @@ code {
   background: -webkit-radial-gradient(center, ellipse, #ffd65e 25%, #febf04 100%);
   background:      -o-radial-gradient(center, ellipse, #ffd65e 25%, #febf04 100%);
   background:         radial-gradient(ellipse at center, #ffd65e 25%,#febf04 100%); /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--window-icons .green {
@@ -225,31 +223,30 @@ code {
   background: -webkit-radial-gradient(center, ellipse, #b4e391 0%, #61c419 91%, #b4e391 100%);
   background:      -o-radial-gradient(center, ellipse, #b4e391 0%, #61c419 91%, #b4e391 100%);
   background:         radial-gradient(ellipse at center, #b4e391 0%,#61c419 91%,#b4e391 100%); /* W3C */
-
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ) /* IE6-9 fallback on horizontal gradient */
 }
 .iterm--shell {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  /*overflow: hidden;*/
-  font-size: 17px;
-  line-height: 23px;
   position: relative;
   display: block;
   min-height: 50px;
   padding: 15px;
-  text-align: left;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  /*overflow: hidden;*/
+  font-size: 17px;
+  line-height: 23px;
   color: #fff;
+  text-align: left;
+  background-color: #3d3d3d;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
-  background-color: #3d3d3d;
 }
 .iterm--shell > p {
   white-space: nowrap;
 }
 .iterm--shell > p > span:before {
   padding-right: 10px;
-  content: "$";
   color: #ffe100;
+  content: "$";
 }
 .go-top {
   background-color: #fff;
@@ -265,19 +262,19 @@ code {
 }
 
 .well--download {
-  overflow: hidden;
   max-width: 500px;
   margin: 20px auto;
+  overflow: hidden;
   text-align: center;
-  white-space: nowrap;
   text-transform: capitalize;
-  border: none;
+  white-space: nowrap;
   background: #242424;
+  border: none;
 }
 .well--download > h2 {
+  margin: 10px auto;
   font-family: inherit;
   font-weight: 400;
-  margin: 10px auto;
   color: #fafafa;
 }
 .well--download hr {
@@ -320,73 +317,73 @@ code {
   right: 0;
   bottom: 0;
   cursor: pointer;
-  border: none;
   background-color: #4e5d6c;
+  border: none;
 }
 .zero-clipboard {
   position: relative;
   display: block;
 }
 .btn-clipboard {
-  font-size: 12px;
   position: absolute;
-  z-index: 10;
   top: 0;
   right: 0;
+  z-index: 10;
   display: block;
   padding: 5px 8px;
-  cursor: pointer;
-  -webkit-transition: all .4s ease;
-       -o-transition: all .4s ease;
-          transition: all .4s ease;
+  font-size: 12px;
   color: #fafafa;
+  cursor: pointer;
+  background-color: #1abc9c;
   border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
   border-radius: 0 0 0 6px;
-  background-color: #1abc9c;
+  -webkit-transition: all .4s ease;
+       -o-transition: all .4s ease;
+          transition: all .4s ease;
 }
 .icon-clipboard {
-  font-size: 12px;
   position: absolute;
-  z-index: 10;
   top: 4px;
   right: 0;
   left: 0;
+  z-index: 10;
   display: block;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 5px 8px;
   margin-right: -10px;
   margin-left: -10px;
-  padding: 5px 8px;
+  font-size: 12px;
+  color: #fafafa;
   cursor: pointer;
+  background-color: #1abc9c;
+  border-top: none;
+  border-radius: 0;
   -webkit-transition: all .4s ease;
        -o-transition: all .4s ease;
           transition: all .4s ease;
-  color: #fafafa;
-  border-top: none;
-  border-radius: 0;
-  background-color: #1abc9c;
 }
 .fa-icon-clipboard {
-  font-size: 12px;
   position: absolute;
-  z-index: 10;
   top: 0;
   right: 15px;
+  z-index: 10;
   display: block;
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   padding: 5.333333px 8px;
+  font-size: 12px;
+  color: #fafafa;
   cursor: pointer;
+  background-color: #1abc9c;
+  border-top: none;
+  border-radius: 0 4px 4px 0;
   -webkit-transition: all .4s ease;
        -o-transition: all .4s ease;
           transition: all .4s ease;
-  color: #fafafa;
-  border-top: none;
-  border-radius: 0 4px 4px 0;
-  background-color: #1abc9c;
 }
 .tool-tip,
 .tooltip-inner {
@@ -394,22 +391,22 @@ code {
   white-space: nowrap;
 }
 .btn-copy-hover {
-  cursor: pointer;
   color: #fff;
+  cursor: pointer;
   background-color: #08bddd;
 }
 .glyphicons-list .btn-copy-hover {
   margin-top: 1px;
-  cursor: pointer;
   color: #fff;
-  border: none;
+  cursor: pointer;
   background-color: #08bddd;
+  border: none;
 }
 .fontawesome-icon-list .btn-copy-hover {
-  cursor: pointer;
   color: #fff;
-  border-top: none;
+  cursor: pointer;
   background-color: #08bddd;
+  border-top: none;
 }
 .btn-copy-active,
 .btn-copy:focus,
@@ -418,11 +415,11 @@ code {
 }
 .icon-copy,
 .after-copy {
-  font-size: 15px;
-  font-weight: 500;
   position: absolute;
   right: 100px;
   bottom: -61px;
+  font-size: 15px;
+  font-weight: 500;
   color: #1abc9c;
 }
 .icon-copy {
@@ -433,8 +430,8 @@ code {
   margin: 40px auto;
 }
 .callout {
-  margin: 20px 0;
   padding: 20px;
+  margin: 20px 0;
   border: 1px solid #eee;
   border-left-width: 5px;
   border-radius: 3px;
@@ -593,40 +590,40 @@ li.L9 {
 }
 .site-footer {
   position: fixed;
-  z-index: 900;
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 900;
   background-color: #2a3542;
 }
 .fixed {
   position: fixed;
 }
 .nav-sidebar {
+  padding-left: 20px;
   margin-top: 130px;
   margin-bottom: 20px;
-  padding-left: 20px;
 }
 .nav-sidebar .nav > li > a {
+  padding: 4px 20px;
   font-size: 13px;
   font-weight: 400;
-  padding: 4px 20px;
   color: #999;
   border-left: 2px solid transparent;
 }
 .nav-sidebar .nav .nav > li > a {
-  font-size: 12px;
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
+  font-size: 12px;
 }
 .nav-sidebar .nav > .active > a,
 .nav-sidebar .nav > li > a:hover,
 .nav-sidebar .nav > li > a:focus {
-  text-decoration: none;
   color: #16a085;
-  border-left-color: #16a085;
+  text-decoration: none;
   background-color: transparent;
+  border-left-color: #16a085;
 }
 .nav-sidebar .nav > .active > a,
 .nav-sidebar .nav > .active:hover > a,
@@ -682,8 +679,8 @@ li.L9 {
 
 
 .glyphicons {
-  overflow: hidden;
   margin: 0 -10px 20px;
+  overflow: hidden;
 }
 .glyphicons-list {
   padding-left: 0;
@@ -693,20 +690,20 @@ li.L9 {
   color: #fff;
 }
 .glyphicons li {
-  font-size: 10px;
-  line-height: 1.4;
   float: left;
   width: 25%;
   height: 85px;
   padding: 10px;
+  font-size: 10px;
+  line-height: 1.4;
   text-align: center;
-  border: 1px solid #fff;
   background-color: #08bddd;
+  border: 1px solid #fff;
 }
 .glyphicons .glyphicon {
-  font-size: 24px;
   margin-top: 5px;
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .glyphicons .glyphicon-class {
   display: block;
@@ -728,11 +725,11 @@ li.L9 {
   display: none;
 }
 .fontawesome-icon-list .fa-hover .icon-name {
-  line-height: 32px;
   position: relative;
   display: block;
   height: 32px;
   padding-left: 10px;
+  line-height: 32px;
   color: #222;
   border-radius: 4px;
 }
@@ -742,18 +739,18 @@ li.L9 {
   right: 0;
 }
 .fontawesome-icon-list .fa-hover .icon-name {
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
   background-color: #1d9d74;
 }
 .icon-name > .fa {
   color: #000;
 }
 .icon-name:hover > .fa {
-  font-size: 53px;
   width: 77px;
-  margin-left: -10px;
   padding: 7px;
+  margin-left: -10px;
+  font-size: 53px;
   text-align: center;
   background-color: #1d9d74;
 }
@@ -764,8 +761,8 @@ li.L9 {
     margin-left: 0;
   }
   .glyphicons li {
-    font-size: 12px;
     width: 12.5%;
+    font-size: 12px;
   }
 }
 
@@ -773,33 +770,33 @@ li.L9 {
 .tab-pane .search:focus {
   width: 100%;
   color: #000;
-  border-color: #1d9d74;
   background: url(../img/search-icon.jpg) no-repeat 10px 15px;
+  border-color: #1d9d74;
 }
 .tab-pane .btn {
   margin-bottom: 20px;
 }
 .example-code {
   position: relative;
-  margin: 0 -15px 15px;
   padding: 45px 15px 15px;
+  margin: 0 -15px 15px;
+  background-color: #fff;
   border-width: 1px 0;
   border-style: solid;
   border-color: #e5e5e5 #eee #eee;
-  background-color: #fff;
   -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
           box-shadow: inset 0 3px 6px rgba(0,0,0,.05);
 }
 .example-code:after {
-  font-size: 12px;
-  font-weight: 700;
   position: absolute;
   top: 15px;
   left: 15px;
-  content: "Example";
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
   color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Example";
 }
 .example-code + .highlight,
 .example-code + .zero-clipboard + .highlight > .prettyprint {
@@ -812,10 +809,10 @@ li.L9 {
   .example-code {
     margin-right: 0;
     margin-left: 0;
+    background-color: #fff;
     border-width: 1px;
     border-color: #ddd;
     border-radius: 4px 4px 0 0;
-    background-color: #fff;
     -webkit-box-shadow: none;
             box-shadow: none;
   }
@@ -853,16 +850,16 @@ li.L9 {
 .show-grid [class^=col-] {
   padding-top: 10px;
   padding-bottom: 10px;
+  background-color: #1d9d74;
   border: 1px solid #08bddd;
   border-radius: 4px;
-  background-color: #1d9d74;
 }
 
 #gritter-notice-wrapper {
   position: fixed;
-  z-index: 9999;
   top: 20px;
   right: 20px;
+  z-index: 9999;
   width: 301px;
 }
 .gritter-item-wrapper {
@@ -875,10 +872,10 @@ li.L9 {
   background-color: rgba(0, 0, 0, .7);
 }
 .gritter-item {
-  font-family: verdana;
-  font-size: 11px;
   display: block;
   padding: 2px 11px 8px 11px;
+  font-family: verdana;
+  font-size: 11px;
   color: #eee;
   background-color: rgba(0, 0, 0, .7);
 }
@@ -886,8 +883,8 @@ li.L9 {
   background-position: right -40px;
 }
 .gritter-item p {
-  margin: 0;
   padding: 0;
+  margin: 0;
   word-wrap: break-word;
 }
 .gritter-close {
@@ -909,10 +906,10 @@ li.L9 {
   background-color: #f00;
 }
 .gritter-title {
-  font-size: 14px;
-  font-weight: bold;
   display: block;
   padding: 0 0 7px 0;
+  font-size: 14px;
+  font-weight: bold;
   text-shadow: 1px 1px 0 #000;
 }
 .gritter-image {
@@ -965,8 +962,8 @@ li.L9 {
 .example-code > .dropdown > .dropdown-menu {
   position: static;
   display: block;
-  clear: left;
   margin-bottom: 5px;
+  clear: left;
 }
 .example-code > .style-row {
   position: absolute;
@@ -985,15 +982,15 @@ li.L9 {
   background-color: #1fd5b1;
 }
 .example-code > .style-row::after {
-  font-size: 12px;
-  font-weight: 700;
   position: absolute;
   top: 8px;
   left: -120px;
-  content: "Choose Style";
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
   color: #959595;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  content: "Choose Style";
 }
 
 .dropdown-toggle + .square {

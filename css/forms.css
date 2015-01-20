@@ -6,26 +6,26 @@
 
 fieldset {
   min-width: 0;
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: 0;
 }
 legend {
-  font-size: 21px;
-  line-height: inherit;
   display: block;
   width: 100%;
-  margin-bottom: 20px;
   padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
   color: #333;
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 }
 label {
-  font-weight: bold;
   display: inline-block;
   max-width: 100%;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 input[type="search"] {
   -webkit-box-sizing: border-box;
@@ -34,9 +34,9 @@ input[type="search"] {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  line-height: normal;
   margin: 4px 0 0;
   margin-top: 1px \9;
+  line-height: normal;
 }
 input[type="file"] {
   display: block;
@@ -57,29 +57,29 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 output {
-  font-size: 14px;
-  line-height: 1.42857143;
   display: block;
   padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857143;
   color: #555;
 }
 .form-control {
-  font-size: 14px;
-  line-height: 1.42857143;
   display: block;
   width: 100%;
   height: 34px;
   padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  color: #555;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #fff;
-  background-image: none;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
 .form-control:focus {
   border-color: #66afe9;
@@ -88,8 +88,8 @@ output {
           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .form-control::-moz-placeholder {
-  opacity: 1;
   color: #999;
+  opacity: 1;
 }
 .form-control:-ms-input-placeholder {
   color: #999;
@@ -101,8 +101,8 @@ output {
 .form-control[readonly],
 fieldset[disabled] .form-control {
   cursor: not-allowed;
-  opacity: 1;
   background-color: #eee;
+  opacity: 1;
 }
 textarea.form-control {
   height: auto;
@@ -142,19 +142,19 @@ input[type="search"] {
 }
 .radio label,
 .checkbox label {
-  font-weight: normal;
   min-height: 20px;
-  margin-bottom: 0;
   padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
   cursor: pointer;
 }
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-top: 4px \9;
-  margin-left: -20px;
+  /*position: absolute;*/
+  margin-top: 4px;
+  /*margin-left: -20px;*/
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -162,12 +162,12 @@ input[type="search"] {
 }
 .radio-inline,
 .checkbox-inline {
-  font-weight: normal;
   display: inline-block;
-  margin-bottom: 0;
   padding-left: 20px;
-  cursor: pointer;
+  margin-bottom: 0;
+  font-weight: normal;
   vertical-align: middle;
+  cursor: pointer;
 }
 .radio-inline + .radio-inline,
 .checkbox-inline + .checkbox-inline {
@@ -195,9 +195,9 @@ fieldset[disabled] .checkbox label {
   cursor: not-allowed;
 }
 .form-control-static {
-  margin-bottom: 0;
   padding-top: 7px;
   padding-bottom: 7px;
+  margin-bottom: 0;
 }
 .form-control-static.input-lg,
 .form-control-static.input-sm {
@@ -206,16 +206,16 @@ fieldset[disabled] .checkbox label {
 }
 .input-sm,
 .form-group-sm .form-control {
-  font-size: 12px;
-  line-height: 1.5;
   height: 30px;
   padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
   border-radius: 3px;
 }
 select.input-sm,
 select.form-group-sm .form-control {
-  line-height: 30px;
   height: 30px;
+  line-height: 30px;
 }
 textarea.input-sm,
 textarea.form-group-sm .form-control,
@@ -225,16 +225,16 @@ select[multiple].form-group-sm .form-control {
 }
 .input-lg,
 .form-group-lg .form-control {
-  font-size: 18px;
-  line-height: 1.33;
   height: 46px;
   padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
   border-radius: 6px;
 }
 select.input-lg,
 select.form-group-lg .form-control {
-  line-height: 46px;
   height: 46px;
+  line-height: 46px;
 }
 textarea.input-lg,
 textarea.form-group-lg .form-control,
@@ -249,26 +249,26 @@ select[multiple].form-group-lg .form-control {
   padding-right: 42.5px;
 }
 .form-control-feedback {
-  line-height: 34px;
   position: absolute;
-  z-index: 2;
   top: 0;
   right: 0;
+  z-index: 2;
   display: block;
   width: 34px;
   height: 34px;
+  line-height: 34px;
   text-align: center;
   pointer-events: none;
 }
 .input-lg + .form-control-feedback {
-  line-height: 46px;
   width: 46px;
   height: 46px;
+  line-height: 46px;
 }
 .input-sm + .form-control-feedback {
-  line-height: 30px;
   width: 30px;
   height: 30px;
+  line-height: 30px;
 }
 .has-success .help-block,
 .has-success .control-label,
@@ -294,8 +294,8 @@ select[multiple].form-group-lg .form-control {
 }
 .has-success .input-group-addon {
   color: #3c763d;
-  border-color: #3c763d;
   background-color: #dff0d8;
+  border-color: #3c763d;
 }
 .has-success .form-control-feedback {
   color: #3c763d;
@@ -324,8 +324,8 @@ select[multiple].form-group-lg .form-control {
 }
 .has-warning .input-group-addon {
   color: #8a6d3b;
-  border-color: #8a6d3b;
   background-color: #fcf8e3;
+  border-color: #8a6d3b;
 }
 .has-warning .form-control-feedback {
   color: #8a6d3b;
@@ -354,8 +354,8 @@ select[multiple].form-group-lg .form-control {
 }
 .has-error .input-group-addon {
   color: #a94442;
-  border-color: #a94442;
   background-color: #f2dede;
+  border-color: #a94442;
 }
 .has-error .form-control-feedback {
   color: #a94442;
@@ -426,9 +426,9 @@ select[multiple].form-group-lg .form-control {
 .form-horizontal .checkbox,
 .form-horizontal .radio-inline,
 .form-horizontal .checkbox-inline {
+  padding-top: 7px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 7px;
 }
 .form-horizontal .radio,
 .form-horizontal .checkbox {
@@ -440,8 +440,8 @@ select[multiple].form-group-lg .form-control {
 }
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    margin-bottom: 0;
     padding-top: 7px;
+    margin-bottom: 0;
     text-align: right;
   }
 }
